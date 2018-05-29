@@ -1,0 +1,6 @@
+framework module Pods_Hagrid {
+  umbrella header "Pods-Hagrid-umbrella.h"
+
+  export *
+  module * { export * }
+}
