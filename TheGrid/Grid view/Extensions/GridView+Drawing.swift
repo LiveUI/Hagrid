@@ -57,7 +57,20 @@ extension GridView {
         
         let x = self.x((column - 1))
         let font = (config.columnWidth > 20) ? UIFont.boldSystemFont(ofSize: (config.columnWidth / 2)) : UIFont.systemFont(ofSize: (config.columnWidth / 2))
-        let y = ((bounds.size.height / 2) - (font.pointSize / 2))
+        
+        if bounds.size.height < 200 {
+            let y = ((bounds.size.height / 2) - (font.pointSize / 2))
+            drawColumnNumber(at: y, column: column, x: x, font: font, color: color, context: context)
+        } else {
+            var y: CGFloat = 100
+            while y < bounds.size.height {
+                drawColumnNumber(at: y, column: column, x: x, font: font, color: color, context: context)
+                y += 100
+            }
+        }
+    }
+    
+    func drawColumnNumber(at y: CGFloat, column: Int, x: CGFloat, font: UIFont, color: UIColor, context: CGContext) {
         let textRect = CGRect(x: x, y: y, width: config.columnWidth, height: 44)
         let textTextContent = String(column)
         let textStyle = NSMutableParagraphStyle()
@@ -73,7 +86,6 @@ extension GridView {
         context.clip(to: textRect)
         textTextContent.draw(in: CGRect(x: textRect.minX, y: textRect.minY + (textRect.height - textTextHeight) / 2, width: textRect.width, height: textTextHeight), withAttributes: textFontAttributes)
         context.restoreGState()
-
     }
     
 }

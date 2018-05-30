@@ -28,31 +28,65 @@ extension GridView {
     func layout(_ subview: Subview) {
         subview.view.snp.remakeConstraints { (make) in
             // Top
-            if var top = subview.properties.vertical.top {
-                top += config.padding.value.top
-                make.top.equalTo(top)
-            } else if let below = subview.properties.vertical.below {
-                make.top.equalTo(below.view.snp.bottom).offset(below.offset)
+            if let vertical = subview.properties.vertical {
+                switch vertical {
+                case .toTop:
+                    make.top.equalTo(config.padding.value.top)
+                case .exactly(fromTop: let top):
+                    make.top.equalTo(top)
+                case .below(let view, margin: let margin):
+                    make.top.equalTo(view.snp.bottom).offset(margin)
+                case .above(let view, margin: let margin):
+                    make.bottom.equalTo(view.snp.top).offset(-margin)
+                case .row(let views, margin: let margin):
+                    for view in views {
+                        make.top.greaterThanOrEqualTo(view.snp.bottom).offset(margin)
+                    }
+                }
+            } else {
+                make.top.greaterThanOrEqualTo(config.padding.value.top)
             }
             
             // Left
-            let left = (self.x(subview.properties.from) + subview.properties.padding.value.left)
-            make.left.equalTo(left)
+            let leftPadding = subview.properties.padding.value.left
+            switch subview.properties.from.position {
+            case .col(let column):
+                let left = (self.x(column) + leftPadding)
+                make.left.equalTo(left)
+            case .reversed(let column):
+                let left = (self.x((config.numberOfColumns - column)) + leftPadding)
+                make.left.equalTo(left)
+            case .last:
+                make.width.equalTo(self.x(config.numberOfColumns - 1))
+            case .dynamic:
+                break
+            case .dynamicallySnapped:
+                fatalError("Not implemented")
+            case .relation(let view, margin: let margin):
+                make.left.equalTo(view.snp.right).offset(margin + leftPadding)
+            }
             
             // Right
-            if !subview.properties.space.isDynamicPosition {
-                let column = subview.properties.space.column
-                let right: CGFloat
-                if column >= 0 { // Defined column
-                    right = self.x(subview.properties.from + column)
-                } else if column > -666 { // N-th column from the end
-                    right = self.x(config.numberOfColumns + column)
-                } else if column == Position.lastValue { // Last column
-                    right = self.x(config.numberOfColumns)
-                } else { // Not implemented, should not really happen!
-                    fatalError("Position is not implemented or is not a real value!")
+            let rightPadding = subview.properties.padding.value.right
+            let fullRightPadding = -(rightPadding + config.padding.value.right)
+            switch subview.properties.space.position {
+            case .col(let column):
+                if column >= 0 && column < config.numberOfColumns { // Defined column
+                    let col = config.numberOfColumns - (config.numberOfColumns - column)
+                    make.width.equalTo((CGFloat(col) * config.columnWidth) - rightPadding)
+                } else {
+                    make.right.equalTo(fullRightPadding)
                 }
-                make.width.equalTo(right - left)
+            case .reversed(let column):
+                make.right.equalTo(fullRightPadding - (CGFloat(column) * config.columnWidth))
+            case .last:
+                make.right.equalTo(fullRightPadding)
+            case .dynamic:
+                break
+            case .dynamicallySnapped:
+                fatalError("Not implemented")
+            case .relation(let view, margin: let margin):
+                make.right.equalTo(view.snp.left).offset(margin - rightPadding)
             }
             
             // Run custom constraints

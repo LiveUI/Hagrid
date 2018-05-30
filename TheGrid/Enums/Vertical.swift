@@ -19,31 +19,12 @@ public enum Vertical {
     case exactly(fromTop: CGFloat)
     
     /// Below another view (view, margin)
-    case below(UIView, offset: CGFloat)
+    case below(UIView, margin: CGFloat)
     
-}
-
-extension Vertical {
+    /// Above another view (view, margin)
+    case above(UIView, margin: CGFloat)
     
-    /// Top value
-    var top: CGFloat? {
-        switch self {
-        case .toTop:
-            return 0
-        case .exactly(let value):
-            return value
-        default:
-            return nil
-        }
-    }
-    
-    var below: (view: UIView, offset: CGFloat)? {
-        switch self {
-        case .below(let view, let offset):
-            return (view: view, offset: offset)
-        default:
-            return nil
-        }
-    }
+    /// Maintains a position (row) under a set of elements
+    case row([UIView], margin: CGFloat)
     
 }

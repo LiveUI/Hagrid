@@ -12,11 +12,27 @@ import Foundation
 /// Class representing different screensizes
 public struct Class {
     
-    /// Sizes
-    let sizes: [Device: Position]
+    /// Size object
+    public struct Size {
+        
+        /// Device details
+        public let device: Device
+        
+        /// Position
+        public let position: Position
+        
+    }
     
-    /// Initializer
-    public init(_ sizes: [Device: Position]) {
+    /// Sizes
+    let sizes: [Size]
+    
+    /**
+     Initializer, first size in the array will be considered 
+     */
+    public init(_ sizes: [Size]) {
+        guard sizes.count > 0 else {
+            fatalError("Sizes need to contain at least one value")
+        }
         self.sizes = sizes
     }
     
@@ -25,9 +41,9 @@ public struct Class {
 
 extension Class: PositionConvertible {
     
-    /// Numeric representation of the column
-    public var column: Int {
-        return 1
+    /// Position fitting current device and it's state
+    public var position: Position {
+        return .col(1)
     }
     
 }

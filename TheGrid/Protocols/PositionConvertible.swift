@@ -13,26 +13,15 @@
 public protocol PositionConvertible {
     
     /// Numeric representation of the column
-    var column: Int { get }
-    
-    var isDynamicPosition: Bool { get }
-    
-}
-
-extension PositionConvertible {
-    
-    /// Check if the given position is dynamic
-    public var isDynamicPosition: Bool {
-        return false
-    }
+    var position: Position { get }
     
 }
 
 extension Int: PositionConvertible {
     
-    /// Numeric representation of a GridView column
-    public var column: Int {
-        return self
+    /// Value converted to GridView column
+    public var position: Position {
+        return .col(self)
     }
     
 }

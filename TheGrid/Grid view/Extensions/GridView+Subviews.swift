@@ -24,15 +24,15 @@ extension GridView {
          - redraw: SnapKit make closure for that fine tunning we all need
      */
     public func add(subview view: UIView,
-                    _ vertical: Vertical = .toTop,
-                    from: PositionConvertible,
-                    space: PositionConvertible,
+                    _ vertical: Vertical? = nil,
+                    from: PositionConvertible = 0,
+                    space: PositionConvertible = Position.last,
                     padding: Padding = .none,
                     redraw: ((_ make: ConstraintMaker) -> Void)? = nil) {
         let subview = Subview(
             properties: Properties(
                 vertical: vertical,
-                from: from.column,
+                from: from,
                 space: space,
                 redraw: redraw,
                 padding: padding

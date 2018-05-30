@@ -14,10 +14,10 @@ import Foundation
 public struct Properties {
     
     /// Vertical positioning
-    public let vertical: Vertical
+    public let vertical: Vertical?
     
     /// Starting position
-    public let from: Int
+    public let from: PositionConvertible
     
     /// Horizontal space taken by the element
     public let space: PositionConvertible
