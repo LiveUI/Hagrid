@@ -4,9 +4,9 @@ Brings grid layout to the Apple platforms
 
 <table>
 	<tr>
-		<td>![Screenshot 1](/Other/12-column.png?raw=true)</td>
-		<td>![Screenshot 2](/Other/8-column.png?raw=true)</td>
-		<td>![Screenshot 3](/Other/22-column.png?raw=true)</td>
+		<td><img src="https://github.com/LiveUI/TheGrid/blob/master/Other/12-column.png?raw=true" alt="" /></td>
+		<td><img src="https://github.com/LiveUI/TheGrid/blob/master/Other/8-column.png?raw=true" alt="" /></td>
+		<td><img src="https://github.com/LiveUI/TheGrid/blob/master/Other/22-column.png?raw=true" alt="" /></td>
 	</tr>
 </table>
 
