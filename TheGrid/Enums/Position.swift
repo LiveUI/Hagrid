@@ -12,15 +12,6 @@ import Foundation
 /// Basic position value object
 public enum Position {
     
-    /// Dynamic value
-    static let dynamicValue = -666
-    
-    /// Dynamic value, snapped to the nearest column
-    static let dynamicSnappedValue = -667
-    
-    /// Last column on a grid view
-    static let lastValue = -668
-    
     /// Specific column on the grid
     case col(Int)
     
@@ -40,6 +31,15 @@ public enum Position {
 
 
 extension Position: PositionConvertible {
+    
+    /// Dynamic value
+    static let dynamicValue = -666
+    
+    /// Dynamic value, snapped to the nearest column
+    static let dynamicSnappedValue = -667
+    
+    /// Last column on a grid view
+    static let lastValue = -668
     
     /// Numeric representation of the column
     public var column: Int {

@@ -87,7 +87,7 @@ class ViewController: GridViewController {
         toggleGrid()
         
         gridView.config.padding = .full(top: 6, left: 12, right: 12)
-//        gridView.place.on(andFill: view)
+        
         addSubviews()
     }
     

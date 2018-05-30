@@ -2,6 +2,14 @@
 
 Brings grid layout to the Apple platforms
 
+<table>
+	<tr>
+		<td>![Screenshot 1](/Other/12-column.png?raw=true)</td>
+		<td>![Screenshot 2](/Other/8-column.png?raw=true)</td>
+		<td>![Screenshot 3](/Other/22-column.png?raw=true)</td>
+	</tr>
+</table>
+
 ## Usage
 
 ```swift
@@ -28,7 +36,7 @@ gridView.add(subview: yearLabel, .below(artistLabel, offset: 2), from: 5, space:
 
 ## Customisation
 
-There is a number of ways to customize your grid views:
+There is a number of ways to customise your grid views:
 
 ### Number of columns
 
@@ -39,12 +47,47 @@ Each grid view can have any number of columns, it is completely up to the develo
 gridView.config.numberOfColumns = 24
 ```
 
-## View controller
+### Grid view outer padding
 
-A `GridViewController` is available for your convenience with `gridView` property replacing the standard `view`.
+You can set `top`, `left` or `right` padding for the entire grid view like this:
 
 ```swift
+gridView.config.padding = .full(top: 6, left: 12, right: 12)
+```
 
+Available paddings are:
+```swift
+/// Element padding
+public enum Padding {
+    
+    /// None
+    case none
+    
+    /// Top
+    case top(CGFloat)
+    
+    /// Left
+    case left(CGFloat)
+    
+    /// Right
+    case right(CGFloat)
+    
+    /// Sides (left, right)
+    case horizontal(left: CGFloat, right: CGFloat)
+    
+    /// Full (top, left, right, bottom)
+    case full(top: CGFloat, left: CGFloat, right: CGFloat)
+    
+}
+
+```
+
+## View controller
+
+A `GridViewController` is available for subclassing and your convenience with `gridView` property replacing the standard `view`.
+
+```swift
+class MyViewController: GridViewController { }
 ```
 
 ## Debugging

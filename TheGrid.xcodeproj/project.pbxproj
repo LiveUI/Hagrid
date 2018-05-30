@@ -66,6 +66,7 @@
 		153F9D7A20BE22F00051D0D3 /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
 		153F9D7B20BE22F00051D0D3 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		153F9D7C20BE22F00051D0D3 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		153F9D7D20BE2AEA0051D0D3 /* Other */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Other; sourceTree = "<group>"; };
 		15D00E7920BDB8C20051A8CF /* UIColor+Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Tools.swift"; sourceTree = "<group>"; };
 		15D00E7B20BDBE8A0051A8CF /* GridView+Drawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GridView+Drawing.swift"; sourceTree = "<group>"; };
 		15D00E7D20BDBECF0051A8CF /* GridView+Calculations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GridView+Calculations.swift"; sourceTree = "<group>"; };
@@ -118,7 +119,7 @@
 		151640E020BD7A8C0062FA33 = {
 			isa = PBXGroup;
 			children = (
-				153F9D7820BE22DF0051D0D3 /* Other */,
+				153F9D7820BE22DF0051D0D3 /* Configs */,
 				151640EC20BD7A8C0062FA33 /* TheGrid */,
 				151640F720BD7A8C0062FA33 /* TheGridTests */,
 				1516410E20BD7B740062FA33 /* Hagrid */,
@@ -245,15 +246,16 @@
 			path = "View controllers";
 			sourceTree = "<group>";
 		};
-		153F9D7820BE22DF0051D0D3 /* Other */ = {
+		153F9D7820BE22DF0051D0D3 /* Configs */ = {
 			isa = PBXGroup;
 			children = (
+				153F9D7D20BE2AEA0051D0D3 /* Other */,
 				153F9D7B20BE22F00051D0D3 /* LICENSE */,
 				153F9D7C20BE22F00051D0D3 /* Podfile */,
 				153F9D7A20BE22F00051D0D3 /* Podfile.lock */,
 				153F9D7920BE22F00051D0D3 /* README.md */,
 			);
-			name = Other;
+			name = Configs;
 			sourceTree = "<group>";
 		};
 		15D00E7F20BDC3A50051A8CF /* Extensions */ = {
