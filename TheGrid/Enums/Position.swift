@@ -18,8 +18,17 @@ public enum Position {
     /// Dynamic value, snapped to the nearest column
     static let dynamicSnappedValue = -667
     
+    /// Last column on a grid view
+    static let lastValue = -668
+    
     /// Specific column on the grid
     case col(Int)
+    
+    /// Last column on a grid view
+    case last
+    
+    /// N-th column from the end
+    case reversed(Int)
     
     /// Dynamic position
     case dynamic
@@ -37,6 +46,10 @@ extension Position: PositionConvertible {
         switch self {
         case .col(let column):
             return column
+        case .reversed(let column):
+            return -column
+        case .last:
+            return Position.lastValue
         case .dynamic:
             return Position.dynamicValue
         case .dynamicallySnapped:
@@ -47,7 +60,7 @@ extension Position: PositionConvertible {
     /// Check if the given position is dynamic
     public var isDynamicPosition: Bool {
         switch self {
-        case .col(_):
+        case .col(_), .reversed(_), .last:
             return false
         default:
             return true

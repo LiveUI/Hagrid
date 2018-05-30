@@ -17,7 +17,7 @@ extension GridView {
         super.layoutSubviews()
         
         config.recalculate()
-        config.redraw()
+        config.reDraw()
         
         for subview in gridSubviews {
             layout(subview)
@@ -28,19 +28,34 @@ extension GridView {
     func layout(_ subview: Subview) {
         subview.view.snp.remakeConstraints { (make) in
             // Top
-            make.top.equalTo(subview.properties.top)
+            if var top = subview.properties.vertical.top {
+                top += config.padding.value.top
+                make.top.equalTo(top)
+            } else if let below = subview.properties.vertical.below {
+                make.top.equalTo(below.view.snp.bottom).offset(below.offset)
+            }
             
             // Left
-            let left = (self.x(subview.properties.pos) + subview.properties.padding.value.left)
+            let left = (self.x(subview.properties.from) + subview.properties.padding.value.left)
             make.left.equalTo(left)
             
             // Right
             if !subview.properties.space.isDynamicPosition {
-                // Start column + number of columns
-                let right = self.x((subview.properties.pos + subview.properties.space.column))
-                make.width.equalTo((right - left))
+                let column = subview.properties.space.column
+                let right: CGFloat
+                if column >= 0 { // Defined column
+                    right = self.x(subview.properties.from + column)
+                } else if column > -666 { // N-th column from the end
+                    right = self.x(config.numberOfColumns + column)
+                } else if column == Position.lastValue { // Last column
+                    right = self.x(config.numberOfColumns)
+                } else { // Not implemented, should not really happen!
+                    fatalError("Position is not implemented or is not a real value!")
+                }
+                make.width.equalTo(right - left)
             }
             
+            // Run custom constraints
             subview.properties.redraw?(make)
         }
     }

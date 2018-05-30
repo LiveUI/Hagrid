@@ -16,21 +16,24 @@ extension GridView {
      Add subview
      
      - parameters:
-        - view: View to be added
-        - pos: Position on the grid
-        - columns: Number of columns to fill
+         - view: View to be added
+         - top: Top margin
+         - pos: Position on the grid
+         - space: Number of columns to fill
+         - padding: Subview padding on the grid
+         - redraw: SnapKit make closure for that fine tunning we all need
      */
-    public func addSubview(_ view: UIView,
-                           top: CGFloat = 0,
-                           pos: PositionConvertible,
-                           columns: PositionConvertible,
-                           padding: Padding = .none,
-                           redraw: ((_ make: ConstraintMaker) -> Void)? = nil) {
+    public func add(subview view: UIView,
+                    _ vertical: Vertical = .toTop,
+                    from: PositionConvertible,
+                    space: PositionConvertible,
+                    padding: Padding = .none,
+                    redraw: ((_ make: ConstraintMaker) -> Void)? = nil) {
         let subview = Subview(
             properties: Properties(
-                top: top,
-                pos: pos.column,
-                space: columns,
+                vertical: vertical,
+                from: from.column,
+                space: space,
                 redraw: redraw,
                 padding: padding
             ),
@@ -39,7 +42,12 @@ extension GridView {
         addSubview(subview)
     }
     
-    @available(*, unavailable, message: "This method is unavailable, please use addSubview(_:pos:columns:padding:) instead")
+    /// Close row
+    public func closeRow() {
+        
+    }
+    
+    @available(*, unavailable, message: "This method is unavailable, please use add(subview:_:from:space:padding:redraw:) instead")
     open override func addSubview(_ view: UIView) {
         fatalError("Add subview is not supported on a GridView")
     }

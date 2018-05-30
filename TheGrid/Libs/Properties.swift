@@ -13,11 +13,11 @@ import Foundation
 /// Element properties
 public struct Properties {
     
-    /// Top margin from the nearest row
-    public let top: CGFloat
+    /// Vertical positioning
+    public let vertical: Vertical
     
     /// Starting position
-    public let pos: Int
+    public let from: Int
     
     /// Horizontal space taken by the element
     public let space: PositionConvertible

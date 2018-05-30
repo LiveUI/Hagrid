@@ -27,7 +27,7 @@ extension GridView {
             for i in 0...config.numberOfColumns {
                 let x = self.x(i)
                 let bezierPath = UIBezierPath()
-                bezierPath.move(to: CGPoint(x: x, y: 0))
+                bezierPath.move(to: CGPoint(x: x, y: config.padding.value.top))
                 bezierPath.addLine(to: CGPoint(x: x, y: bounds.size.height))
                 color.setStroke()
                 bezierPath.lineWidth = 1
@@ -38,17 +38,17 @@ extension GridView {
                 }
             }
             
-            var y: CGFloat = 0
-            for _ in 0...Int(rect.size.height / config.values.columnWidth) {
-                let bezierPath = UIBezierPath()
-                bezierPath.move(to: CGPoint(x: 0, y: y))
-                bezierPath.addLine(to: CGPoint(x: bounds.size.width, y: y))
-                color.setStroke()
-                bezierPath.lineWidth = 1
-                bezierPath.stroke()
-                
-                y += config.values.columnWidth
-            }
+//            var y: CGFloat = 0
+//            for _ in 0...Int(rect.size.height / config.columnWidth) {
+//                let bezierPath = UIBezierPath()
+//                bezierPath.move(to: CGPoint(x: 0, y: y))
+//                bezierPath.addLine(to: CGPoint(x: bounds.size.width, y: y))
+//                color.setStroke()
+//                bezierPath.lineWidth = 1
+//                bezierPath.stroke()
+//
+//                y += config.columnWidth
+//            }
         }
     }
     
@@ -56,9 +56,9 @@ extension GridView {
         let context = UIGraphicsGetCurrentContext()!
         
         let x = self.x((column - 1))
-        let font = (config.values.columnWidth > 20) ? UIFont.boldSystemFont(ofSize: (config.values.columnWidth / 2)) : UIFont.systemFont(ofSize: (config.values.columnWidth / 2))
+        let font = (config.columnWidth > 20) ? UIFont.boldSystemFont(ofSize: (config.columnWidth / 2)) : UIFont.systemFont(ofSize: (config.columnWidth / 2))
         let y = ((bounds.size.height / 2) - (font.pointSize / 2))
-        let textRect = CGRect(x: x, y: y, width: config.values.columnWidth, height: 44)
+        let textRect = CGRect(x: x, y: y, width: config.columnWidth, height: 44)
         let textTextContent = String(column)
         let textStyle = NSMutableParagraphStyle()
         textStyle.alignment = .center

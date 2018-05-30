@@ -11,37 +11,47 @@ import TheGrid
 import Modular
 
 
-class ViewController: UIViewController {
-    
-    let gridView = GridView()
-    
+class ViewController: GridViewController {
+
     // MARK: Example app
     
     let albumCover = UIImageView()
-    
+
     let albumTitleLabel = UILabel()
     let artistLabel = UILabel()
     let yearLabel = UILabel()
-    
+
     /// Create album cover
     func configureAlbumCover() {
         albumCover.backgroundColor = .random
         albumCover.image = UIImage(named: "TestData/AlbumCover")
         albumCover.contentMode = .scaleAspectFill
         albumCover.clipsToBounds = true
-        gridView.addSubview(albumCover, pos: 0, columns: 5, padding: .left(6)) { make in
+        albumCover.layer.cornerRadius = 3
+        
+        gridView.add(subview: albumCover, from: 0, space: 5) { make in
             make.height.equalTo(self.albumCover.snp.width)
         }
     }
-    
+
     /// Create album labels
     func createAlbumLabels() {
         albumTitleLabel.font = UIFont.boldSystemFont(ofSize: 18)
         albumTitleLabel.text = "Ten"
         albumTitleLabel.textColor = .darkText
-        gridView.addSubview(albumTitleLabel, pos: 5, columns: 3, padding: .left(12))
+        gridView.add(subview: albumTitleLabel, from: 5, space: Position.last, padding: .left(12))
+        
+        artistLabel.font = UIFont.systemFont(ofSize: 15)
+        artistLabel.text = "Pearl Jam"
+        artistLabel.textColor = .gray
+        gridView.add(subview: artistLabel, .below(albumTitleLabel, offset: 2), from: 5, space: Position.last, padding: .left(12))
+        
+        yearLabel.font = UIFont.systemFont(ofSize: 12)
+        yearLabel.text = "Released: 1991"
+        yearLabel.textColor = .gray
+        gridView.add(subview: yearLabel, .below(artistLabel, offset: 2), from: 5, space: Position.last, padding: .left(12))
     }
-    
+
     /// Add all subviews on the canvas
     func addSubviews() {
         configureAlbumCover()
@@ -57,11 +67,11 @@ class ViewController: UIViewController {
         setupGridView()
         
         navigationController?.navigationBar.isTranslucent = false
-        view.backgroundColor = .white
+        gridView.backgroundColor = .white
     }
     
     func setupNavBar() {
-        title = "Hagrid"
+        title = "HaGrid"
         
         let columns = UISegmentedControl(items: ["12", "8", "22"])
         columns.addTarget(self, action: #selector(selectColumns(_:)), for: .valueChanged)
@@ -69,14 +79,15 @@ class ViewController: UIViewController {
         let columnsItem = UIBarButtonItem(customView: columns)
         navigationItem.leftBarButtonItem = columnsItem
         
-        let toggleGrid = UIBarButtonItem(title: "Grid", style: .plain, target: self, action: #selector(toggleGrid(_:)))
-        navigationItem.rightBarButtonItem = toggleGrid
+        let toggle = UIBarButtonItem(title: "Debug", style: .plain, target: self, action: #selector(toggleGrid))
+        navigationItem.rightBarButtonItem = toggle
     }
     
     func setupGridView() {
-        gridView.place.on(andFill: view, top: 6, left:20, right: -20)
-        gridView.config.displayGrid = true
+        toggleGrid()
         
+        gridView.config.padding = .full(top: 6, left: 12, right: 12)
+//        gridView.place.on(andFill: view)
         addSubviews()
     }
     
@@ -94,8 +105,14 @@ class ViewController: UIViewController {
         })
     }
     
-    @objc func toggleGrid(_ sender: UIBarButtonItem) {
+    @objc func toggleGrid() {
         gridView.config.displayGrid = !gridView.config.displayGrid
+        
+        let debugColor = UIColor.lightGray.withAlphaComponent(0.3)
+        
+        albumTitleLabel.backgroundColor = gridView.config.displayGrid ? debugColor : .clear
+        artistLabel.backgroundColor = gridView.config.displayGrid ? debugColor : .clear
+        yearLabel.backgroundColor = gridView.config.displayGrid ? debugColor : .clear
     }
 
 }

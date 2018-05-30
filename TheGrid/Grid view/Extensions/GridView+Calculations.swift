@@ -13,7 +13,7 @@ extension GridView {
     
     /// Pixel position for column
     func x(_ column: Int) -> CGFloat {
-        return CGFloat(column) * config.values.columnWidth
+        return (CGFloat(column) * config.columnWidth) + config.padding.value.left
     }
     
 }
@@ -22,13 +22,14 @@ extension GridView.Config {
     
     /// Recalculate cache
     func recalculate() {
-        values.columnWidth = columnWidth()
+        columnWidth = calculatedColumnWidth()
     }
     
     /// Column width
-    private func columnWidth() -> CGFloat {
-        let w = element.bounds.size.width / CGFloat(numberOfColumns)
-        return w
+    private func calculatedColumnWidth() -> CGFloat {
+        let availableWidth = (element.bounds.size.width - (padding.value.left + padding.value.right))
+        let columnWidth = (availableWidth / CGFloat(numberOfColumns))
+        return columnWidth
     }
     
 }

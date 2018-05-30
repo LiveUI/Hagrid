@@ -16,37 +16,39 @@ open class GridView: UIView {
     /// Grid view config object
     public final class Config {
         
-        /// Grid view data cache
-        public struct Values {
-            
-            /// Column width
-            public var columnWidth: CGFloat = 0
-            
-        }
-        
         /**
          Display grid outlines
          
          - important: Redraws gridview on set
          */
-        public var displayGrid: Bool = false { didSet { redraw() } }
+        public var displayGrid: Bool = false { didSet { reDraw() } }
         
         /**
          Number of columns
          
          - important: Redraws gridview on set
          */
-        public var numberOfColumns: Int = 12 {
+        public var numberOfColumns: Int = 12 { didSet { reLayout() } }
+        
+        /**
+         Column width
+         
+         - important: Will be 0 until grid view is drawn for the first time
+         */
+        public internal(set) var columnWidth: CGFloat = 0
+        
+        /**
+         Grid view padding
+         
+         - important: Bottom padding not implemented
+         */
+        public var padding: Padding = .none {
             didSet {
-                element.setNeedsLayout()
-                element.layoutIfNeeded()
+                reLayout()
             }
         }
         
         // MARK: Private interface
-        
-        /// Cached values
-        public internal(set) var values = Values()
         
         /// Holds reference to the grid view
         let element: GridView
@@ -57,8 +59,16 @@ open class GridView: UIView {
         }
         
         /// Re-draw the element
-        func redraw() {
+        func reDraw() {
             element.setNeedsDisplay()
+        }
+        
+        /// Re-layout
+        private func reLayout() {
+            if element.superview != nil {
+                element.setNeedsLayout()
+                element.layoutIfNeeded()
+            }
         }
         
     }

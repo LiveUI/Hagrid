@@ -16,6 +16,8 @@
 		1516411A20BD7B750062FA33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1516411820BD7B750062FA33 /* LaunchScreen.storyboard */; };
 		1516412020BD7D490062FA33 /* TheGrid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 151640EA20BD7A8C0062FA33 /* TheGrid.framework */; };
 		1516412220BD7D760062FA33 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1516412120BD7D760062FA33 /* GridView.swift */; };
+		153F9D7520BE02D70051D0D3 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D7420BE02D70051D0D3 /* GridViewController.swift */; };
+		153F9D7720BE1ACE0051D0D3 /* Vertical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D7620BE1ACE0051D0D3 /* Vertical.swift */; };
 		15D00E7A20BDB8C20051A8CF /* UIColor+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E7920BDB8C20051A8CF /* UIColor+Tools.swift */; };
 		15D00E7C20BDBE8A0051A8CF /* GridView+Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E7B20BDBE8A0051A8CF /* GridView+Drawing.swift */; };
 		15D00E7E20BDBECF0051A8CF /* GridView+Calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E7D20BDBECF0051A8CF /* GridView+Calculations.swift */; };
@@ -58,6 +60,12 @@
 		1516411920BD7B750062FA33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1516411B20BD7B750062FA33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1516412120BD7D760062FA33 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		153F9D7420BE02D70051D0D3 /* GridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
+		153F9D7620BE1ACE0051D0D3 /* Vertical.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertical.swift; sourceTree = "<group>"; };
+		153F9D7920BE22F00051D0D3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		153F9D7A20BE22F00051D0D3 /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
+		153F9D7B20BE22F00051D0D3 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		153F9D7C20BE22F00051D0D3 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		15D00E7920BDB8C20051A8CF /* UIColor+Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Tools.swift"; sourceTree = "<group>"; };
 		15D00E7B20BDBE8A0051A8CF /* GridView+Drawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GridView+Drawing.swift"; sourceTree = "<group>"; };
 		15D00E7D20BDBECF0051A8CF /* GridView+Calculations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GridView+Calculations.swift"; sourceTree = "<group>"; };
@@ -110,6 +118,7 @@
 		151640E020BD7A8C0062FA33 = {
 			isa = PBXGroup;
 			children = (
+				153F9D7820BE22DF0051D0D3 /* Other */,
 				151640EC20BD7A8C0062FA33 /* TheGrid */,
 				151640F720BD7A8C0062FA33 /* TheGridTests */,
 				1516410E20BD7B740062FA33 /* Hagrid */,
@@ -132,6 +141,7 @@
 		151640EC20BD7A8C0062FA33 /* TheGrid */ = {
 			isa = PBXGroup;
 			children = (
+				153F9D7320BE02300051D0D3 /* View controllers */,
 				1516410820BD7B5D0062FA33 /* Protocols */,
 				15D00E7F20BDC3A50051A8CF /* Extensions */,
 				1516410620BD7B4A0062FA33 /* Enums */,
@@ -172,6 +182,7 @@
 		1516410620BD7B4A0062FA33 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				153F9D7620BE1ACE0051D0D3 /* Vertical.swift */,
 				15D00E8020BDC3B80051A8CF /* Position.swift */,
 				15D00E8920BDC8DB0051A8CF /* Class.swift */,
 				15D00E8B20BDC9960051A8CF /* Device.swift */,
@@ -224,6 +235,25 @@
 				1516411120BD7B740062FA33 /* ViewController.swift */,
 			);
 			path = "View controllers";
+			sourceTree = "<group>";
+		};
+		153F9D7320BE02300051D0D3 /* View controllers */ = {
+			isa = PBXGroup;
+			children = (
+				153F9D7420BE02D70051D0D3 /* GridViewController.swift */,
+			);
+			path = "View controllers";
+			sourceTree = "<group>";
+		};
+		153F9D7820BE22DF0051D0D3 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				153F9D7B20BE22F00051D0D3 /* LICENSE */,
+				153F9D7C20BE22F00051D0D3 /* Podfile */,
+				153F9D7A20BE22F00051D0D3 /* Podfile.lock */,
+				153F9D7920BE22F00051D0D3 /* README.md */,
+			);
+			name = Other;
 			sourceTree = "<group>";
 		};
 		15D00E7F20BDC3A50051A8CF /* Extensions */ = {
@@ -464,12 +494,14 @@
 				15D00E8F20BDD0690051A8CF /* Padding.swift in Sources */,
 				1516412220BD7D760062FA33 /* GridView.swift in Sources */,
 				15D00E8120BDC3B80051A8CF /* Position.swift in Sources */,
+				153F9D7720BE1ACE0051D0D3 /* Vertical.swift in Sources */,
 				15D00E9520BDDE280051A8CF /* GridView+Layout.swift in Sources */,
 				15D00E8C20BDC9960051A8CF /* Device.swift in Sources */,
 				15D00E7C20BDBE8A0051A8CF /* GridView+Drawing.swift in Sources */,
 				15D00E8A20BDC8DB0051A8CF /* Class.swift in Sources */,
 				15D00E7A20BDB8C20051A8CF /* UIColor+Tools.swift in Sources */,
 				15D00E9120BDD1930051A8CF /* Properties.swift in Sources */,
+				153F9D7520BE02D70051D0D3 /* GridViewController.swift in Sources */,
 				15D00E9320BDD2250051A8CF /* Subview.swift in Sources */,
 				15D00E8620BDC84A0051A8CF /* GridView+Subviews.swift in Sources */,
 				15D00E7E20BDBECF0051A8CF /* GridView+Calculations.swift in Sources */,
