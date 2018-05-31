@@ -9,11 +9,13 @@
 @_exported import Foundation
 #if os(iOS) || os(tvOS)
 @_exported import UIKit
+#elseif os(OSX)
+@_exported import Cocoa
 #endif
 
 
 /// Grid view
-open class GridView: UIView, GridViewInterface {
+open class GridView: ViewAlias, GridViewInterface {
     
     /// Grid view config object
     public final class Config {
@@ -80,14 +82,23 @@ open class GridView: UIView, GridViewInterface {
         
         /// Re-draw the element
         func reDraw() {
+            #if os(iOS) || os(tvOS)
             element.setNeedsDisplay()
+            #elseif os(OSX)
+            element.setNeedsDisplay(element.bounds)
+            #endif
         }
         
         /// Re-layout
         private func reLayout() {
             if element.superview != nil {
+                #if os(iOS) || os(tvOS)
                 element.setNeedsLayout()
                 element.layoutIfNeeded()
+                #elseif os(OSX)
+                element.needsLayout = true
+                element.macLayout()
+                #endif
             }
         }
         
@@ -124,7 +135,9 @@ open class GridView: UIView, GridViewInterface {
 extension GridView {
     
     func setup() {
+        #if os(iOS) || os(tvOS)
         backgroundColor = .clear
+        #endif
     }
     
     /// Initializer

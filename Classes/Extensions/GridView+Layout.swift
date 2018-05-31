@@ -7,15 +7,40 @@
 //
 
 @_exported import Foundation
+#if os(iOS) || os(tvOS)
+@_exported import UIKit
+#elseif os(OSX)
+@_exported import Cocoa
+#endif
 
 
 extension GridView {
     
+    #if os(iOS) || os(tvOS)
     /// Layout subviews override
     @available(*, unavailable, message: "This method is unavailable")
     open override func layoutSubviews() {
         super.layoutSubviews()
         
+        executeLayout()
+    }
+    #elseif os(OSX)
+    /// Layout subviews override
+    @available(*, unavailable, message: "This method is unavailable")
+    open override func layout() {
+        macLayout()
+    }
+    
+    /// Mac layout
+    func macLayout() {
+        super.layout()
+        
+        executeLayout()
+    }
+    #endif
+    
+    /// Execute layout
+    private func executeLayout() {
         if self.superview != nil {
             config.recalculate()
             config.reDraw()
@@ -68,8 +93,10 @@ extension GridView {
                     for view in views {
                         make.top.greaterThanOrEqualTo(view.snp.bottom).offset(margin)
                     }
+                #if os(iOS) || os(tvOS)
                 case .custom(let closure):
                     set(vertical: closure(traitCollection))
+                #endif
                 }
             }
             set(vertical: vertical)
@@ -97,8 +124,10 @@ extension GridView {
                 make.left.equalTo(view).offset(margin + leftPadding)
             case .relation(let view, margin: let margin):
                 make.left.equalTo(view.snp.right).offset(margin + leftPadding)
+            #if os(iOS) || os(tvOS)
             case .custom(let closure):
                 setLeft(position: closure(traitCollection))
+            #endif
             }
         }
         setLeft(position: subview.properties.from)
@@ -127,8 +156,10 @@ extension GridView {
                 make.right.equalTo(view).offset(margin - rightPadding)
             case .relation(let view, margin: let margin):
                 make.right.equalTo(view.snp.left).offset(margin - rightPadding)
+            #if os(iOS) || os(tvOS)
             case .custom(let closure):
                 setRight(position: closure(traitCollection))
+            #endif
             }
         }
         setRight(position: subview.properties.space)

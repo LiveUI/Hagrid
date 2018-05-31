@@ -8,6 +8,11 @@
 
 @_exported import Foundation
 @_exported import SnapKit
+#if os(iOS) || os(tvOS)
+@_exported import UIKit
+#elseif os(OSX)
+@_exported import Cocoa
+#endif
 
 
 extension GridScrollView {
@@ -23,7 +28,7 @@ extension GridScrollView {
          - padding: Subview padding on the grid
          - redraw: SnapKit make closure for that fine tunning we all need
      */
-    public func add(subview view: UIView, _ vertical: Vertical? = nil, from: Position = .first, space: Position = .last, padding: Padding = .none, redraw: ((_ make: ConstraintMaker) -> Void)? = nil) {
+    public func add(subview view: ViewAlias, _ vertical: Vertical? = nil, from: Position = .first, space: Position = .last, padding: Padding = .none, redraw: ((_ make: ConstraintMaker) -> Void)? = nil) {
         let subview = Subview(
             properties: Properties(
                 vertical: vertical,
@@ -38,7 +43,7 @@ extension GridScrollView {
     }
     
     @available(*, unavailable, message: "This method is unavailable, please use add(subview:_:from:space:padding:redraw:) instead")
-    open override func addSubview(_ view: UIView) {
+    open override func addSubview(_ view: ViewAlias) {
         fatalError("Add subview is not supported on a GridView")
     }
     

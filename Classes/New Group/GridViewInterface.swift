@@ -29,6 +29,6 @@ public protocol GridViewInterface {
          - padding: Subview padding on the grid
          - redraw: SnapKit make closure for that fine tunning we all need
      */
-    func add(subview view: UIView, _ vertical: Vertical?, from: Position, space: Position, padding: Padding, redraw: ((_ make: ConstraintMaker) -> Void)?)
+    func add(subview view: ViewAlias, _ vertical: Vertical?, from: Position, space: Position, padding: Padding, redraw: ((_ make: ConstraintMaker) -> Void)?)
     
 }

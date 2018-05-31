@@ -35,21 +35,27 @@ public enum Padding {
 
 extension Padding {
     
+    #if os(iOS) || os(tvOS)
+    typealias EdgeInsetsAlias = UIEdgeInsets
+    #elseif os(OSX)
+    typealias EdgeInsetsAlias = NSEdgeInsets
+    #endif
+    
     /// UIEdgeInsets representation
-    var value: UIEdgeInsets {
+    var value: EdgeInsetsAlias {
         switch self {
         case .top(let top):
-            return UIEdgeInsets(top: top, left: 0, bottom: 0, right: 0)
+            return EdgeInsetsAlias(top: top, left: 0, bottom: 0, right: 0)
         case .left(let left):
-            return UIEdgeInsets(top: 0, left: left, bottom: 0, right: 0)
+            return EdgeInsetsAlias(top: 0, left: left, bottom: 0, right: 0)
         case .right(let right):
-            return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: right)
+            return EdgeInsetsAlias(top: 0, left: 0, bottom: 0, right: right)
         case .horizontal(let left, let right):
-            return UIEdgeInsets(top: 0, left: left, bottom: 0, right: right)
+            return EdgeInsetsAlias(top: 0, left: left, bottom: 0, right: right)
         case .full(let top, let left, let right):
-            return UIEdgeInsets(top: top, left: left, bottom: 0, right: right)
+            return EdgeInsetsAlias(top: top, left: left, bottom: 0, right: right)
         case .none:
-            return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+            return EdgeInsetsAlias(top: 0, left: 0, bottom: 0, right: 0)
         }
     }
     

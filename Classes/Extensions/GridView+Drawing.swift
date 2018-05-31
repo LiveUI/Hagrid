@@ -9,6 +9,8 @@
 @_exported import Foundation
 #if os(iOS) || os(tvOS)
 @_exported import UIKit
+#elseif os(OSX)
+@_exported import Cocoa
 #endif
 
 

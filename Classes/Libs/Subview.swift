@@ -16,7 +16,7 @@ public struct Subview {
     public let properties: Properties
     
     /// View
-    public let view: UIView
+    public let view: ViewAlias
     
 }
 

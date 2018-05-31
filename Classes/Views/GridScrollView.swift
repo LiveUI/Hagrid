@@ -11,7 +11,7 @@
 
 
 /// GridView enabled scroll view
-open class GridScrollView: UIView, GridViewInterface, ScrollViewForwarder {
+open class GridScrollView: ViewAlias, GridViewInterface, ScrollViewForwarder {
     
     /// Scrolling direction
     public enum Direction {

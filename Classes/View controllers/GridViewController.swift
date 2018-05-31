@@ -9,6 +9,8 @@
 @_exported import Foundation
 #if os(iOS) || os(tvOS)
 @_exported import UIKit
+#elseif os(OSX)
+@_exported import Cocoa
 #endif
 
 
@@ -24,7 +26,7 @@ open class GridViewController: UIViewController {
     
     /// Original view (removed)
     @available(*, unavailable, message: "This property is unavailable", renamed: "gridView")
-    open override var view: UIView! {
+    open override var view: ViewAlias! {
         get { return gridView }
         set { }
     }

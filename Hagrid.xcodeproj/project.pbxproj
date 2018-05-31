@@ -28,6 +28,20 @@
 		15020ABA20C0A6B500BBADBD /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E8E20BDD0690051A8CF /* Padding.swift */; };
 		15020ABB20C0A6B500BBADBD /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E9020BDD1930051A8CF /* Properties.swift */; };
 		15020ABC20C0A6B500BBADBD /* Subview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E9220BDD2250051A8CF /* Subview.swift */; };
+		15020AC820C0A9A300BBADBD /* Hagrid_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 15020AC620C0A9A300BBADBD /* Hagrid_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15020ACD20C0A9F800BBADBD /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E9020BDD1930051A8CF /* Properties.swift */; };
+		15020ACE20C0A9F800BBADBD /* Subview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E9220BDD2250051A8CF /* Subview.swift */; };
+		15020AD020C0AA8100BBADBD /* Compatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15020ACF20C0AA8100BBADBD /* Compatibility.swift */; };
+		15020AD120C0AA8100BBADBD /* Compatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15020ACF20C0AA8100BBADBD /* Compatibility.swift */; };
+		15020AD220C0AA8100BBADBD /* Compatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15020ACF20C0AA8100BBADBD /* Compatibility.swift */; };
+		15020AD320C0AB7500BBADBD /* Vertical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D7620BE1ACE0051D0D3 /* Vertical.swift */; };
+		15020AD420C0AB7500BBADBD /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E8020BDC3B80051A8CF /* Position.swift */; };
+		15020AD520C0AB7500BBADBD /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E8E20BDD0690051A8CF /* Padding.swift */; };
+		15020AD620C0AC8D00BBADBD /* GridView+Calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E7D20BDBECF0051A8CF /* GridView+Calculations.swift */; };
+		15020AD720C0AC8D00BBADBD /* GridView+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E8520BDC84A0051A8CF /* GridView+Subviews.swift */; };
+		15020AD920C0AC8D00BBADBD /* GridView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E9420BDDE280051A8CF /* GridView+Layout.swift */; };
+		15020ADA20C0AC9F00BBADBD /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1516412120BD7D760062FA33 /* GridView.swift */; };
+		15020ADB20C0ACAD00BBADBD /* GridViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D8720C028750051D0D3 /* GridViewInterface.swift */; };
 		151640FB20BD7A8C0062FA33 /* TheGrid.h in Headers */ = {isa = PBXBuildFile; fileRef = 151640ED20BD7A8C0062FA33 /* TheGrid.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1516411020BD7B740062FA33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1516410F20BD7B740062FA33 /* AppDelegate.swift */; };
 		1516411220BD7B740062FA33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1516411120BD7B740062FA33 /* ViewController.swift */; };
@@ -54,6 +68,7 @@
 		3C90ACB540437EA7A4A8F593 /* Pods_Hagrid_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB4248513ADBF0F843A9588C /* Pods_Hagrid_tvOS.framework */; };
 		BAC12D08CE1D3FD77B866AA6 /* Pods_Hagrid_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D7AB17DD8C832613ACD8B16 /* Pods_Hagrid_Demo.framework */; };
 		C4590549B6C522B067ADD83E /* Pods_Hagrid_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71143FA7D55E9607C58F4C6 /* Pods_Hagrid_iOS.framework */; };
+		EFCAD873A9F0C77A7FE10E25 /* Pods_Hagrid_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E973DF88701F9CE6B97523 /* Pods_Hagrid_macOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +101,10 @@
 		15020AA420C0A65200BBADBD /* Hagrid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hagrid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15020AA620C0A65200BBADBD /* Hagrid_appleTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hagrid_appleTV.h; sourceTree = "<group>"; };
 		15020AA720C0A65200BBADBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15020AC420C0A9A300BBADBD /* Hagrid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hagrid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15020AC620C0A9A300BBADBD /* Hagrid_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hagrid_macOS.h; sourceTree = "<group>"; };
+		15020AC720C0A9A300BBADBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15020ACF20C0AA8100BBADBD /* Compatibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compatibility.swift; sourceTree = "<group>"; };
 		151640EA20BD7A8C0062FA33 /* Hagrid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hagrid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		151640ED20BD7A8C0062FA33 /* TheGrid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheGrid.h; sourceTree = "<group>"; };
 		151640EE20BD7A8C0062FA33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -127,10 +146,13 @@
 		BB4248513ADBF0F843A9588C /* Pods_Hagrid_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hagrid_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBCCC4FB790DBCD69D43EC1E /* Pods_Hagrid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hagrid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C242ACA85C259DC0AFADA102 /* Pods-Hagrid-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hagrid-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hagrid-Demo/Pods-Hagrid-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		C6BBCC95665D6D0A9AD40A40 /* Pods-Hagrid-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hagrid-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hagrid-macOS/Pods-Hagrid-macOS.release.xcconfig"; sourceTree = "<group>"; };
 		D18E01931BD7CDB4C6680694 /* Pods-Hagrid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hagrid.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hagrid/Pods-Hagrid.release.xcconfig"; sourceTree = "<group>"; };
 		D3E73270D6C628A61AC35C7D /* Pods-Hagrid-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hagrid-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hagrid-Demo/Pods-Hagrid-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		D4E973DF88701F9CE6B97523 /* Pods_Hagrid_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hagrid_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF7847A38AF1993933259644 /* Pods-Hagrid-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hagrid-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hagrid-tvOS/Pods-Hagrid-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		E0A3C8BC6F94CC51804EB9DB /* Pods-TheGrid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheGrid.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheGrid/Pods-TheGrid.release.xcconfig"; sourceTree = "<group>"; };
+		ED992AF2789CCD5AF016E590 /* Pods-Hagrid-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hagrid-macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hagrid-macOS/Pods-Hagrid-macOS.debug.xcconfig"; sourceTree = "<group>"; };
 		F71143FA7D55E9607C58F4C6 /* Pods_Hagrid_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hagrid_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -140,6 +162,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C90ACB540437EA7A4A8F593 /* Pods_Hagrid_tvOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15020AC020C0A9A300BBADBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFCAD873A9F0C77A7FE10E25 /* Pods_Hagrid_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +210,23 @@
 			path = "Supporting files";
 			sourceTree = "<group>";
 		};
+		15020AC520C0A9A300BBADBD /* Hagrid-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				15020ACC20C0A9BE00BBADBD /* Supporting files */,
+			);
+			path = "Hagrid-macOS";
+			sourceTree = "<group>";
+		};
+		15020ACC20C0A9BE00BBADBD /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				15020AC620C0A9A300BBADBD /* Hagrid_macOS.h */,
+				15020AC720C0A9A300BBADBD /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
 		151640E020BD7A8C0062FA33 = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +234,7 @@
 				153F9D9620C0A2070051D0D3 /* Classes */,
 				151640EC20BD7A8C0062FA33 /* Hagrid-iOS */,
 				15020AA520C0A65200BBADBD /* Hagrid-tvOS */,
+				15020AC520C0A9A300BBADBD /* Hagrid-macOS */,
 				1516410E20BD7B740062FA33 /* Hagrid Demo */,
 				151640EB20BD7A8C0062FA33 /* Products */,
 				1516411F20BD7D490062FA33 /* Frameworks */,
@@ -200,6 +248,7 @@
 				151640EA20BD7A8C0062FA33 /* Hagrid.framework */,
 				1516410D20BD7B740062FA33 /* Hagrid-Demo.app */,
 				15020AA420C0A65200BBADBD /* Hagrid.framework */,
+				15020AC420C0A9A300BBADBD /* Hagrid.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -226,6 +275,7 @@
 			children = (
 				15D00E9020BDD1930051A8CF /* Properties.swift */,
 				15D00E9220BDD2250051A8CF /* Subview.swift */,
+				15020ACF20C0AA8100BBADBD /* Compatibility.swift */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -259,6 +309,7 @@
 				4D7AB17DD8C832613ACD8B16 /* Pods_Hagrid_Demo.framework */,
 				F71143FA7D55E9607C58F4C6 /* Pods_Hagrid_iOS.framework */,
 				BB4248513ADBF0F843A9588C /* Pods_Hagrid_tvOS.framework */,
+				D4E973DF88701F9CE6B97523 /* Pods_Hagrid_macOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -369,6 +420,8 @@
 				D3E73270D6C628A61AC35C7D /* Pods-Hagrid-Demo.release.xcconfig */,
 				88511D80AFA68B04A9940FDE /* Pods-Hagrid-tvOS.debug.xcconfig */,
 				DF7847A38AF1993933259644 /* Pods-Hagrid-tvOS.release.xcconfig */,
+				ED992AF2789CCD5AF016E590 /* Pods-Hagrid-macOS.debug.xcconfig */,
+				C6BBCC95665D6D0A9AD40A40 /* Pods-Hagrid-macOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -381,6 +434,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				15020AA820C0A65200BBADBD /* Hagrid_appleTV.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15020AC120C0A9A300BBADBD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15020AC820C0A9A300BBADBD /* Hagrid_macOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +473,25 @@
 			name = "Hagrid-tvOS";
 			productName = "Hagrid-appleTV";
 			productReference = 15020AA420C0A65200BBADBD /* Hagrid.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		15020AC320C0A9A300BBADBD /* Hagrid-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15020AC920C0A9A300BBADBD /* Build configuration list for PBXNativeTarget "Hagrid-macOS" */;
+			buildPhases = (
+				731A1E2BEE9071DAC09D7B75 /* [CP] Check Pods Manifest.lock */,
+				15020ABF20C0A9A300BBADBD /* Sources */,
+				15020AC020C0A9A300BBADBD /* Frameworks */,
+				15020AC120C0A9A300BBADBD /* Headers */,
+				15020AC220C0A9A300BBADBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hagrid-macOS";
+			productName = "Hagrid-macOS";
+			productReference = 15020AC420C0A9A300BBADBD /* Hagrid.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		151640E920BD7A8C0062FA33 /* Hagrid-iOS */ = {
@@ -467,6 +547,9 @@
 					15020AA320C0A65200BBADBD = {
 						CreatedOnToolsVersion = 9.3.1;
 					};
+					15020AC320C0A9A300BBADBD = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
 					151640E920BD7A8C0062FA33 = {
 						CreatedOnToolsVersion = 9.3;
 						LastSwiftMigration = 0930;
@@ -492,12 +575,20 @@
 				1516410C20BD7B740062FA33 /* Hagrid-Demo */,
 				151640E920BD7A8C0062FA33 /* Hagrid-iOS */,
 				15020AA320C0A65200BBADBD /* Hagrid-tvOS */,
+				15020AC320C0A9A300BBADBD /* Hagrid-macOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		15020AA220C0A65200BBADBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15020AC220C0A9A300BBADBD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -536,6 +627,24 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Hagrid-Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		731A1E2BEE9071DAC09D7B75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hagrid-macOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -611,6 +720,7 @@
 				15020AB220C0A6B500BBADBD /* UIColor+Tools.swift in Sources */,
 				15020AB820C0A6B500BBADBD /* Vertical.swift in Sources */,
 				15020AAE20C0A6B500BBADBD /* GridView.swift in Sources */,
+				15020AD120C0AA8100BBADBD /* Compatibility.swift in Sources */,
 				15020AB520C0A6B500BBADBD /* GridView+Subviews.swift in Sources */,
 				15020ABB20C0A6B500BBADBD /* Properties.swift in Sources */,
 				15020AB420C0A6B500BBADBD /* GridView+Calculations.swift in Sources */,
@@ -620,6 +730,24 @@
 				15020AB020C0A6B500BBADBD /* GridScrollViewController.swift in Sources */,
 				15020AAF20C0A6B500BBADBD /* GridScrollView.swift in Sources */,
 				15020AB620C0A6B500BBADBD /* GridSrollView+Subviews.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15020ABF20C0A9A300BBADBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15020ADB20C0ACAD00BBADBD /* GridViewInterface.swift in Sources */,
+				15020ACD20C0A9F800BBADBD /* Properties.swift in Sources */,
+				15020ACE20C0A9F800BBADBD /* Subview.swift in Sources */,
+				15020AD920C0AC8D00BBADBD /* GridView+Layout.swift in Sources */,
+				15020ADA20C0AC9F00BBADBD /* GridView.swift in Sources */,
+				15020AD220C0AA8100BBADBD /* Compatibility.swift in Sources */,
+				15020AD420C0AB7500BBADBD /* Position.swift in Sources */,
+				15020AD320C0AB7500BBADBD /* Vertical.swift in Sources */,
+				15020AD620C0AC8D00BBADBD /* GridView+Calculations.swift in Sources */,
+				15020AD720C0AC8D00BBADBD /* GridView+Subviews.swift in Sources */,
+				15020AD520C0AB7500BBADBD /* Padding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,6 +763,7 @@
 				15D00E9520BDDE280051A8CF /* GridView+Layout.swift in Sources */,
 				153F9D8E20C03A6C0051D0D3 /* ScrollViewForwarder.swift in Sources */,
 				15D00E7C20BDBE8A0051A8CF /* GridView+Drawing.swift in Sources */,
+				15020AD020C0AA8100BBADBD /* Compatibility.swift in Sources */,
 				153F9D8A20C02B440051D0D3 /* GridSrollView+Subviews.swift in Sources */,
 				153F9D8320C023610051D0D3 /* GridScrollViewController.swift in Sources */,
 				15D00E7A20BDB8C20051A8CF /* UIColor+Tools.swift in Sources */,
@@ -730,6 +859,62 @@
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+		15020ACA20C0A9A300BBADBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED992AF2789CCD5AF016E590 /* Pods-Hagrid-macOS.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Hagrid-macOS/Supporting files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.liveui.Hagrid-macOS";
+				PRODUCT_NAME = Hagrid;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		15020ACB20C0A9A300BBADBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6BBCC95665D6D0A9AD40A40 /* Pods-Hagrid-macOS.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Hagrid-macOS/Supporting files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.liveui.Hagrid-macOS";
+				PRODUCT_NAME = Hagrid;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -958,6 +1143,15 @@
 			buildConfigurations = (
 				15020AAA20C0A65200BBADBD /* Debug */,
 				15020AAB20C0A65200BBADBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15020AC920C0A9A300BBADBD /* Build configuration list for PBXNativeTarget "Hagrid-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15020ACA20C0A9A300BBADBD /* Debug */,
+				15020ACB20C0A9A300BBADBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

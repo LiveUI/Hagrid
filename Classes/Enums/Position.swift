@@ -25,16 +25,18 @@ public struct Position: ExpressibleByIntegerLiteral {
         case reversed(Int)
         
         /// Up to another element
-        case relation(UIView, margin: CGFloat)
+        case relation(ViewAlias, margin: CGFloat)
         
         /// Match position of another view
-        case match(UIView, margin: CGFloat)
+        case match(ViewAlias, margin: CGFloat)
         
         /// Dynamic position
         case dynamic
         
+        #if os(iOS) || os(tvOS)
         /// Custom position for a given size class (trait collection)
-        case custom(((_ traitCollection: UITraitCollection) -> Position))
+        case custom(((_ traitCollection: NSTraitCollection) -> Position))
+        #endif
         
     }
     
@@ -56,16 +58,18 @@ public struct Position: ExpressibleByIntegerLiteral {
     public static func reversed(_ value: Int) -> Position { return .init(.reversed(value)) }
     
     /// Up to another element
-    public static func relation(_ view: UIView, margin: CGFloat = 0) -> Position { return .init(.relation(view, margin: margin)) }
+    public static func relation(_ view: ViewAlias, margin: CGFloat = 0) -> Position { return .init(.relation(view, margin: margin)) }
     
     /// Match position of another view
-    public static func match(_ view: UIView, margin: CGFloat = 0) -> Position { return .init(.match(view, margin: margin)) }
+    public static func match(_ view: ViewAlias, margin: CGFloat = 0) -> Position { return .init(.match(view, margin: margin)) }
     
     /// Dynamic position
     public static var dynamic: Position { return .init(.dynamic) }
     
+    #if os(iOS) || os(tvOS)
     /// Custom position for a given size class (trait collection)
     public static func custom(_ closure: @escaping ((_ traitCollection: UITraitCollection) -> Position)) -> Position { return .init(.custom(closure)) }
+    #endif
     
     /// First column
     public static var first: Position { return .col(0) }

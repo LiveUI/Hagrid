@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
 
     s.ios.deployment_target = '9.3'
     s.tvos.deployment_target = '10.2'
-    #s.macos.deployment_target = '10.12'
+    s.macos.deployment_target = '10.12'
 
     s.source_files = 'Classes/**/*'
 

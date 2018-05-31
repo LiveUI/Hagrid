@@ -9,6 +9,8 @@
 @_exported import Foundation
 #if os(iOS) || os(tvOS)
 @_exported import UIKit
+#elseif os(OSX)
+@_exported import Cocoa
 #endif
 
 
@@ -213,11 +215,11 @@ extension GridScrollView {
         set { scrollView.canCancelContentTouches = newValue }
     }
     
-    open func touchesShouldBegin(_ touches: Set<UITouch>, with event: UIEvent?, in view: UIView) -> Bool {
+    open func touchesShouldBegin(_ touches: Set<UITouch>, with event: UIEvent?, in view: ViewAlias) -> Bool {
         return touchesShouldBegin(touches, with: event, in: view)
     }
     
-    open func touchesShouldCancel(in view: UIView) -> Bool {
+    open func touchesShouldCancel(in view: ViewAlias) -> Bool {
         return touchesShouldCancel(in: view)
     }
     
