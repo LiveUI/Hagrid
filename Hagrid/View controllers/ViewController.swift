@@ -11,7 +11,7 @@ import TheGrid
 import Modular
 
 
-class ViewController: GridViewController {
+class ViewController: GridScrollViewController {
 
     // MARK: Example app
     
@@ -30,11 +30,11 @@ class ViewController: GridViewController {
     /// Setup layout for all elements
     func setupLayout() {
         // Add an album cover
-        gridView.add(subview: albumCover, space: .col(5)) { make in
+        gridView.add(subview: albumCover, space: 5) { make in
             make.height.equalTo(self.albumCover.snp.width)
         }
         
-        let albumCoverRelation: Position = .relation(albumCover, margin: 0)
+        let albumCoverRelation: Position = .relation(albumCover)
         
         gridView.add(subview: albumTitleLabel, from: albumCoverRelation, space: .last, padding: .left(12))
         
@@ -50,7 +50,7 @@ class ViewController: GridViewController {
             if self.gridView.bounds.size.width < 414 {
                 return .below(self.yearLabel, margin: 3)
             } else {
-                return .match(self.artistLabel, margin: 0)
+                return .match(self.artistLabel)
             }
         }), from: .custom({ _ in
             if self.gridView.bounds.size.width < 414 {
@@ -66,7 +66,7 @@ class ViewController: GridViewController {
             make.height.equalTo(28)
         }
         
-        gridView.add(subview: separator, .row([albumCover, yearLabel, purchaseButton], margin: 12)) { make in
+        gridView.add(subview: separator, .below([albumCover, yearLabel, purchaseButton], margin: 12)) { make in
             make.height.equalTo(1)
         }
         
@@ -108,6 +108,13 @@ class ViewController: GridViewController {
         Ten is the debut studio album by American rock band Pearl Jam, released on August 27, 1991 through Epic Records. Following the disbanding of bassist Jeff Ament and guitarist Stone Gossard's previous group Mother Love Bone, the two recruited vocalist Eddie Vedder, guitarist Mike McCready, and drummer Dave Krusen to form Pearl Jam in 1990. Most of the songs began as instrumental jams, to which Vedder added lyrics about topics such as depression, homelessness, and abuse.
         
         Ten was not an immediate success, but by late 1992 it had reached number two on the Billboard 200 chart. The album produced three hit singles: "Alive", "Even Flow", and "Jeremy". While Pearl Jam was accused of jumping on the grunge bandwagon at the time—despite the fact that Ten had been both recorded and released before Nirvana's Nevermind — Ten was instrumental in popularizing alternative rock in the mainstream. In February 2013, the album crossed the 10 million mark in sales, becoming the 22nd one to do so in the Nielsen SoundScan era and has been certified 13× platinum by the RIAA. It remains Pearl Jam's most commercially successful album.
+        
+        Pearl Jam:
+        Pearl Jam is an American rock band formed in Seattle, Washington, in 1990. Since its inception, the band's line-up has consisted of Eddie Vedder (lead vocals), Mike McCready (lead guitar), Stone Gossard (rhythm guitar) and Jeff Ament (bass). The band's fifth member is drummer Matt Cameron (also of Soundgarden), who has been with the band since 1998. Boom Gaspar (piano) has also been a session/touring member with the band since 2002. Drummers Dave Krusen, Matt Chamberlain, Dave Abbruzzese and Jack Irons are former members of the band.
+        
+        Formed after the demise of Gossard and Ament's previous band, Mother Love Bone, Pearl Jam broke into the mainstream with its debut album, Ten, in 1991. One of the key bands in the grunge movement of the early 1990s, over the course of the band's career, its members became noted for their refusal to adhere to traditional music industry practices, including refusing to make proper music videos or give interviews, and engaging in a much-publicized boycott of Ticketmaster. In 2006, Rolling Stone described the band as having "spent much of the past decade deliberately tearing apart their own fame."[1]
+        
+        To date, the band has sold nearly 32 million records in the United States[2] and an estimated 60 million worldwide.[3][4] Pearl Jam has outlasted and outsold many of its contemporaries from the alternative rock breakthrough of the early 1990s, and is considered one of the most influential bands of that decade.[5] Stephen Thomas Erlewine of AllMusic referred to Pearl Jam as "the most popular American rock & roll band of the '90s".[6] Pearl Jam was inducted into the Rock and Roll Hall of Fame on April 7, 2017, in its first year of eligibility.
         """
         aboutLabel.textColor = .darkText
     }

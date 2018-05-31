@@ -16,11 +16,13 @@ extension GridView {
     open override func layoutSubviews() {
         super.layoutSubviews()
         
-        config.recalculate()
-        config.reDraw()
-        
-        for subview in gridSubviews {
-            layout(subview)
+        if self.superview != nil {
+            config.recalculate()
+            config.reDraw()
+            
+            for subview in gridSubviews {
+                layout(subview)
+            }
         }
     }
     
@@ -30,11 +32,9 @@ extension GridView {
             // Top
             if let vertical = subview.properties.vertical {
                 func set(vertical: Vertical) {
-                    switch vertical {
-                    case .toTop:
-                        make.top.equalTo(config.padding.value.top)
+                    switch vertical.storage {
                     case .exactly(fromTop: let top):
-                        make.top.equalTo(top)
+                        make.top.equalTo(top + config.padding.value.top)
                     case .match(let view, margin: let margin):
                         make.top.equalTo(view).offset(margin)
                     case .below(let view, margin: let margin):
@@ -57,7 +57,7 @@ extension GridView {
             // Left
             func setLeft(position: Position) {
                 let leftPadding = subview.properties.padding.value.left
-                switch position {
+                switch position.storage {
                 case .col(let column):
                     let left = (self.x(column) + leftPadding)
                     make.left.equalTo(left)
@@ -82,7 +82,7 @@ extension GridView {
             func setRight(position: Position) {
                 let rightPadding = subview.properties.padding.value.right
                 let fullRightPadding = -(rightPadding + config.padding.value.right)
-                switch position {
+                switch position.storage {
                 case .col(let column):
                     if column >= 0 && column < config.numberOfColumns { // Defined column
                         let col = config.numberOfColumns - (config.numberOfColumns - column)

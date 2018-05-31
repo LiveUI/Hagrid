@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 
 /// Grid view view controller
@@ -17,7 +18,7 @@ open class GridViewController: UIViewController {
      
      - important: Replaces default `view`
      */
-    open let gridView = GridView()
+    public internal(set) var gridView: GridView!
     
     /// Original view (removed)
     @available(*, unavailable, message: "This property is unavailable", renamed: "gridView")
@@ -30,7 +31,8 @@ open class GridViewController: UIViewController {
     
     @available(*, unavailable, message: "This method is unavailable")
     open override func loadView() {
-        // Replace view with gridView
+        // Replacing view with gridView
+        gridView = GridView()
         super.view = gridView
     }
     

@@ -11,7 +11,7 @@ import Foundation
 
 
 /// Grid view
-open class GridView: UIView {
+open class GridView: UIView, GridViewInterface {
     
     /// Grid view config object
     public final class Config {
@@ -43,6 +43,20 @@ open class GridView: UIView {
          - important: Bottom padding not implemented
          */
         public var padding: Padding = .none {
+            didSet {
+                reLayout()
+            }
+        }
+        
+        /// View is dynamically extending horizontally
+        open var autoDynamicHorizontally: Bool = false {
+            didSet {
+                reLayout()
+            }
+        }
+        
+        /// View is dynamically extending vertically
+        open var autoDynamicVertically: Bool = false {
             didSet {
                 reLayout()
             }

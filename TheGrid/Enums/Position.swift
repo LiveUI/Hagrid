@@ -10,30 +10,69 @@ import Foundation
 
 
 /// Basic position value object
-public enum Position {
+public struct Position: ExpressibleByIntegerLiteral {
+    
+    /// Internal storage enum
+    enum Storage {
+        
+        /// Specific column on the grid
+        case col(Int)
+        
+        /// Last column on a grid view
+        case last
+        
+        /// N-th column from the end
+        case reversed(Int)
+        
+        /// Up to another element
+        case relation(UIView, margin: CGFloat)
+        
+        /// Match position of another view
+        case match(UIView, margin: CGFloat)
+        
+        /// Dynamic position
+        case dynamic
+        
+        /// Custom position for a given size class (trait collection)
+        case custom(((_ traitCollection: UITraitCollection) -> Position))
+        
+    }
+    
+    /// Storage
+    var storage: Storage
+    
+    /// Initializer
+    init(_ value: Storage) {
+        storage = value
+    }
     
     /// Specific column on the grid
-    case col(Int)
+    public static func col(_ value: Int) -> Position { return .init(.col(value)) }
     
     /// Last column on a grid view
-    case last
+    public static var last: Position { return .init(.last) }
     
     /// N-th column from the end
-    case reversed(Int)
+    public static func reversed(_ value: Int) -> Position { return .init(.reversed(value)) }
     
     /// Up to another element
-    case relation(UIView, margin: CGFloat)
+    public static func relation(_ view: UIView, margin: CGFloat = 0) -> Position { return .init(.relation(view, margin: margin)) }
     
     /// Match position of another view
-    case match(UIView, margin: CGFloat)
+    public static func match(_ view: UIView, margin: CGFloat = 0) -> Position { return .init(.match(view, margin: margin)) }
     
     /// Dynamic position
-    case dynamic
+    public static var dynamic: Position { return .init(.dynamic) }
     
     /// Custom position for a given size class (trait collection)
-    case custom(((_ traitCollection: UITraitCollection) -> Position))
+    public static func custom(_ closure: @escaping ((_ traitCollection: UITraitCollection) -> Position)) -> Position { return .init(.custom(closure)) }
     
     /// First column
     public static var first: Position { return .col(0) }
+    
+    /// Initialize with a number
+    public init(integerLiteral value: Int) {
+        storage = .col(value)
+    }
     
 }
