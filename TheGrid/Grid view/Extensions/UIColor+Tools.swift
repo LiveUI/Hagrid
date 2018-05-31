@@ -6,8 +6,8 @@
 //  Copyright © 2018 LiveUI. All rights reserved.
 //
 
-import Foundation
-import UIKit
+@_exported import Foundation
+@_exported import UIKit
 
 
 extension UIColor {

@@ -6,7 +6,7 @@
 //  Copyright © 2018 LiveUI. All rights reserved.
 //
 
-import Foundation
+@_exported import Foundation
 @_exported import UIKit
 
 
@@ -48,14 +48,18 @@ open class GridView: UIView, GridViewInterface {
             }
         }
         
-        /// View is dynamically extending horizontally
+        /**
+         View is dynamically extending horizontally with each added element
+         */
         open var autoDynamicHorizontally: Bool = false {
             didSet {
                 reLayout()
             }
         }
         
-        /// View is dynamically extending vertically
+        /**
+         View is dynamically extending vertically with each added element
+         */
         open var autoDynamicVertically: Bool = false {
             didSet {
                 reLayout()
@@ -97,12 +101,14 @@ open class GridView: UIView, GridViewInterface {
     
     // MARK: Initialization
     
+    /// Initializer
     public override init(frame: CGRect) {
         super.init(frame: frame)
         
         setup()
     }
     
+    /// Initializer
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
@@ -119,6 +125,7 @@ extension GridView {
         backgroundColor = .clear
     }
     
+    /// Initializer
     public convenience init() {
         self.init(frame: CGRect.zero)
     }
