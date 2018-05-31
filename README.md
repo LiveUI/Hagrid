@@ -5,7 +5,7 @@
 [![Cocoapods Compatible](https://img.shields.io/cocoapods/v/Hagrid.svg)](https://cocoapods.org/pods/Hagrid)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-Brings a proper grid layout to the Apple platforms!
+<center>Brings a proper grid layout to the Apple platforms!</center>
 
 <table>
 	<tr>
