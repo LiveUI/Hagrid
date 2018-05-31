@@ -30,9 +30,6 @@ public enum Position {
     /// Dynamic position
     case dynamic
     
-    /// Nearest dynamically calculated column
-    case dynamicallySnapped
-    
     /// Custom position for a given size class (trait collection)
     case custom(((_ traitCollection: UITraitCollection) -> Position))
     

@@ -68,8 +68,6 @@ extension GridView {
                     make.width.equalTo(self.x(config.numberOfColumns - 1))
                 case .dynamic:
                     break
-                case .dynamicallySnapped:
-                    fatalError("Not implemented")
                 case .match(let view, margin: let margin):
                     make.left.equalTo(view).offset(margin + leftPadding)
                 case .relation(let view, margin: let margin):
@@ -98,8 +96,6 @@ extension GridView {
                     make.right.equalTo(fullRightPadding)
                 case .dynamic:
                     break
-                case .dynamicallySnapped:
-                    fatalError("Not implemented")
                 case .match(let view, margin: let margin):
                     make.right.equalTo(view).offset(margin - rightPadding)
                 case .relation(let view, margin: let margin):
