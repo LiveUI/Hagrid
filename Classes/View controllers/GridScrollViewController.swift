@@ -6,6 +6,7 @@
 //  Copyright © 2018 LiveUI. All rights reserved.
 //
 
+#if os(iOS) || os(tvOS)
 @_exported import Foundation
 
 
@@ -60,3 +61,5 @@ open class GridScrollViewController: UIViewController {
     }
     
 }
+
+#endif

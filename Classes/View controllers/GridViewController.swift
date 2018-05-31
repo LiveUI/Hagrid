@@ -6,12 +6,9 @@
 //  Copyright © 2018 LiveUI. All rights reserved.
 //
 
-@_exported import Foundation
 #if os(iOS) || os(tvOS)
+@_exported import Foundation
 @_exported import UIKit
-#elseif os(OSX)
-@_exported import Cocoa
-#endif
 
 
 /// Grid view view controller
@@ -41,3 +38,5 @@ open class GridViewController: UIViewController {
     }
     
 }
+
+#endif

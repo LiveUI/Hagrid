@@ -45,6 +45,13 @@
 		15020ADD20C0AF7000BBADBD /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 15020ADC20C0AF6F00BBADBD /* Cartfile */; };
 		15020ADE20C0AF7000BBADBD /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 15020ADC20C0AF6F00BBADBD /* Cartfile */; };
 		15020ADF20C0AF7000BBADBD /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 15020ADC20C0AF6F00BBADBD /* Cartfile */; };
+		15020AE020C0BF6700BBADBD /* GridView+Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E7B20BDBE8A0051A8CF /* GridView+Drawing.swift */; };
+		15020AE120C0BF6B00BBADBD /* UIColor+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E7920BDB8C20051A8CF /* UIColor+Tools.swift */; };
+		15020AE220C0BF9A00BBADBD /* ScrollViewForwarder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D8D20C03A6C0051D0D3 /* ScrollViewForwarder.swift */; };
+		15020AE320C0BFAC00BBADBD /* GridScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D8420C027B70051D0D3 /* GridScrollView.swift */; };
+		15020AE420C0BFB800BBADBD /* GridScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D8220C023610051D0D3 /* GridScrollViewController.swift */; };
+		15020AE520C0BFEA00BBADBD /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D7420BE02D70051D0D3 /* GridViewController.swift */; };
+		15020AE620C0BFEA00BBADBD /* GridSrollView+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D8920C02B440051D0D3 /* GridSrollView+Subviews.swift */; };
 		151640FB20BD7A8C0062FA33 /* TheGrid.h in Headers */ = {isa = PBXBuildFile; fileRef = 151640ED20BD7A8C0062FA33 /* TheGrid.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1516411020BD7B740062FA33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1516410F20BD7B740062FA33 /* AppDelegate.swift */; };
 		1516411220BD7B740062FA33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1516411120BD7B740062FA33 /* ViewController.swift */; };
@@ -746,8 +753,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				15020ADB20C0ACAD00BBADBD /* GridViewInterface.swift in Sources */,
+				15020AE020C0BF6700BBADBD /* GridView+Drawing.swift in Sources */,
 				15020ACD20C0A9F800BBADBD /* Properties.swift in Sources */,
+				15020AE320C0BFAC00BBADBD /* GridScrollView.swift in Sources */,
 				15020ACE20C0A9F800BBADBD /* Subview.swift in Sources */,
+				15020AE520C0BFEA00BBADBD /* GridViewController.swift in Sources */,
 				15020AD920C0AC8D00BBADBD /* GridView+Layout.swift in Sources */,
 				15020ADA20C0AC9F00BBADBD /* GridView.swift in Sources */,
 				15020AD220C0AA8100BBADBD /* Compatibility.swift in Sources */,
@@ -756,6 +766,10 @@
 				15020AD620C0AC8D00BBADBD /* GridView+Calculations.swift in Sources */,
 				15020AD720C0AC8D00BBADBD /* GridView+Subviews.swift in Sources */,
 				15020AD520C0AB7500BBADBD /* Padding.swift in Sources */,
+				15020AE420C0BFB800BBADBD /* GridScrollViewController.swift in Sources */,
+				15020AE620C0BFEA00BBADBD /* GridSrollView+Subviews.swift in Sources */,
+				15020AE220C0BF9A00BBADBD /* ScrollViewForwarder.swift in Sources */,
+				15020AE120C0BF6B00BBADBD /* UIColor+Tools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

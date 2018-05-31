@@ -6,6 +6,7 @@
 //  Copyright © 2018 LiveUI. All rights reserved.
 //
 
+#if os(iOS) || os(tvOS)
 @_exported import Foundation
 @_exported import SnapKit
 
@@ -85,3 +86,5 @@ open class GridScrollView: ViewAlias, GridViewInterface, ScrollViewForwarder {
     }
     
 }
+
+#endif
