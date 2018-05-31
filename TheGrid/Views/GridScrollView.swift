@@ -51,10 +51,7 @@ open class GridScrollView: UIView, GridViewInterface, ScrollViewForwarder {
     // MARK: Initialization
     
     private func setup(direction: Direction = .vertical) {
-        backgroundColor = .blue
-        
         super.addSubview(scrollView)
-        scrollView.backgroundColor = .red
         scrollView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
@@ -83,6 +80,7 @@ open class GridScrollView: UIView, GridViewInterface, ScrollViewForwarder {
     public init(scrollingDirection: Direction = .vertical) {
         self.scrollingDirection = scrollingDirection
         super.init(frame: .zero)
+        setup()
     }
     
     /// Init with frame (defaults to vertical scrolling)

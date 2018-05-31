@@ -47,6 +47,13 @@ open class GridScrollViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
     
+    /// Initializer (scrolling direction set to `.vertical` by default)
+    public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        self.scrollingDirection = .vertical
+            
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+    
     @available(*, unavailable, message: "This method is unavailable")
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

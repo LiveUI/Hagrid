@@ -106,6 +106,14 @@ extension GridView {
             }
             setRight(position: subview.properties.space)
             
+            // Dynamic size
+            if config.autoDynamicVertically {
+                make.bottom.lessThanOrEqualTo(self.snp.bottom)
+            }
+            if config.autoDynamicHorizontally {
+                make.right.lessThanOrEqualTo(self.snp.right)
+            }
+            
             // Run custom constraints
             subview.properties.redraw?(make)
         }
