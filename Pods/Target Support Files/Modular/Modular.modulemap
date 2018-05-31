@@ -1,6 +1,0 @@
-framework module Modular {
-  umbrella header "Modular-umbrella.h"
-
-  export *
-  module * { export * }
-}

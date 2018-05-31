@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F37D33FB3EF2AAD41E5B1C8466C550DD"
-               BuildableName = "Pods_Hagrid_Demo.framework"
-               BlueprintName = "Pods-Hagrid-Demo"
+               BlueprintIdentifier = "3DA75728F77BDD6C1BEEC5B419A950EB"
+               BuildableName = "Pods_Hagrid_iOS.framework"
+               BlueprintName = "Pods-Hagrid-iOS"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F37D33FB3EF2AAD41E5B1C8466C550DD"
-            BuildableName = "Pods_Hagrid_Demo.framework"
-            BlueprintName = "Pods-Hagrid-Demo"
+            BlueprintIdentifier = "3DA75728F77BDD6C1BEEC5B419A950EB"
+            BuildableName = "Pods_Hagrid_iOS.framework"
+            BlueprintName = "Pods-Hagrid-iOS"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

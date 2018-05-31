@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F37D33FB3EF2AAD41E5B1C8466C550DD"
-               BuildableName = "Pods_Hagrid_Demo.framework"
-               BlueprintName = "Pods-Hagrid-Demo"
+               BlueprintIdentifier = "99A72A7393774793129E6E962476B066"
+               BuildableName = "SnapKit.framework"
+               BlueprintName = "SnapKit-tvOS"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F37D33FB3EF2AAD41E5B1C8466C550DD"
-            BuildableName = "Pods_Hagrid_Demo.framework"
-            BlueprintName = "Pods-Hagrid-Demo"
+            BlueprintIdentifier = "99A72A7393774793129E6E962476B066"
+            BuildableName = "SnapKit.framework"
+            BlueprintName = "SnapKit-tvOS"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

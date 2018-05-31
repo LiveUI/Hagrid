@@ -6,9 +6,7 @@
 //  Copyright © 2018 LiveUI. All rights reserved.
 //
 
-import UIKit
-import TheGrid
-import Modular
+import Hagrid
 
 
 class ViewController: GridScrollViewController {
@@ -34,17 +32,15 @@ class ViewController: GridScrollViewController {
             make.height.equalTo(self.albumCover.snp.width)
         }
         
-        let albumCoverRelation: Position = .relation(albumCover)
-        
-        gridView.add(subview: albumTitleLabel, from: albumCoverRelation, space: .last, padding: .left(12))
+        gridView.add(subview: albumTitleLabel, from: .relation(albumCover), space: .last, padding: .left(12))
         
         let subtitlesLast: Position = .custom { _ in
             return self.gridView.bounds.size.width <= 414 ? .last : .reversed(2)
         }
         
-        gridView.add(subview: artistLabel, .below(albumTitleLabel, margin: 2), from: albumCoverRelation, space: subtitlesLast, padding: .horizontal(left: 12, right: 0))
+        gridView.add(subview: artistLabel, .below(albumTitleLabel, margin: 2), from: .match(artistLabel), space: subtitlesLast, padding: .horizontal(left: 12, right: 0))
         
-        gridView.add(subview: yearLabel, .below(artistLabel, margin: 2), from: albumCoverRelation, space: subtitlesLast, padding: .horizontal(left: 12, right: 0))
+        gridView.add(subview: yearLabel, .below(artistLabel, margin: 2), from: .match(artistLabel), space: subtitlesLast, padding: .horizontal(left: 12, right: 0))
         
         gridView.add(subview: purchaseButton, .custom({ _ in
             if self.gridView.bounds.size.width <= 414 {
@@ -152,7 +148,7 @@ class ViewController: GridScrollViewController {
     }
     
     func setupNavBar() {
-        title = "HaGrid"
+        title = "Hagrid"
         
         let columns = UISegmentedControl(items: ["12", "15", "18"])
         columns.addTarget(self, action: #selector(selectColumns(_:)), for: .valueChanged)

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F37D33FB3EF2AAD41E5B1C8466C550DD"
-               BuildableName = "Pods_Hagrid_Demo.framework"
-               BlueprintName = "Pods-Hagrid-Demo"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "1516410C20BD7B740062FA33"
+               BuildableName = "Hagrid-Demo.app"
+               BlueprintName = "Hagrid-Demo"
+               ReferencedContainer = "container:Hagrid.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,6 +29,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "1516410C20BD7B740062FA33"
+            BuildableName = "Hagrid-Demo.app"
+            BlueprintName = "Hagrid-Demo"
+            ReferencedContainer = "container:Hagrid.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -42,15 +51,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F37D33FB3EF2AAD41E5B1C8466C550DD"
-            BuildableName = "Pods_Hagrid_Demo.framework"
-            BlueprintName = "Pods-Hagrid-Demo"
-            ReferencedContainer = "container:Pods.xcodeproj">
+            BlueprintIdentifier = "1516410C20BD7B740062FA33"
+            BuildableName = "Hagrid-Demo.app"
+            BlueprintName = "Hagrid-Demo"
+            ReferencedContainer = "container:Hagrid.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -60,6 +70,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "1516410C20BD7B740062FA33"
+            BuildableName = "Hagrid-Demo.app"
+            BlueprintName = "Hagrid-Demo"
+            ReferencedContainer = "container:Hagrid.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

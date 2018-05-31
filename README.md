@@ -1,6 +1,6 @@
-# TheGrid
+# Hagrid
 
-Brings grid layout to the Apple platforms
+Brings grid layout to the Apple platforms!
 
 <table>
 	<tr>
@@ -13,25 +13,60 @@ Brings grid layout to the Apple platforms
 ## Usage
 
 ```swift
-let albumCover = UIImageView()
-
-let albumTitleLabel = UILabel()
-let artistLabel = UILabel()
-let yearLabel = UILabel()
-
-// Add image view onto the grid, starting from column 0, with length of 5 column and make some additional SnapKit "fine-tuning"
-gridView.add(subview: albumCover, from: 0, space: 5) { make in
+// Add an album cover from the first column to 5
+// (please note we are using just a plain Int instead of the Position object below)
+// To make the album square we have used a custom closure with SnapKit's own `ConstraintMaker` (make) at the end of the method
+gridView.add(subview: albumCover, space: 5) { make in
     make.height.equalTo(self.albumCover.snp.width)
 }
 
-// Add album title on the grid view, starting from column 5 stretching to the last column with 12px padding from the image view
-gridView.add(subview: albumTitleLabel, from: 5, space: Position.last, padding: .left(12))
+// Add album title label, stretching (12px padding) from the album cover image to the end of the grid view
+gridView.add(subview: albumTitleLabel, from: albumCoverRelation, space: .last, padding: .left(12))
 
-// Add artist name 2px below the album name, stretch to the end
-gridView.add(subview: artistLabel, .below(albumTitleLabel, offset: 2), from: 5, space: Position.last, padding: .left(12))
+// Reusable position for the remaining two album labels. iPhones in portrait will take the rest of the screen,
+// on bigger devices or in landscape mode these labels finish two columns from the end of the grid view (.reversed(2)). 
+let subtitlesLast: Position = .custom { traitCollection in
+    return self.gridView.bounds.size.width <= 414 ? .last : .reversed(2)
+}
 
-// Add year of release 2px below the artist name, stretch to the end
-gridView.add(subview: yearLabel, .below(artistLabel, offset: 2), from: 5, space: Position.last, padding: .left(12))
+// Place artist label below the album title with margin of 2px, match the left position of the album title label
+// and the previously calculated `subtitlesLast` for end position
+gridView.add(subview: artistLabel, .below(albumTitleLabel, margin: 2), from: .match(artistLabel), space: subtitlesLast, padding: .left(12))
+
+// Place year released label under the artist name label, rest is same as above
+gridView.add(subview: yearLabel, .below(artistLabel, margin: 2), from: .match(artistLabel), space: subtitlesLast, padding: .left(12))
+
+// Place a purchase button next to the artist and year label on bigger screens and under on smaller ones (iPhone in portrait etc)
+// For the start position you either start 12px from the album on smaller screens or second column from the right on bigger ones
+// (note you can also use `UITraitCollection` in both cases if needed)
+gridView.add(subview: purchaseButton, .custom({ traitCollection in
+    if self.gridView.bounds.size.width <= 414 {
+        return .below(self.yearLabel, margin: 3)
+    } else {
+        return .match(self.artistLabel)
+    }
+}), from: .custom({ _ in
+    if self.gridView.bounds.size.width <= 414 {
+        return .relation(self.albumCover, margin: 12)
+    } else {
+        return .relation(self.artistLabel, margin: 6)
+    }
+}), space: .last) { make in
+    make.height.equalTo(28)
+}
+
+// Place the star rating label above the separator. The initial position is not set and will be dynamic, the whole thing will stretch to the end
+gridView.add(subview: ratingLabel, .above(separator, margin: 12), from: .dynamic, space: .last) { make in
+    make.height.equalTo(28)
+}
+
+// Add a 1px separator below any of the components that could reach it and space it 12px from the lowest one
+gridView.add(subview: separator, .below([albumCover, yearLabel, purchaseButton], margin: 12)) { make in
+    make.height.equalTo(1)
+}
+
+// Add the long description copy which takes the full width and is placed below the separator
+gridView.add(subview: aboutLabel, .below(separator, margin: 12))
 ```
 
 ## Customisation

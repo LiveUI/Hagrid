@@ -1,21 +1,16 @@
 PODS:
-  - Modular (1.0.0):
-    - SnapKit
   - SnapKit (4.0.0)
 
 DEPENDENCIES:
-  - Modular (~> 1.0.0)
   - SnapKit (~> 4.0.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - Modular
     - SnapKit
 
 SPEC CHECKSUMS:
-  Modular: 677f4e99e93b2a2b6e9794d08e2738dec735023f
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: d5e2e3fac092d946f294cd36b78ebe7590b37ffe
+PODFILE CHECKSUM: a630c306400f48ba35f295281739f9dcd5d7c8ef
 
 COCOAPODS: 1.5.0
