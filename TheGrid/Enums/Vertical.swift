@@ -18,6 +18,9 @@ public enum Vertical {
     /// Exact value from the top
     case exactly(fromTop: CGFloat)
     
+    /// Match top of another view
+    case match(UIView, margin: CGFloat)
+    
     /// Below another view (view, margin)
     case below(UIView, margin: CGFloat)
     
@@ -28,6 +31,6 @@ public enum Vertical {
     case row([UIView], margin: CGFloat)
     
     /// Custom vertical position for a given size class (trait collection)
-    case custom(((UITraitCollection) -> Vertical))
+    case custom(((_ traitCollection: UITraitCollection) -> Vertical))
     
 }

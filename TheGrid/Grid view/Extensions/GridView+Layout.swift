@@ -35,6 +35,8 @@ extension GridView {
                         make.top.equalTo(config.padding.value.top)
                     case .exactly(fromTop: let top):
                         make.top.equalTo(top)
+                    case .match(let view, margin: let margin):
+                        make.top.equalTo(view).offset(margin)
                     case .below(let view, margin: let margin):
                         make.top.equalTo(view.snp.bottom).offset(margin)
                     case .above(let view, margin: let margin):
@@ -68,6 +70,8 @@ extension GridView {
                     break
                 case .dynamicallySnapped:
                     fatalError("Not implemented")
+                case .match(let view, margin: let margin):
+                    make.left.equalTo(view).offset(margin + leftPadding)
                 case .relation(let view, margin: let margin):
                     make.left.equalTo(view.snp.right).offset(margin + leftPadding)
                 case .custom(let closure):
@@ -96,6 +100,8 @@ extension GridView {
                     break
                 case .dynamicallySnapped:
                     fatalError("Not implemented")
+                case .match(let view, margin: let margin):
+                    make.right.equalTo(view).offset(margin - rightPadding)
                 case .relation(let view, margin: let margin):
                     make.right.equalTo(view.snp.left).offset(margin - rightPadding)
                 case .custom(let closure):

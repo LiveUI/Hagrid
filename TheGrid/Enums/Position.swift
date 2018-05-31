@@ -24,6 +24,9 @@ public enum Position {
     /// Up to another element
     case relation(UIView, margin: CGFloat)
     
+    /// Match position of another view
+    case match(UIView, margin: CGFloat)
+    
     /// Dynamic position
     case dynamic
     
@@ -31,7 +34,7 @@ public enum Position {
     case dynamicallySnapped
     
     /// Custom position for a given size class (trait collection)
-    case custom(((UITraitCollection) -> Position))
+    case custom(((_ traitCollection: UITraitCollection) -> Position))
     
     /// First column
     public static var first: Position { return .col(0) }
