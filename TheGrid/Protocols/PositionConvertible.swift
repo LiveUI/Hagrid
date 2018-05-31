@@ -9,19 +9,19 @@
 @_exported import Foundation
 
 
-/// Convertible to a position on a grid
-public protocol PositionConvertible {
-    
-    /// Numeric representation of the column
-    var position: Position { get }
-    
-}
-
-extension Int: PositionConvertible {
-    
-    /// Value converted to GridView column
-    public var position: Position {
-        return .col(self)
-    }
-    
-}
+///// Convertible to a position on a grid
+//public protocol PositionConvertible {
+//
+//    /// Numeric representation of the column
+//    var position: Position { get }
+//
+//}
+//
+//extension Int: PositionConvertible {
+//
+//    /// Value converted to GridView column
+//    public var position: Position {
+//        return .col(self)
+//    }
+//
+//}

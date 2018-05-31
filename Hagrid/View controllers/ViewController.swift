@@ -33,7 +33,7 @@ class ViewController: GridViewController {
         albumCover.clipsToBounds = true
         albumCover.layer.cornerRadius = 3
         
-        gridView.add(subview: albumCover, from: 0, space: 5) { make in
+        gridView.add(subview: albumCover, space: .col(5)) { make in
             make.height.equalTo(self.albumCover.snp.width)
         }
     }
@@ -44,23 +44,23 @@ class ViewController: GridViewController {
         albumTitleLabel.font = UIFont.boldSystemFont(ofSize: 18)
         albumTitleLabel.text = "Ten"
         albumTitleLabel.textColor = .darkText
-        gridView.add(subview: albumTitleLabel, from: albumCoverRelation, space: Position.last, padding: .left(12))
+        gridView.add(subview: albumTitleLabel, from: albumCoverRelation, space: .last, padding: .left(12))
         
         artistLabel.font = UIFont.systemFont(ofSize: 15)
         artistLabel.text = "Pearl Jam"
         artistLabel.textColor = .gray
-        gridView.add(subview: artistLabel, .below(albumTitleLabel, margin: 2), from: albumCoverRelation, space: Position.reversed(2), padding: .horizontal(left: 12, right: 6))
+        gridView.add(subview: artistLabel, .below(albumTitleLabel, margin: 2), from: albumCoverRelation, space: .reversed(2), padding: .horizontal(left: 12, right: 6))
 
         yearLabel.font = UIFont.systemFont(ofSize: 12)
         yearLabel.text = "Released: 1991"
         yearLabel.textColor = .gray
-        gridView.add(subview: yearLabel, .below(artistLabel, margin: 2), from: albumCoverRelation, space: Position.reversed(2), padding: .horizontal(left: 12, right: 6))
+        gridView.add(subview: yearLabel, .below(artistLabel, margin: 2), from: albumCoverRelation, space: .reversed(2), padding: .horizontal(left: 12, right: 6))
         
         
         ratingLabel.font = UIFont.boldSystemFont(ofSize: 34)
         ratingLabel.text = "* * * * *"
         ratingLabel.textColor = .orange
-        gridView.add(subview: ratingLabel, .above(separator, margin: 12), from: Position.dynamic, space: Position.last) { make in
+        gridView.add(subview: ratingLabel, .above(separator, margin: 12), from: .dynamic, space: .reversed(2)) { make in
             make.height.equalTo(28)
         }
         
@@ -90,7 +90,7 @@ class ViewController: GridViewController {
         purchaseButton.setTitleColor(purchaseButton.tintColor, for: .normal)
         purchaseButton.setTitleColor(.lightGray, for: .highlighted)
         purchaseButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 12)
-        gridView.add(subview: purchaseButton, from: Position.relation(artistLabel, margin: 6), space: Position.last) { make in
+        gridView.add(subview: purchaseButton, from: .relation(artistLabel, margin: 6), space: .last) { make in
             make.top.equalTo(self.artistLabel)
             make.height.equalTo(28)
         }

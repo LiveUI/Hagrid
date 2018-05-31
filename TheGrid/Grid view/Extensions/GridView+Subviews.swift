@@ -25,8 +25,8 @@ extension GridView {
      */
     public func add(subview view: UIView,
                     _ vertical: Vertical? = nil,
-                    from: PositionConvertible = 0,
-                    space: PositionConvertible = Position.last,
+                    from: Position = .first,
+                    space: Position = .last,
                     padding: Padding = .none,
                     redraw: ((_ make: ConstraintMaker) -> Void)? = nil) {
         let subview = Subview(

@@ -48,46 +48,56 @@ extension GridView {
             }
             
             // Left
-            let leftPadding = subview.properties.padding.value.left
-            switch subview.properties.from.position {
-            case .col(let column):
-                let left = (self.x(column) + leftPadding)
-                make.left.equalTo(left)
-            case .reversed(let column):
-                let left = (self.x((config.numberOfColumns - column)) + leftPadding)
-                make.left.equalTo(left)
-            case .last:
-                make.width.equalTo(self.x(config.numberOfColumns - 1))
-            case .dynamic:
-                break
-            case .dynamicallySnapped:
-                fatalError("Not implemented")
-            case .relation(let view, margin: let margin):
-                make.left.equalTo(view.snp.right).offset(margin + leftPadding)
+            func setLeft(position: Position) {
+                let leftPadding = subview.properties.padding.value.left
+                switch position {
+                case .col(let column):
+                    let left = (self.x(column) + leftPadding)
+                    make.left.equalTo(left)
+                case .reversed(let column):
+                    let left = (self.x((config.numberOfColumns - column)) + leftPadding)
+                    make.left.equalTo(left)
+                case .last:
+                    make.width.equalTo(self.x(config.numberOfColumns - 1))
+                case .dynamic:
+                    break
+                case .dynamicallySnapped:
+                    fatalError("Not implemented")
+                case .relation(let view, margin: let margin):
+                    make.left.equalTo(view.snp.right).offset(margin + leftPadding)
+                case .custom(let closure):
+                    setLeft(position: closure(traitCollection))
+                }
             }
+            setLeft(position: subview.properties.from)
             
             // Right
-            let rightPadding = subview.properties.padding.value.right
-            let fullRightPadding = -(rightPadding + config.padding.value.right)
-            switch subview.properties.space.position {
-            case .col(let column):
-                if column >= 0 && column < config.numberOfColumns { // Defined column
-                    let col = config.numberOfColumns - (config.numberOfColumns - column)
-                    make.width.equalTo((CGFloat(col) * config.columnWidth) - rightPadding)
-                } else {
+            func setRight(position: Position) {
+                let rightPadding = subview.properties.padding.value.right
+                let fullRightPadding = -(rightPadding + config.padding.value.right)
+                switch position {
+                case .col(let column):
+                    if column >= 0 && column < config.numberOfColumns { // Defined column
+                        let col = config.numberOfColumns - (config.numberOfColumns - column)
+                        make.width.equalTo((CGFloat(col) * config.columnWidth) - rightPadding)
+                    } else {
+                        make.right.equalTo(fullRightPadding)
+                    }
+                case .reversed(let column):
+                    make.right.equalTo(fullRightPadding - (CGFloat(column) * config.columnWidth))
+                case .last:
                     make.right.equalTo(fullRightPadding)
+                case .dynamic:
+                    break
+                case .dynamicallySnapped:
+                    fatalError("Not implemented")
+                case .relation(let view, margin: let margin):
+                    make.right.equalTo(view.snp.left).offset(margin - rightPadding)
+                case .custom(let closure):
+                    setRight(position: closure(traitCollection))
                 }
-            case .reversed(let column):
-                make.right.equalTo(fullRightPadding - (CGFloat(column) * config.columnWidth))
-            case .last:
-                make.right.equalTo(fullRightPadding)
-            case .dynamic:
-                break
-            case .dynamicallySnapped:
-                fatalError("Not implemented")
-            case .relation(let view, margin: let margin):
-                make.right.equalTo(view.snp.left).offset(margin - rightPadding)
             }
+            setRight(position: subview.properties.space)
             
             // Run custom constraints
             subview.properties.redraw?(make)

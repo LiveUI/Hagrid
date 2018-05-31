@@ -30,14 +30,20 @@ public enum Position {
     /// Nearest dynamically calculated column
     case dynamicallySnapped
     
+    /// Custom position for a given size class (trait collection)
+    case custom(((UITraitCollection) -> Position))
+    
+    /// First column
+    public static var first: Position { return .col(0) }
+    
 }
 
 
-extension Position: PositionConvertible {
-    
-    /// Position forwarder to conform to PositionConvertible
-    public var position: Position {
-        return self
-    }
-    
-}
+//extension Position: PositionConvertible {
+//    
+//    /// Position forwarder to conform to PositionConvertible
+//    public var position: Position {
+//        return self
+//    }
+//    
+//}

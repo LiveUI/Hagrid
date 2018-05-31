@@ -17,10 +17,10 @@ public struct Properties {
     public let vertical: Vertical?
     
     /// Starting position
-    public let from: PositionConvertible
+    public let from: Position
     
     /// Horizontal space taken by the element
-    public let space: PositionConvertible
+    public let space: Position
     
     /// Redraw SnapKit closure
     let redraw: ((_ make: ConstraintMaker) -> Void)?

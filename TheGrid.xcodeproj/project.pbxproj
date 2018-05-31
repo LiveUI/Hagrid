@@ -25,8 +25,6 @@
 		15D00E8420BDC49F0051A8CF /* UIColor+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E8320BDC49F0051A8CF /* UIColor+Tools.swift */; };
 		15D00E8620BDC84A0051A8CF /* GridView+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E8520BDC84A0051A8CF /* GridView+Subviews.swift */; };
 		15D00E8820BDC86A0051A8CF /* PositionConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E8720BDC86A0051A8CF /* PositionConvertible.swift */; };
-		15D00E8A20BDC8DB0051A8CF /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E8920BDC8DB0051A8CF /* Class.swift */; };
-		15D00E8C20BDC9960051A8CF /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E8B20BDC9960051A8CF /* Device.swift */; };
 		15D00E8F20BDD0690051A8CF /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E8E20BDD0690051A8CF /* Padding.swift */; };
 		15D00E9120BDD1930051A8CF /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E9020BDD1930051A8CF /* Properties.swift */; };
 		15D00E9320BDD2250051A8CF /* Subview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E9220BDD2250051A8CF /* Subview.swift */; };
@@ -74,8 +72,6 @@
 		15D00E8320BDC49F0051A8CF /* UIColor+Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Tools.swift"; sourceTree = "<group>"; };
 		15D00E8520BDC84A0051A8CF /* GridView+Subviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GridView+Subviews.swift"; sourceTree = "<group>"; };
 		15D00E8720BDC86A0051A8CF /* PositionConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionConvertible.swift; sourceTree = "<group>"; };
-		15D00E8920BDC8DB0051A8CF /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
-		15D00E8B20BDC9960051A8CF /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		15D00E8E20BDD0690051A8CF /* Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Padding.swift; sourceTree = "<group>"; };
 		15D00E9020BDD1930051A8CF /* Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
 		15D00E9220BDD2250051A8CF /* Subview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subview.swift; sourceTree = "<group>"; };
@@ -185,8 +181,6 @@
 			children = (
 				153F9D7620BE1ACE0051D0D3 /* Vertical.swift */,
 				15D00E8020BDC3B80051A8CF /* Position.swift */,
-				15D00E8920BDC8DB0051A8CF /* Class.swift */,
-				15D00E8B20BDC9960051A8CF /* Device.swift */,
 				15D00E8E20BDD0690051A8CF /* Padding.swift */,
 			);
 			path = Enums;
@@ -498,9 +492,7 @@
 				15D00E8120BDC3B80051A8CF /* Position.swift in Sources */,
 				153F9D7720BE1ACE0051D0D3 /* Vertical.swift in Sources */,
 				15D00E9520BDDE280051A8CF /* GridView+Layout.swift in Sources */,
-				15D00E8C20BDC9960051A8CF /* Device.swift in Sources */,
 				15D00E7C20BDBE8A0051A8CF /* GridView+Drawing.swift in Sources */,
-				15D00E8A20BDC8DB0051A8CF /* Class.swift in Sources */,
 				15D00E7A20BDB8C20051A8CF /* UIColor+Tools.swift in Sources */,
 				15D00E9120BDD1930051A8CF /* Properties.swift in Sources */,
 				153F9D7520BE02D70051D0D3 /* GridViewController.swift in Sources */,
