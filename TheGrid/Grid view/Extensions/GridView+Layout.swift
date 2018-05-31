@@ -30,81 +30,13 @@ extension GridView {
     func layout(_ subview: Subview) {
         subview.view.snp.remakeConstraints { (make) in
             // Top
-            if let vertical = subview.properties.vertical {
-                func set(vertical: Vertical) {
-                    switch vertical.storage {
-                    case .exactly(fromTop: let top):
-                        make.top.equalTo(top + config.padding.value.top)
-                    case .match(let view, margin: let margin):
-                        make.top.equalTo(view).offset(margin)
-                    case .below(let view, margin: let margin):
-                        make.top.equalTo(view.snp.bottom).offset(margin)
-                    case .above(let view, margin: let margin):
-                        make.bottom.equalTo(view.snp.top).offset(-margin)
-                    case .row(let views, margin: let margin):
-                        for view in views {
-                            make.top.greaterThanOrEqualTo(view.snp.bottom).offset(margin)
-                        }
-                    case .custom(let closure):
-                        set(vertical: closure(traitCollection))
-                    }
-                }
-                set(vertical: vertical)
-            } else {
-                make.top.greaterThanOrEqualTo(config.padding.value.top)
-            }
+            self.make(subview, top: make)
             
             // Left
-            func setLeft(position: Position) {
-                let leftPadding = subview.properties.padding.value.left
-                switch position.storage {
-                case .col(let column):
-                    let left = (self.x(column) + leftPadding)
-                    make.left.equalTo(left)
-                case .reversed(let column):
-                    let left = (self.x((config.numberOfColumns - column)) + leftPadding)
-                    make.left.equalTo(left)
-                case .last:
-                    make.width.equalTo(self.x(config.numberOfColumns - 1))
-                case .dynamic:
-                    break
-                case .match(let view, margin: let margin):
-                    make.left.equalTo(view).offset(margin + leftPadding)
-                case .relation(let view, margin: let margin):
-                    make.left.equalTo(view.snp.right).offset(margin + leftPadding)
-                case .custom(let closure):
-                    setLeft(position: closure(traitCollection))
-                }
-            }
-            setLeft(position: subview.properties.from)
+            self.make(subview, left: make)
             
             // Right
-            func setRight(position: Position) {
-                let rightPadding = subview.properties.padding.value.right
-                let fullRightPadding = -(rightPadding + config.padding.value.right)
-                switch position.storage {
-                case .col(let column):
-                    if column >= 0 && column < config.numberOfColumns { // Defined column
-                        let col = config.numberOfColumns - (config.numberOfColumns - column)
-                        make.width.equalTo((CGFloat(col) * config.columnWidth) - rightPadding)
-                    } else {
-                        make.right.equalTo(fullRightPadding)
-                    }
-                case .reversed(let column):
-                    make.right.equalTo(fullRightPadding - (CGFloat(column) * config.columnWidth))
-                case .last:
-                    make.right.equalTo(fullRightPadding)
-                case .dynamic:
-                    break
-                case .match(let view, margin: let margin):
-                    make.right.equalTo(view).offset(margin - rightPadding)
-                case .relation(let view, margin: let margin):
-                    make.right.equalTo(view.snp.left).offset(margin - rightPadding)
-                case .custom(let closure):
-                    setRight(position: closure(traitCollection))
-                }
-            }
-            setRight(position: subview.properties.space)
+            self.make(subview, right: make)
             
             // Dynamic size
             if config.autoDynamicVertically {
@@ -117,6 +49,89 @@ extension GridView {
             // Run custom constraints
             subview.properties.redraw?(make)
         }
+    }
+    
+    /// Build top constraints
+    private func make(_ subview: Subview, top make: ConstraintMaker) {
+        if let vertical = subview.properties.vertical {
+            func set(vertical: Vertical) {
+                switch vertical.storage {
+                case .exactly(fromTop: let top):
+                    make.top.equalTo(top + config.padding.value.top)
+                case .match(let view, margin: let margin):
+                    make.top.equalTo(view).offset(margin)
+                case .below(let view, margin: let margin):
+                    make.top.equalTo(view.snp.bottom).offset(margin)
+                case .above(let view, margin: let margin):
+                    make.bottom.equalTo(view.snp.top).offset(-margin)
+                case .row(let views, margin: let margin):
+                    for view in views {
+                        make.top.greaterThanOrEqualTo(view.snp.bottom).offset(margin)
+                    }
+                case .custom(let closure):
+                    set(vertical: closure(traitCollection))
+                }
+            }
+            set(vertical: vertical)
+        } else {
+            make.top.greaterThanOrEqualTo(config.padding.value.top)
+        }
+    }
+    
+    /// Build left constraints
+    private func make(_ subview: Subview, left make: ConstraintMaker) {
+        func setLeft(position: Position) {
+            let leftPadding = subview.properties.padding.value.left
+            switch position.storage {
+            case .col(let column):
+                let left = (self.x(column) + leftPadding)
+                make.left.equalTo(left)
+            case .reversed(let column):
+                let left = (self.x((config.numberOfColumns - column)) + leftPadding)
+                make.left.equalTo(left)
+            case .last:
+                make.width.equalTo(self.x(config.numberOfColumns - 1))
+            case .dynamic:
+                break
+            case .match(let view, margin: let margin):
+                make.left.equalTo(view).offset(margin + leftPadding)
+            case .relation(let view, margin: let margin):
+                make.left.equalTo(view.snp.right).offset(margin + leftPadding)
+            case .custom(let closure):
+                setLeft(position: closure(traitCollection))
+            }
+        }
+        setLeft(position: subview.properties.from)
+    }
+    
+    /// Build right constraints
+    private func make(_ subview: Subview, right make: ConstraintMaker) {
+        func setRight(position: Position) {
+            let rightPadding = subview.properties.padding.value.right
+            let fullRightPadding = -(rightPadding + config.padding.value.right)
+            switch position.storage {
+            case .col(let column):
+                if column >= 0 && column < config.numberOfColumns { // Defined column
+                    let col = config.numberOfColumns - (config.numberOfColumns - column)
+                    make.width.equalTo((CGFloat(col) * config.columnWidth) - rightPadding)
+                } else {
+                    make.right.equalTo(fullRightPadding)
+                }
+            case .reversed(let column):
+                make.right.equalTo(fullRightPadding - (CGFloat(column) * config.columnWidth))
+            case .last:
+                make.right.equalTo(fullRightPadding)
+            case .dynamic:
+                break
+            case .match(let view, margin: let margin):
+                make.right.equalTo(view).offset(margin - rightPadding)
+            case .relation(let view, margin: let margin):
+                make.right.equalTo(view.snp.left).offset(margin - rightPadding)
+            case .custom(let closure):
+                setRight(position: closure(traitCollection))
+            }
+        }
+        setRight(position: subview.properties.space)
     }
     
 }
