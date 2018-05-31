@@ -118,7 +118,7 @@ extension GridView {
             case .dynamic:
                 break
             case .match(let view, margin: let margin):
-                make.left.equalTo(view).offset(margin + leftPadding)
+                make.left.equalTo(view.snp.left).offset(margin + leftPadding)
             case .relation(let view, margin: let margin):
                 make.left.equalTo(view.snp.right).offset(margin + leftPadding)
             #if os(iOS) || os(tvOS)

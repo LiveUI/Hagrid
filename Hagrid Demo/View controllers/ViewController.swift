@@ -38,9 +38,9 @@ class ViewController: GridScrollViewController {
             return self.gridView.bounds.size.width <= 414 ? .last : .reversed(2)
         }
         
-        gridView.add(subview: artistLabel, .below(albumTitleLabel, margin: 2), from: .match(artistLabel), space: subtitlesLast, padding: .horizontal(left: 12, right: 0))
+        gridView.add(subview: artistLabel, .below(albumTitleLabel, margin: 2), from: .match(albumTitleLabel), space: subtitlesLast)
         
-        gridView.add(subview: yearLabel, .below(artistLabel, margin: 2), from: .match(artistLabel), space: subtitlesLast, padding: .horizontal(left: 12, right: 0))
+        gridView.add(subview: yearLabel, .below(artistLabel, margin: 2), from: .match(albumTitleLabel), space: subtitlesLast)
         
         gridView.add(subview: purchaseButton, .custom({ _ in
             if self.gridView.bounds.size.width <= 414 {

@@ -1,14 +1,25 @@
-# Hagrid
+![Hagrid: Grid layout library for iOS, tvOS and macOS](https://github.com/LiveUI/Hagrid/raw/master/Other/logo.png)
 
-Brings grid layout to the Apple platforms!
+
+[![Platform](https://img.shields.io/cocoapods/p/Hagrid.svg?style=flat)](https://github.com/LiveUI/Hagrid)
+[![Cocoapods Compatible](https://img.shields.io/cocoapods/v/Hagrid.svg)](https://cocoapods.org/pods/Hagrid)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+
+Brings a proper grid layout to the Apple platforms!
 
 <table>
 	<tr>
-		<td><img src="https://github.com/LiveUI/TheGrid/blob/master/Other/12-column.png?raw=true" alt="" />&nbsp;</td>
-		<td>&nbsp;<img src="https://github.com/LiveUI/TheGrid/blob/master/Other/8-column.png?raw=true" alt="" />&nbsp;</td>
-		<td>&nbsp;<img src="https://github.com/LiveUI/TheGrid/blob/master/Other/22-column.png?raw=true" alt="" /></td>
+		<td><img src="https://github.com/LiveUI/TheGrid/blob/master/Other/screen1.png?raw=true" alt="" /></td>
+		<td><img src="https://github.com/LiveUI/TheGrid/blob/master/Other/screen2.png?raw=true" alt="" /></td>
+		<td><img src="https://github.com/LiveUI/TheGrid/blob/master/Other/screen3.png?raw=true" alt="" /></td>
+		<td>
+			<img src="https://github.com/LiveUI/TheGrid/blob/master/Other/screen4.png?raw=true" alt="" /><br />
+			<img src="https://github.com/LiveUI/TheGrid/blob/master/Other/screen5.png?raw=true" alt="" />
+		</td>
 	</tr>
 </table>
+
+> Use `gridView.config.displayGrid = true` to enable grid layout as per screenshots
 
 ## Available components
 
@@ -38,10 +49,10 @@ let subtitlesLast: Position = .custom { traitCollection in
 
 // Place artist label below the album title with margin of 2px, match the left position of the album title label
 // and the previously calculated `subtitlesLast` for end position
-gridView.add(subview: artistLabel, .below(albumTitleLabel, margin: 2), from: .match(artistLabel), space: subtitlesLast, padding: .left(12))
+gridView.add(subview: artistLabel, .below(albumTitleLabel, margin: 2), from: .match(albumTitleLabel), space: subtitlesLast)
 
 // Place year released label under the artist name label, rest is same as above
-gridView.add(subview: yearLabel, .below(artistLabel, margin: 2), from: .match(artistLabel), space: subtitlesLast, padding: .left(12))
+gridView.add(subview: yearLabel, .below(artistLabel, margin: 2), from: .match(artistLabel), space: subtitlesLast)
 
 // Place a purchase button next to the artist and year label on bigger screens and under on smaller ones (iPhone in portrait etc)
 // For the start position you either start 12px from the album on smaller screens or second column from the right on bigger ones
@@ -102,8 +113,10 @@ gridView.config.padding = .full(top: 6, left: 12, right: 12)
 You can enable dynamic sizing for the grid view by setting:
 
 ```swift
-gridView.config.aaaaaaa = true
+gridView.config.automaticVerticalSizing = true
 ```
+
+## Positioning
 
 Available paddings are:
 ```swift
@@ -184,7 +197,7 @@ For horizontal positioning you can use an integer (`Int`) directly to specify th
 .custom(((_ traitCollection: UITraitCollection) -> Position))
 ```
 
-## View controller
+## View controllers
 
 A `GridViewController` and `GridScrollViewController` are available for subclassing and your convenience with `gridView` property replacing the standard `view`.
 
