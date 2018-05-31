@@ -9,17 +9,16 @@
 /* Begin PBXBuildFile section */
 		010F2113F39E0A27B6E612BF8376B674 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2EC454CB8B9820D9BEB20E97501CB7 /* ConstraintPriority.swift */; };
 		0266A5509AFCC1261916488CB0C9EA60 /* Modular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3F8485A9A900B76A347F3E6772D163 /* Modular.swift */; };
-		061091C7FC160F7EDC4EB96B09FCAA0A /* Pods-Hagrid-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F868223775C2FC0299D405E2851D9BB1 /* Pods-Hagrid-dummy.m */; };
 		06DE79A3F47486AD3E179113E428C34B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 512147FDA1939417BB42A1771EA830F9 /* Foundation.framework */; };
 		0A43D4F940BFEF5DB848D6BCA44BDAAF /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683D10EDE25248DC69750F021596E5E /* Debug.swift */; };
 		0A4CBBB29444D378C983ADAB75902F36 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DA9C020F0AECDBAF4F968336A658C7 /* LayoutConstraint.swift */; };
 		0BAD0EC1175B8A8F6DDE2181796F6CD3 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729785A50D53A72254CDFA97B0448226 /* ConstraintMakerExtendable.swift */; };
+		0DB73584CDD6F5317045E557CB73C4CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 512147FDA1939417BB42A1771EA830F9 /* Foundation.framework */; };
 		0F8656A005123FD5143D334117E9995D /* Make+Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B816F61E39762B2BF76A782B1BB58BD /* Make+Shapes.swift */; };
 		17365C8717A5F887FAAF34BDDE3FDF4F /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BA3C391F39D02E599655AD2D958285 /* ConstraintInsetTarget.swift */; };
 		1DA82FA3F09E7341EF8BCAD2A149A31A /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A5160447274C53F1E95C43EAF707B /* Constraint.swift */; };
 		1FAA0B1D62E1D86C67337FA3B5CA5C7D /* Place+Basic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49771F15A64DDF6B1EE1A706DFE20F64 /* Place+Basic.swift */; };
 		1FE1F0CC486CC177E0778E696693A38C /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF896E65EB62968F8C6125B5D352910 /* ConstraintInsets.swift */; };
-		2270EBC6ABE0206E0B96B6B18EE787F7 /* Pods-Hagrid-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 73BCE0666DF5AF1E66C4D9A4F9644FB4 /* Pods-Hagrid-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2447DAF4FA64C23209E04F085303BAA3 /* Modular-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1BB1D907284AE9AEF4048C3018FDBC /* Modular-dummy.m */; };
 		2589804B29E63742B071BA7E62B58644 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 713265A8867D4AACAEAAA96A63DFDA8E /* SnapKit-dummy.m */; };
 		2CFF812E3F394BA5582A4BF45A3FD4F0 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E66CC8B78FA0C5C44522268C818CCBA /* ConstraintMakerPriortizable.swift */; };
@@ -27,6 +26,7 @@
 		319ED5A4A26171D40E9380DE59EDA0AA /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80975828EC97840CD9ADE0B98CBEF9DE /* ConstraintMultiplierTarget.swift */; };
 		3D987E940F87E5F3C1B385DA013DB6F6 /* Make+Dimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD28A22EB30D03091FACFDA3F5D0CD87 /* Make+Dimensions.swift */; };
 		3F1051BCE0D2D030323CA2C89C4B2267 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8B390527554E63DEBDF4F9332388A4 /* ConstraintMakerRelatable.swift */; };
+		455301BDC22FEF1429441C8946A6DC1E /* Pods-Hagrid-Demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E3EA3330798B8B4E64187F5BD91875 /* Pods-Hagrid-Demo-dummy.m */; };
 		474E8D163B97F481B38C6CCE8B7DC9CE /* Modular-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36B3D5AB05A5581B3D2D6012574F9F54 /* Modular-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		49C90765A33C96495FB82551313AA61F /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323E35A78DA81665B8179C94887E39CA /* ConstraintRelation.swift */; };
 		4EE33C61CED1A1E3D35056193113EBD8 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCCF6FD255BD753BFEA8B9159DC469F /* ConstraintDSL.swift */; };
@@ -48,7 +48,7 @@
 		8FF32FF61095C2F464C007C89475202A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 512147FDA1939417BB42A1771EA830F9 /* Foundation.framework */; };
 		9014A92301791529CDBC9235594C8C1F /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7129824DF2BAF50070737B48BBE6E9CD /* ConstraintMakerFinalizable.swift */; };
 		90C22BC342834A23FAB48A01C01FF04E /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C983F74B96590085C9BC371202206 /* ConstraintItem.swift */; };
-		947A06F5924F853B2E9D9234C78AC6B6 /* Pods-TheGrid-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9BA764F8DC7C0B766FFBAC178CC0B7 /* Pods-TheGrid-dummy.m */; };
+		947A06F5924F853B2E9D9234C78AC6B6 /* Pods-TheGrid-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 856065FFAADBB0A8020B57666C7ABB3D /* Pods-TheGrid-dummy.m */; };
 		9622DF21E506419549D2066D3EC1CE25 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196963BDF01CDED3B4FBA7BC87E17E8 /* ConstraintViewDSL.swift */; };
 		9BA94A7019522121D522CE7BBBA538E8 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98476F42A7756DF6F0816027D13AD9A /* ConstraintRelatableTarget.swift */; };
 		A00A3C7A720D5FFEDDCC76E63BDFCF10 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4437D3E46ADB6F6909BE4F7FE97CA5A /* ConstraintMakerEditable.swift */; };
@@ -57,9 +57,9 @@
 		C8942629C139FCA8E924D92830CE89EB /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B93B7EF98C556D50159D7E5316FD4B /* Debugging.swift */; };
 		C91A2A159EEE937833FD9B461B854657 /* Make.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5550EB1CF398EC739024A4C4FCBC6 /* Make.swift */; };
 		C92E2404772249595DB6EA622D82C783 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16BC3675935BF2B507B94AA60453CE6 /* ConstraintConfig.swift */; };
-		CC3B722F49CAA4DA4076DDDBF26DB49A /* Pods-TheGrid-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55C5A411A9601B64C7D0A5FC2DCCBEA0 /* Pods-TheGrid-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CDF7E17C5B538AF0CE47506F810F8E5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 512147FDA1939417BB42A1771EA830F9 /* Foundation.framework */; };
+		CC3B722F49CAA4DA4076DDDBF26DB49A /* Pods-TheGrid-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15A8C91A7A710CEC51741FDFF101CE83 /* Pods-TheGrid-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D259C6557364E45A22A267151DB62897 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F16297E9E5F1CE1523A34439885CF8 /* ConstraintView+Extensions.swift */; };
+		D3447FB928DBFFED4244D6E9234F6876 /* Pods-Hagrid-Demo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1B8717314F52D6E786E987AC459C91 /* Pods-Hagrid-Demo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D678ED4BBC136FC03F31C8676D6DD821 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59429DE855930CBD7F4C29BBEBA0B404 /* ConstraintLayoutGuideDSL.swift */; };
 		DEB54EEA394FF5480F2E4195CEB8EE23 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE3D5B973F64B6DDFA193541ACD4811 /* ConstraintConstantTarget.swift */; };
 		E0A1C687EE61EE8D34F64489CC3200F2 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DF899E8D9EA0BF64D18008CE4B2CC8 /* ConstraintLayoutSupport.swift */; };
@@ -75,13 +75,6 @@
 			remoteGlobalIDString = D73FA0C9F955FB73409E8B0F9DFD28D4;
 			remoteInfo = SnapKit;
 		};
-		8E994A2EFDC9E044D7DB85F55C5B8FB1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B4D4708218C0C62F2EC982D2AA5EBE04;
-			remoteInfo = Modular;
-		};
 		96ADA5CBE55C09F7C8035A52373ACAEC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -89,7 +82,14 @@
 			remoteGlobalIDString = D73FA0C9F955FB73409E8B0F9DFD28D4;
 			remoteInfo = SnapKit;
 		};
-		FC305D85A5DAF773E06CF4C58724C261 /* PBXContainerItemProxy */ = {
+		ABEE7214A53764E7E0BA20F7E87F23CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4D4708218C0C62F2EC982D2AA5EBE04;
+			remoteInfo = Modular;
+		};
+		B56DBFFE8438B86B7B44DD3D9795ED39 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -104,84 +104,84 @@
 		0C593EC953B74431D2E7E95DC2F3C70A /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
 		0CCCF6FD255BD753BFEA8B9159DC469F /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
 		0D8658C28873AE2F8C1F1D9E6BBEA0BD /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		15A8C91A7A710CEC51741FDFF101CE83 /* Pods-TheGrid-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TheGrid-umbrella.h"; sourceTree = "<group>"; };
 		19553AC302EB644C0841A824C9F04597 /* Place.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Place.swift; path = Modular/Classes/Place.swift; sourceTree = "<group>"; };
 		1B3F8485A9A900B76A347F3E6772D163 /* Modular.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Modular.swift; path = Modular/Classes/Modular.swift; sourceTree = "<group>"; };
 		1F0C983F74B96590085C9BC371202206 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
 		2293547CB2D2FBFCB610CFBC13F4A879 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
-		30C5519F5ACCE0943AAD8D255A292775 /* Pods-Hagrid.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hagrid.modulemap"; sourceTree = "<group>"; };
+		230674A387F2066F4C6FC5A50554189F /* Pods-TheGrid.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TheGrid.modulemap"; sourceTree = "<group>"; };
+		27D7A18DAE21CD350540687C98D7E3B1 /* Pods-Hagrid-Demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hagrid-Demo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		323E35A78DA81665B8179C94887E39CA /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		33E29C3A1796C5B4CF4D8192870D40C2 /* Pods_TheGrid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TheGrid.framework; path = "Pods-TheGrid.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35E3EA3330798B8B4E64187F5BD91875 /* Pods-Hagrid-Demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hagrid-Demo-dummy.m"; sourceTree = "<group>"; };
 		3685F02C3D0A530B00152C977ABEBD5B /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
 		36B3D5AB05A5581B3D2D6012574F9F54 /* Modular-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Modular-umbrella.h"; sourceTree = "<group>"; };
 		36B9140B56B5CD4C4C4F24E483686519 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
 		3B816F61E39762B2BF76A782B1BB58BD /* Make+Shapes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Make+Shapes.swift"; path = "Modular/Classes/Extensions/Make+Shapes.swift"; sourceTree = "<group>"; };
-		430BD8780B90D41999FFA2352109C0EB /* Pods-TheGrid-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TheGrid-resources.sh"; sourceTree = "<group>"; };
 		49771F15A64DDF6B1EE1A706DFE20F64 /* Place+Basic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Place+Basic.swift"; path = "Modular/Classes/Extensions/Place+Basic.swift"; sourceTree = "<group>"; };
+		499010F57A489E16C515FC638EF8280D /* Pods_Hagrid_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hagrid_Demo.framework; path = "Pods-Hagrid-Demo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D42A9244597D6CA0DAA8D1E073A7FB2 /* Pods-Hagrid-Demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hagrid-Demo.modulemap"; sourceTree = "<group>"; };
 		4FF896E65EB62968F8C6125B5D352910 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
 		512147FDA1939417BB42A1771EA830F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		53F5FF0E81020B0FD358CFB5E3993840 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55C043D5FF9AAE48B3361BAB8D2BDECD /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
-		55C5A411A9601B64C7D0A5FC2DCCBEA0 /* Pods-TheGrid-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TheGrid-umbrella.h"; sourceTree = "<group>"; };
 		5836B32824B9181EF2EF9B449FC09788 /* Array+StackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+StackView.swift"; path = "Modular/Classes/Extensions/Array+StackView.swift"; sourceTree = "<group>"; };
-		590EAAFE3A80061BA8F3D93E604191A8 /* Pods-TheGrid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheGrid.debug.xcconfig"; sourceTree = "<group>"; };
 		59429DE855930CBD7F4C29BBEBA0B404 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
-		5D33CBBFB92C4FDDB1E0FEE00AD92671 /* Pods-Hagrid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hagrid.debug.xcconfig"; sourceTree = "<group>"; };
-		5F79C5280F69D3DD40A1D67D1D09E0EF /* Pods-Hagrid-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hagrid-acknowledgements.plist"; sourceTree = "<group>"; };
-		61DE3F739496B4087A2E56ABE9B48159 /* Modular.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Modular.framework; path = Modular.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		674A5160447274C53F1E95C43EAF707B /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
-		6F27BC911BD006D32791FF671EA3E3D7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7129824DF2BAF50070737B48BBE6E9CD /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
 		713265A8867D4AACAEAAA96A63DFDA8E /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
 		729785A50D53A72254CDFA97B0448226 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
-		73BCE0666DF5AF1E66C4D9A4F9644FB4 /* Pods-Hagrid-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hagrid-umbrella.h"; sourceTree = "<group>"; };
 		78838948C7612D9A3BEB6846EB089AAD /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
-		7F63310A0F8C99F2B79F5AC07AFA651B /* Pods-Hagrid-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hagrid-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7FC74E845022C6D3138A010405422B88 /* Pods-TheGrid-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TheGrid-acknowledgements.plist"; sourceTree = "<group>"; };
+		80183E6CD14CCD33BB81FF8507BBD194 /* Pods-TheGrid-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TheGrid-acknowledgements.plist"; sourceTree = "<group>"; };
 		80975828EC97840CD9ADE0B98CBEF9DE /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
 		81E3D84A608B53617A51B5E4241530BD /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		856065FFAADBB0A8020B57666C7ABB3D /* Pods-TheGrid-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TheGrid-dummy.m"; sourceTree = "<group>"; };
 		8A2EC454CB8B9820D9BEB20E97501CB7 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
 		8B3BCCF2216FA8C03118C6C502CEE0E0 /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
 		8E66CC8B78FA0C5C44522268C818CCBA /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
-		9007C4F28D1D6003E51FD7EC943D1FC0 /* Pods-TheGrid.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TheGrid.modulemap"; sourceTree = "<group>"; };
+		91B7B3D6F99D46A072675A3CD70B1251 /* Pods-Hagrid-Demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hagrid-Demo-acknowledgements.plist"; sourceTree = "<group>"; };
 		91F445F7345C2D3D24C5B255626F3122 /* Modular.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Modular.modulemap; sourceTree = "<group>"; };
 		931314ABB8037BBB7A9D13FB0A582990 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93DA9C020F0AECDBAF4F968336A658C7 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
 		948AF9C11C963AC4C357882308D54A00 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
 		9DE3D5B973F64B6DDFA193541ACD4811 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
-		9E5A5E65DE56E019AC0AE1203A18AD68 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F629AA1E21367B4AD979DC829FEE4F0 /* Pods-Hagrid-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hagrid-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		A029D1D8033DAC5FB38655495FD72C6B /* Pods-Hagrid-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hagrid-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		A03285BA06BFCB6DB64497B4F1DE3834 /* NSLayoutConstraint+Modular.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutConstraint+Modular.swift"; path = "Modular/Classes/Extensions/NSLayoutConstraint+Modular.swift"; sourceTree = "<group>"; };
 		A147E18182775409D82B273BAFB028F2 /* Modular-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Modular-prefix.pch"; sourceTree = "<group>"; };
 		A16BC3675935BF2B507B94AA60453CE6 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
 		A180ED1B4A415A710889303BF7B30122 /* ConstraintMaker+Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintMaker+Helpers.swift"; path = "Modular/Classes/Extensions/ConstraintMaker+Helpers.swift"; sourceTree = "<group>"; };
 		A196963BDF01CDED3B4FBA7BC87E17E8 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
 		A64217F9676107BA47CBE9F6D56F6DBF /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		A7F41D1CAF1779B24618BB8FD9105601 /* Pods-TheGrid-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TheGrid-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A9A5550EB1CF398EC739024A4C4FCBC6 /* Make.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Make.swift; path = Modular/Classes/Make.swift; sourceTree = "<group>"; };
-		B134AE27FAEE76C0ABAE36E53D43D526 /* Pods-TheGrid-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TheGrid-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AB530625E081C9EC72B0C0EDAADD357E /* Pods-TheGrid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheGrid.release.xcconfig"; sourceTree = "<group>"; };
+		B2CE8F1407215CDD5BF8E2C8E205B289 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4B93B7EF98C556D50159D7E5316FD4B /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
-		B6BED6E9052EC2E4FCAD20EEBCA9E09C /* Pods-Hagrid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hagrid.release.xcconfig"; sourceTree = "<group>"; };
 		B752FFB78ED3132BD698EB407E763FFF /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
-		BC7265387BFF3F6CEC8C7C663F6A1C10 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C000FCB4BC12C0A00B3607D3ED9D0B4C /* Pods-Hagrid-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hagrid-frameworks.sh"; sourceTree = "<group>"; };
 		C42E6B36692CB79785C933E25719FA6F /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4BB5E4E674DF4DB068B027FB375E80E /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
-		C8D70798CC3DEBE6FAFD75F77F717FE5 /* Pods_Hagrid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hagrid.framework; path = "Pods-Hagrid.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEAF64646B06B352D7C4E172A1F7413C /* Pods-TheGrid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheGrid.release.xcconfig"; sourceTree = "<group>"; };
+		C636F99E0438A29EC44057F7725CB752 /* Modular.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Modular.framework; path = Modular.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6FB1B9818718CDA475406F4B9B9889B /* Pods-TheGrid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheGrid.debug.xcconfig"; sourceTree = "<group>"; };
+		CB12ED07FA25310AF929B2753C9FD8A0 /* Pods-Hagrid-Demo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hagrid-Demo-frameworks.sh"; sourceTree = "<group>"; };
+		CF72A33CFB02BA02A5E96546FA53C0E0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3DF899E8D9EA0BF64D18008CE4B2CC8 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
 		D444B1AA2CF72582A16C9EFCDB23F5A4 /* Modular.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Modular.xcconfig; sourceTree = "<group>"; };
+		D5451F31044FA366706351D6D85A5475 /* Pods-TheGrid-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TheGrid-resources.sh"; sourceTree = "<group>"; };
 		D5F16297E9E5F1CE1523A34439885CF8 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
 		D77C221841FFA3DD674BEFF6DCF25983 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
 		DA8B390527554E63DEBDF4F9332388A4 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
 		DD28A22EB30D03091FACFDA3F5D0CD87 /* Make+Dimensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Make+Dimensions.swift"; path = "Modular/Classes/Extensions/Make+Dimensions.swift"; sourceTree = "<group>"; };
+		DE1B8717314F52D6E786E987AC459C91 /* Pods-Hagrid-Demo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hagrid-Demo-umbrella.h"; sourceTree = "<group>"; };
 		E4DDEC876B8BA52C378F353A2C9FB3B5 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
 		EC1BB1D907284AE9AEF4048C3018FDBC /* Modular-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Modular-dummy.m"; sourceTree = "<group>"; };
+		EE3B95B7E5864C46BA16F65C8D5A2927 /* Pods-Hagrid-Demo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hagrid-Demo-resources.sh"; sourceTree = "<group>"; };
 		EFBFF4495FBB207E5E4D0116F5D967DD /* Make+Spacing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Make+Spacing.swift"; path = "Modular/Classes/Extensions/Make+Spacing.swift"; sourceTree = "<group>"; };
 		F1DD85453D597BC546B3EE2383E732E9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4437D3E46ADB6F6909BE4F7FE97CA5A /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
 		F683D10EDE25248DC69750F021596E5E /* Debug.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debug.swift; path = Modular/Classes/Debug.swift; sourceTree = "<group>"; };
-		F7FD62923776F7A24196F3F38F790971 /* Pods_TheGrid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TheGrid.framework; path = "Pods-TheGrid.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F868223775C2FC0299D405E2851D9BB1 /* Pods-Hagrid-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hagrid-dummy.m"; sourceTree = "<group>"; };
 		F98476F42A7756DF6F0816027D13AD9A /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
-		FAC15D6502BE7724A741621686AA3FFF /* Pods-Hagrid-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hagrid-resources.sh"; sourceTree = "<group>"; };
-		FD9BA764F8DC7C0B766FFBAC178CC0B7 /* Pods-TheGrid-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TheGrid-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,11 +201,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		73889852E4C2EB149EE8FC417E9C22DF /* Frameworks */ = {
+		A9ADD25BB371E85E5F7B6D5E4A343F6C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDF7E17C5B538AF0CE47506F810F8E5F /* Foundation.framework in Frameworks */,
+				0DB73584CDD6F5317045E557CB73C4CE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,13 +221,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1FC498F6D61E67382CF3CC7D5414D9C1 /* Targets Support Files */ = {
+		356B646891BD9CBE45AB797C82A1C00A /* Pods-Hagrid-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				D6DFA07A948E01A59C116526F2E62C99 /* Pods-Hagrid */,
-				AA7E407B687178F07E5B11FB383E2699 /* Pods-TheGrid */,
+				CF72A33CFB02BA02A5E96546FA53C0E0 /* Info.plist */,
+				4D42A9244597D6CA0DAA8D1E073A7FB2 /* Pods-Hagrid-Demo.modulemap */,
+				27D7A18DAE21CD350540687C98D7E3B1 /* Pods-Hagrid-Demo-acknowledgements.markdown */,
+				91B7B3D6F99D46A072675A3CD70B1251 /* Pods-Hagrid-Demo-acknowledgements.plist */,
+				35E3EA3330798B8B4E64187F5BD91875 /* Pods-Hagrid-Demo-dummy.m */,
+				CB12ED07FA25310AF929B2753C9FD8A0 /* Pods-Hagrid-Demo-frameworks.sh */,
+				EE3B95B7E5864C46BA16F65C8D5A2927 /* Pods-Hagrid-Demo-resources.sh */,
+				DE1B8717314F52D6E786E987AC459C91 /* Pods-Hagrid-Demo-umbrella.h */,
+				A029D1D8033DAC5FB38655495FD72C6B /* Pods-Hagrid-Demo.debug.xcconfig */,
+				9F629AA1E21367B4AD979DC829FEE4F0 /* Pods-Hagrid-Demo.release.xcconfig */,
 			);
-			name = "Targets Support Files";
+			name = "Pods-Hagrid-Demo";
+			path = "Target Support Files/Pods-Hagrid-Demo";
 			sourceTree = "<group>";
 		};
 		38F516C3989A230984BB53D0D9752282 /* SnapKit */ = {
@@ -288,20 +297,9 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				D8B25C6DF01BE2C3F2FA6A25AEE6417A /* Frameworks */,
 				46A36F661CD319F240404EEC84E571B0 /* Pods */,
-				7F4EC62DC6AC61FD845C306E4CE41ECF /* Products */,
-				1FC498F6D61E67382CF3CC7D5414D9C1 /* Targets Support Files */,
+				953956B96024F7AD5780989469FBD375 /* Products */,
+				8BBECD83C7FE58BA0000FD9B06586853 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		7F4EC62DC6AC61FD845C306E4CE41ECF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				61DE3F739496B4087A2E56ABE9B48159 /* Modular.framework */,
-				C8D70798CC3DEBE6FAFD75F77F717FE5 /* Pods_Hagrid.framework */,
-				F7FD62923776F7A24196F3F38F790971 /* Pods_TheGrid.framework */,
-				9E5A5E65DE56E019AC0AE1203A18AD68 /* SnapKit.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		88E343110D0183D8EA5B57E140437CE6 /* Support Files */ = {
@@ -318,18 +316,38 @@
 			path = "../Target Support Files/SnapKit";
 			sourceTree = "<group>";
 		};
-		AA7E407B687178F07E5B11FB383E2699 /* Pods-TheGrid */ = {
+		8BBECD83C7FE58BA0000FD9B06586853 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BC7265387BFF3F6CEC8C7C663F6A1C10 /* Info.plist */,
-				9007C4F28D1D6003E51FD7EC943D1FC0 /* Pods-TheGrid.modulemap */,
-				B134AE27FAEE76C0ABAE36E53D43D526 /* Pods-TheGrid-acknowledgements.markdown */,
-				7FC74E845022C6D3138A010405422B88 /* Pods-TheGrid-acknowledgements.plist */,
-				FD9BA764F8DC7C0B766FFBAC178CC0B7 /* Pods-TheGrid-dummy.m */,
-				430BD8780B90D41999FFA2352109C0EB /* Pods-TheGrid-resources.sh */,
-				55C5A411A9601B64C7D0A5FC2DCCBEA0 /* Pods-TheGrid-umbrella.h */,
-				590EAAFE3A80061BA8F3D93E604191A8 /* Pods-TheGrid.debug.xcconfig */,
-				CEAF64646B06B352D7C4E172A1F7413C /* Pods-TheGrid.release.xcconfig */,
+				356B646891BD9CBE45AB797C82A1C00A /* Pods-Hagrid-Demo */,
+				A372D5CC6F38F1D661CA956072914E72 /* Pods-TheGrid */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		953956B96024F7AD5780989469FBD375 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C636F99E0438A29EC44057F7725CB752 /* Modular.framework */,
+				499010F57A489E16C515FC638EF8280D /* Pods_Hagrid_Demo.framework */,
+				33E29C3A1796C5B4CF4D8192870D40C2 /* Pods_TheGrid.framework */,
+				B2CE8F1407215CDD5BF8E2C8E205B289 /* SnapKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A372D5CC6F38F1D661CA956072914E72 /* Pods-TheGrid */ = {
+			isa = PBXGroup;
+			children = (
+				53F5FF0E81020B0FD358CFB5E3993840 /* Info.plist */,
+				230674A387F2066F4C6FC5A50554189F /* Pods-TheGrid.modulemap */,
+				A7F41D1CAF1779B24618BB8FD9105601 /* Pods-TheGrid-acknowledgements.markdown */,
+				80183E6CD14CCD33BB81FF8507BBD194 /* Pods-TheGrid-acknowledgements.plist */,
+				856065FFAADBB0A8020B57666C7ABB3D /* Pods-TheGrid-dummy.m */,
+				D5451F31044FA366706351D6D85A5475 /* Pods-TheGrid-resources.sh */,
+				15A8C91A7A710CEC51741FDFF101CE83 /* Pods-TheGrid-umbrella.h */,
+				C6FB1B9818718CDA475406F4B9B9889B /* Pods-TheGrid.debug.xcconfig */,
+				AB530625E081C9EC72B0C0EDAADD357E /* Pods-TheGrid.release.xcconfig */,
 			);
 			name = "Pods-TheGrid";
 			path = "Target Support Files/Pods-TheGrid";
@@ -341,24 +359,6 @@
 				512147FDA1939417BB42A1771EA830F9 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		D6DFA07A948E01A59C116526F2E62C99 /* Pods-Hagrid */ = {
-			isa = PBXGroup;
-			children = (
-				6F27BC911BD006D32791FF671EA3E3D7 /* Info.plist */,
-				30C5519F5ACCE0943AAD8D255A292775 /* Pods-Hagrid.modulemap */,
-				7F63310A0F8C99F2B79F5AC07AFA651B /* Pods-Hagrid-acknowledgements.markdown */,
-				5F79C5280F69D3DD40A1D67D1D09E0EF /* Pods-Hagrid-acknowledgements.plist */,
-				F868223775C2FC0299D405E2851D9BB1 /* Pods-Hagrid-dummy.m */,
-				C000FCB4BC12C0A00B3607D3ED9D0B4C /* Pods-Hagrid-frameworks.sh */,
-				FAC15D6502BE7724A741621686AA3FFF /* Pods-Hagrid-resources.sh */,
-				73BCE0666DF5AF1E66C4D9A4F9644FB4 /* Pods-Hagrid-umbrella.h */,
-				5D33CBBFB92C4FDDB1E0FEE00AD92671 /* Pods-Hagrid.debug.xcconfig */,
-				B6BED6E9052EC2E4FCAD20EEBCA9E09C /* Pods-Hagrid.release.xcconfig */,
-			);
-			name = "Pods-Hagrid";
-			path = "Target Support Files/Pods-Hagrid";
 			sourceTree = "<group>";
 		};
 		D8B25C6DF01BE2C3F2FA6A25AEE6417A /* Frameworks */ = {
@@ -407,14 +407,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		ACAF4291EFB41C144331D4438831320B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2270EBC6ABE0206E0B96B6B18EE787F7 /* Pods-Hagrid-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D6D85006BC70AE42D6D8A223F302D923 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -431,6 +423,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E7E0A3BD14077E869AE737C33FA8BCC3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3447FB928DBFFED4244D6E9234F6876 /* Pods-Hagrid-Demo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F24948FE0192856644C7487A6474B218 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -442,25 +442,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1B30111192020309FD7E89FBA9CD6158 /* Pods-Hagrid */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ACD25F9661A915508409D1580499DC45 /* Build configuration list for PBXNativeTarget "Pods-Hagrid" */;
-			buildPhases = (
-				8760141881DD01033CA65BC0606A5600 /* Sources */,
-				73889852E4C2EB149EE8FC417E9C22DF /* Frameworks */,
-				ACAF4291EFB41C144331D4438831320B /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				51CCD2A0B6F5FD3877FDCDAA74A09E33 /* PBXTargetDependency */,
-				7B78F7BE0AFDA8581E5457DE505A0F99 /* PBXTargetDependency */,
-			);
-			name = "Pods-Hagrid";
-			productName = "Pods-Hagrid";
-			productReference = C8D70798CC3DEBE6FAFD75F77F717FE5 /* Pods_Hagrid.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		B4D4708218C0C62F2EC982D2AA5EBE04 /* Modular */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E6D4930861F66BB88E7686EC921CD17 /* Build configuration list for PBXNativeTarget "Modular" */;
@@ -476,7 +457,7 @@
 			);
 			name = Modular;
 			productName = Modular;
-			productReference = 61DE3F739496B4087A2E56ABE9B48159 /* Modular.framework */;
+			productReference = C636F99E0438A29EC44057F7725CB752 /* Modular.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D3EE3376F8FC6821E5BF18C06CED0506 /* Pods-TheGrid */ = {
@@ -494,7 +475,7 @@
 			);
 			name = "Pods-TheGrid";
 			productName = "Pods-TheGrid";
-			productReference = F7FD62923776F7A24196F3F38F790971 /* Pods_TheGrid.framework */;
+			productReference = 33E29C3A1796C5B4CF4D8192870D40C2 /* Pods_TheGrid.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D73FA0C9F955FB73409E8B0F9DFD28D4 /* SnapKit */ = {
@@ -511,7 +492,26 @@
 			);
 			name = SnapKit;
 			productName = SnapKit;
-			productReference = 9E5A5E65DE56E019AC0AE1203A18AD68 /* SnapKit.framework */;
+			productReference = B2CE8F1407215CDD5BF8E2C8E205B289 /* SnapKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DD39F0C2113EC79FF10280EEF9D03E96 /* Pods-Hagrid-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EC409E07696BA4CFDFE18E6E39AA603 /* Build configuration list for PBXNativeTarget "Pods-Hagrid-Demo" */;
+			buildPhases = (
+				2316AC49C4422B3AF6750381F18E3B6D /* Sources */,
+				A9ADD25BB371E85E5F7B6D5E4A343F6C /* Frameworks */,
+				E7E0A3BD14077E869AE737C33FA8BCC3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4286195DF39429C171577217B54313E0 /* PBXTargetDependency */,
+				051F30A86A6F8F6020C5CDE1D1F2AC12 /* PBXTargetDependency */,
+			);
+			name = "Pods-Hagrid-Demo";
+			productName = "Pods-Hagrid-Demo";
+			productReference = 499010F57A489E16C515FC638EF8280D /* Pods_Hagrid_Demo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -531,12 +531,12 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 7F4EC62DC6AC61FD845C306E4CE41ECF /* Products */;
+			productRefGroup = 953956B96024F7AD5780989469FBD375 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				B4D4708218C0C62F2EC982D2AA5EBE04 /* Modular */,
-				1B30111192020309FD7E89FBA9CD6158 /* Pods-Hagrid */,
+				DD39F0C2113EC79FF10280EEF9D03E96 /* Pods-Hagrid-Demo */,
 				D3EE3376F8FC6821E5BF18C06CED0506 /* Pods-TheGrid */,
 				D73FA0C9F955FB73409E8B0F9DFD28D4 /* SnapKit */,
 			);
@@ -544,19 +544,19 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2316AC49C4422B3AF6750381F18E3B6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				455301BDC22FEF1429441C8946A6DC1E /* Pods-Hagrid-Demo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6B5DD6CA5026425EE15884B68B343660 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				947A06F5924F853B2E9D9234C78AC6B6 /* Pods-TheGrid-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8760141881DD01033CA65BC0606A5600 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				061091C7FC160F7EDC4EB96B09FCAA0A /* Pods-Hagrid-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,29 +624,29 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		051F30A86A6F8F6020C5CDE1D1F2AC12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = D73FA0C9F955FB73409E8B0F9DFD28D4 /* SnapKit */;
+			targetProxy = B56DBFFE8438B86B7B44DD3D9795ED39 /* PBXContainerItemProxy */;
+		};
 		3208B44A9420AA2230576836182CDF5D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SnapKit;
 			target = D73FA0C9F955FB73409E8B0F9DFD28D4 /* SnapKit */;
 			targetProxy = 865B4713ECC35507C0F10EBD53229B4C /* PBXContainerItemProxy */;
 		};
-		51CCD2A0B6F5FD3877FDCDAA74A09E33 /* PBXTargetDependency */ = {
+		4286195DF39429C171577217B54313E0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Modular;
 			target = B4D4708218C0C62F2EC982D2AA5EBE04 /* Modular */;
-			targetProxy = 8E994A2EFDC9E044D7DB85F55C5B8FB1 /* PBXContainerItemProxy */;
+			targetProxy = ABEE7214A53764E7E0BA20F7E87F23CD /* PBXContainerItemProxy */;
 		};
 		6CBD0DC5F73F4B5DE2135A89DDB05CF8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SnapKit;
 			target = D73FA0C9F955FB73409E8B0F9DFD28D4 /* SnapKit */;
 			targetProxy = 96ADA5CBE55C09F7C8035A52373ACAEC /* PBXContainerItemProxy */;
-		};
-		7B78F7BE0AFDA8581E5457DE505A0F99 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SnapKit;
-			target = D73FA0C9F955FB73409E8B0F9DFD28D4 /* SnapKit */;
-			targetProxy = FC305D85A5DAF773E06CF4C58724C261 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -685,9 +685,9 @@
 			};
 			name = Release;
 		};
-		277C857AEAFF680735691DC8FDCE371E /* Release */ = {
+		1FEFC47BFBEFC7FE147F3E6009EDE1C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6BED6E9052EC2E4FCAD20EEBCA9E09C /* Pods-Hagrid.release.xcconfig */;
+			baseConfigurationReference = A029D1D8033DAC5FB38655495FD72C6B /* Pods-Hagrid-Demo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -700,12 +700,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Hagrid/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Hagrid-Demo/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Hagrid/Pods-Hagrid.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Hagrid-Demo/Pods-Hagrid-Demo.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -713,13 +713,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		39EEC09B730171E92E5D16F62E028085 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -747,6 +747,42 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		66B66B057FF1EACE37E302E193A7CB97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F629AA1E21367B4AD979DC829FEE4F0 /* Pods-Hagrid-Demo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Hagrid-Demo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hagrid-Demo/Pods-Hagrid-Demo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -788,7 +824,7 @@
 		};
 		6FD3613704826CB93B73EE25C398EE3E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 590EAAFE3A80061BA8F3D93E604191A8 /* Pods-TheGrid.debug.xcconfig */;
+			baseConfigurationReference = C6FB1B9818718CDA475406F4B9B9889B /* Pods-TheGrid.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -824,7 +860,7 @@
 		};
 		A3A253699A688815EFF7A6F7F613CF95 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEAF64646B06B352D7C4E172A1F7413C /* Pods-TheGrid.release.xcconfig */;
+			baseConfigurationReference = AB530625E081C9EC72B0C0EDAADD357E /* Pods-TheGrid.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -857,42 +893,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		BC1F3143324318CF956A7C08DDDC4827 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D33CBBFB92C4FDDB1E0FEE00AD92671 /* Pods-Hagrid.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Hagrid/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Hagrid/Pods-Hagrid.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		CE6BB864FB202B78BB66ACCAACAA0513 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1051,6 +1051,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1EC409E07696BA4CFDFE18E6E39AA603 /* Build configuration list for PBXNativeTarget "Pods-Hagrid-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FEFC47BFBEFC7FE147F3E6009EDE1C2 /* Debug */,
+				66B66B057FF1EACE37E302E193A7CB97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1074,15 +1083,6 @@
 			buildConfigurations = (
 				6FD3613704826CB93B73EE25C398EE3E /* Debug */,
 				A3A253699A688815EFF7A6F7F613CF95 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ACD25F9661A915508409D1580499DC45 /* Build configuration list for PBXNativeTarget "Pods-Hagrid" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BC1F3143324318CF956A7C08DDDC4827 /* Debug */,
-				277C857AEAFF680735691DC8FDCE371E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -39,7 +39,7 @@ class ViewController: GridScrollViewController {
         gridView.add(subview: albumTitleLabel, from: albumCoverRelation, space: .last, padding: .left(12))
         
         let subtitlesLast: Position = .custom { _ in
-            return self.gridView.bounds.size.width < 414 ? .last : .reversed(2)
+            return self.gridView.bounds.size.width <= 414 ? .last : .reversed(2)
         }
         
         gridView.add(subview: artistLabel, .below(albumTitleLabel, margin: 2), from: albumCoverRelation, space: subtitlesLast, padding: .horizontal(left: 12, right: 0))
@@ -47,13 +47,13 @@ class ViewController: GridScrollViewController {
         gridView.add(subview: yearLabel, .below(artistLabel, margin: 2), from: albumCoverRelation, space: subtitlesLast, padding: .horizontal(left: 12, right: 0))
         
         gridView.add(subview: purchaseButton, .custom({ _ in
-            if self.gridView.bounds.size.width < 414 {
+            if self.gridView.bounds.size.width <= 414 {
                 return .below(self.yearLabel, margin: 3)
             } else {
                 return .match(self.artistLabel)
             }
         }), from: .custom({ _ in
-            if self.gridView.bounds.size.width < 414 {
+            if self.gridView.bounds.size.width <= 414 {
                 return .relation(self.albumCover, margin: 12)
             } else {
                 return .relation(self.artistLabel, margin: 6)

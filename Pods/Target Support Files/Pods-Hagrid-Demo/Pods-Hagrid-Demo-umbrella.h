@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_HagridVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_HagridVersionString[];
+FOUNDATION_EXPORT double Pods_Hagrid_DemoVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_Hagrid_DemoVersionString[];
 

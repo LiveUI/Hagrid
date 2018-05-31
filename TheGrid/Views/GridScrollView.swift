@@ -1,6 +1,6 @@
 //
 //  GridScrollView.swift
-//  TheGrid
+//  Hagrid
 //
 //  Created by Ondrej Rafaj on 31/05/2018.
 //  Copyright © 2018 LiveUI. All rights reserved.

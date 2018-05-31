@@ -8,7 +8,7 @@ target 'TheGrid' do
 end
 
 
-target 'Hagrid' do
+target 'Hagrid-Demo' do
     use_frameworks!
     
     pod 'SnapKit', '~> 4.0.0'

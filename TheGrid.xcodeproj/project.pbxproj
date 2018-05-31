@@ -14,7 +14,6 @@
 		1516411220BD7B740062FA33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1516411120BD7B740062FA33 /* ViewController.swift */; };
 		1516411720BD7B750062FA33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1516411620BD7B750062FA33 /* Assets.xcassets */; };
 		1516411A20BD7B750062FA33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1516411820BD7B750062FA33 /* LaunchScreen.storyboard */; };
-		1516412020BD7D490062FA33 /* TheGrid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 151640EA20BD7A8C0062FA33 /* TheGrid.framework */; };
 		1516412220BD7D760062FA33 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1516412120BD7D760062FA33 /* GridView.swift */; };
 		153F9D7520BE02D70051D0D3 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D7420BE02D70051D0D3 /* GridViewController.swift */; };
 		153F9D7720BE1ACE0051D0D3 /* Vertical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D7620BE1ACE0051D0D3 /* Vertical.swift */; };
@@ -23,6 +22,8 @@
 		153F9D8820C028750051D0D3 /* GridViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D8720C028750051D0D3 /* GridViewInterface.swift */; };
 		153F9D8A20C02B440051D0D3 /* GridSrollView+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D8920C02B440051D0D3 /* GridSrollView+Subviews.swift */; };
 		153F9D8E20C03A6C0051D0D3 /* ScrollViewForwarder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D8D20C03A6C0051D0D3 /* ScrollViewForwarder.swift */; };
+		153F9D8F20C08E470051D0D3 /* TheGrid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 151640EA20BD7A8C0062FA33 /* TheGrid.framework */; };
+		153F9D9020C08E470051D0D3 /* TheGrid.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 151640EA20BD7A8C0062FA33 /* TheGrid.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		15D00E7A20BDB8C20051A8CF /* UIColor+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E7920BDB8C20051A8CF /* UIColor+Tools.swift */; };
 		15D00E7C20BDBE8A0051A8CF /* GridView+Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E7B20BDBE8A0051A8CF /* GridView+Drawing.swift */; };
 		15D00E7E20BDBECF0051A8CF /* GridView+Calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E7D20BDBECF0051A8CF /* GridView+Calculations.swift */; };
@@ -34,7 +35,7 @@
 		15D00E9320BDD2250051A8CF /* Subview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E9220BDD2250051A8CF /* Subview.swift */; };
 		15D00E9520BDDE280051A8CF /* GridView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E9420BDDE280051A8CF /* GridView+Layout.swift */; };
 		183438AE4C5495257C4E4786 /* Pods_TheGrid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 114CEE34C270FDE36133C125 /* Pods_TheGrid.framework */; };
-		3C4F88FDBB2A414217B709C8 /* Pods_Hagrid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBCCC4FB790DBCD69D43EC1E /* Pods_Hagrid.framework */; };
+		88CE74DB5728DC7093C65511 /* Pods_Hagrid_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D7AB17DD8C832613ACD8B16 /* Pods_Hagrid_Demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,9 +46,31 @@
 			remoteGlobalIDString = 151640E920BD7A8C0062FA33;
 			remoteInfo = TheGrid;
 		};
+		153F9D9120C08E470051D0D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 151640E120BD7A8C0062FA33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 151640E920BD7A8C0062FA33;
+			remoteInfo = TheGrid;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		153F9D9320C08E470051D0D3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				153F9D9020C08E470051D0D3 /* TheGrid.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		08925202535EF24408777B19 /* Pods-Hagrid-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hagrid-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hagrid-Demo/Pods-Hagrid-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		114CEE34C270FDE36133C125 /* Pods_TheGrid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheGrid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		151640EA20BD7A8C0062FA33 /* TheGrid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TheGrid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		151640ED20BD7A8C0062FA33 /* TheGrid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheGrid.h; sourceTree = "<group>"; };
@@ -86,9 +109,11 @@
 		15D00E9420BDDE280051A8CF /* GridView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GridView+Layout.swift"; sourceTree = "<group>"; };
 		3CB21749E899116D43348A5B /* Pods-TheGrid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheGrid.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheGrid/Pods-TheGrid.debug.xcconfig"; sourceTree = "<group>"; };
 		4A3632002708C4117FD2E160 /* Pods-Hagrid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hagrid.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hagrid/Pods-Hagrid.debug.xcconfig"; sourceTree = "<group>"; };
+		4D7AB17DD8C832613ACD8B16 /* Pods_Hagrid_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hagrid_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBCCC4FB790DBCD69D43EC1E /* Pods_Hagrid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hagrid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D18E01931BD7CDB4C6680694 /* Pods-Hagrid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hagrid.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hagrid/Pods-Hagrid.release.xcconfig"; sourceTree = "<group>"; };
 		E0A3C8BC6F94CC51804EB9DB /* Pods-TheGrid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheGrid.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheGrid/Pods-TheGrid.release.xcconfig"; sourceTree = "<group>"; };
+		FD2BFDE7A6B966EF58233FF2 /* Pods-Hagrid-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hagrid-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hagrid-Demo/Pods-Hagrid-Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +137,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1516412020BD7D490062FA33 /* TheGrid.framework in Frameworks */,
-				3C4F88FDBB2A414217B709C8 /* Pods_Hagrid.framework in Frameworks */,
+				153F9D8F20C08E470051D0D3 /* TheGrid.framework in Frameworks */,
+				88CE74DB5728DC7093C65511 /* Pods_Hagrid_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +151,7 @@
 				153F9D7820BE22DF0051D0D3 /* Configs */,
 				151640EC20BD7A8C0062FA33 /* TheGrid */,
 				151640F720BD7A8C0062FA33 /* TheGridTests */,
-				1516410E20BD7B740062FA33 /* Hagrid */,
+				1516410E20BD7B740062FA33 /* Hagrid Demo */,
 				151640EB20BD7A8C0062FA33 /* Products */,
 				1516411F20BD7D490062FA33 /* Frameworks */,
 				41D83C6D48422F23A3AD3BE9 /* Pods */,
@@ -194,7 +219,7 @@
 			path = Enums;
 			sourceTree = "<group>";
 		};
-		1516410E20BD7B740062FA33 /* Hagrid */ = {
+		1516410E20BD7B740062FA33 /* Hagrid Demo */ = {
 			isa = PBXGroup;
 			children = (
 				15D00E8220BDC4900051A8CF /* Extensions */,
@@ -202,7 +227,7 @@
 				1516410F20BD7B740062FA33 /* AppDelegate.swift */,
 				1516412320BD81790062FA33 /* Supporting files */,
 			);
-			path = Hagrid;
+			path = "Hagrid Demo";
 			sourceTree = "<group>";
 		};
 		1516411F20BD7D490062FA33 /* Frameworks */ = {
@@ -210,6 +235,7 @@
 			children = (
 				BBCCC4FB790DBCD69D43EC1E /* Pods_Hagrid.framework */,
 				114CEE34C270FDE36133C125 /* Pods_TheGrid.framework */,
+				4D7AB17DD8C832613ACD8B16 /* Pods_Hagrid_Demo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -301,6 +327,8 @@
 				D18E01931BD7CDB4C6680694 /* Pods-Hagrid.release.xcconfig */,
 				3CB21749E899116D43348A5B /* Pods-TheGrid.debug.xcconfig */,
 				E0A3C8BC6F94CC51804EB9DB /* Pods-TheGrid.release.xcconfig */,
+				08925202535EF24408777B19 /* Pods-Hagrid-Demo.debug.xcconfig */,
+				FD2BFDE7A6B966EF58233FF2 /* Pods-Hagrid-Demo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -365,10 +393,12 @@
 				1516410A20BD7B740062FA33 /* Frameworks */,
 				1516410B20BD7B740062FA33 /* Resources */,
 				927D5E94626C9C02D80CB3E5 /* [CP] Embed Pods Frameworks */,
+				153F9D9320C08E470051D0D3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				153F9D9220C08E470051D0D3 /* PBXTargetDependency */,
 			);
 			name = "Hagrid-Demo";
 			productName = Hagrid;
@@ -468,7 +498,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Hagrid/Pods-Hagrid-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Hagrid-Demo/Pods-Hagrid-Demo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Modular/Modular.framework",
 			);
@@ -479,7 +509,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hagrid/Pods-Hagrid-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hagrid-Demo/Pods-Hagrid-Demo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D3420C2B1C39E7176B927082 /* [CP] Check Pods Manifest.lock */ = {
@@ -493,7 +523,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Hagrid-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Hagrid-Demo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -552,6 +582,11 @@
 			isa = PBXTargetDependency;
 			target = 151640E920BD7A8C0062FA33 /* TheGrid */;
 			targetProxy = 151640F520BD7A8C0062FA33 /* PBXContainerItemProxy */;
+		};
+		153F9D9220C08E470051D0D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 151640E920BD7A8C0062FA33 /* TheGrid */;
+			targetProxy = 153F9D9120C08E470051D0D3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -619,7 +654,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -676,7 +711,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -695,6 +730,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3R8ZGADY96;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -722,6 +758,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3R8ZGADY96;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -778,11 +815,14 @@
 		};
 		1516411D20BD7B750062FA33 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A3632002708C4117FD2E160 /* Pods-Hagrid.debug.xcconfig */;
+			baseConfigurationReference = 08925202535EF24408777B19 /* Pods-Hagrid-Demo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Hagrid/Supporting files/Info.plist";
+				DEVELOPMENT_TEAM = 3R8ZGADY96;
+				INFOPLIST_FILE = "Hagrid Demo/Supporting files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -796,11 +836,14 @@
 		};
 		1516411E20BD7B750062FA33 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D18E01931BD7CDB4C6680694 /* Pods-Hagrid.release.xcconfig */;
+			baseConfigurationReference = FD2BFDE7A6B966EF58233FF2 /* Pods-Hagrid-Demo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Hagrid/Supporting files/Info.plist";
+				DEVELOPMENT_TEAM = 3R8ZGADY96;
+				INFOPLIST_FILE = "Hagrid Demo/Supporting files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
