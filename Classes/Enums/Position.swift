@@ -35,7 +35,7 @@ public struct Position: ExpressibleByIntegerLiteral {
         
         #if os(iOS) || os(tvOS)
         /// Custom position for a given size class (trait collection)
-        case custom(((_ traitCollection: NSTraitCollection) -> Position))
+        case custom(((_ traitCollection: UITraitCollection) -> Position))
         #endif
         
     }
@@ -47,6 +47,9 @@ public struct Position: ExpressibleByIntegerLiteral {
     init(_ value: Storage) {
         storage = value
     }
+    
+    /// First column
+    public static var first: Position { return .col(0) }
     
     /// Specific column on the grid
     public static func col(_ value: Int) -> Position { return .init(.col(value)) }
@@ -70,9 +73,6 @@ public struct Position: ExpressibleByIntegerLiteral {
     /// Custom position for a given size class (trait collection)
     public static func custom(_ closure: @escaping ((_ traitCollection: UITraitCollection) -> Position)) -> Position { return .init(.custom(closure)) }
     #endif
-    
-    /// First column
-    public static var first: Position { return .col(0) }
     
     /// Initialize with a number
     public init(integerLiteral value: Int) {

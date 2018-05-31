@@ -64,11 +64,8 @@ extension GridView {
             self.make(subview, right: make)
             
             // Dynamic size
-            if config.autoDynamicVertically {
+            if config.automaticVerticalSizing {
                 make.bottom.lessThanOrEqualTo(self.snp.bottom)
-            }
-            if config.autoDynamicHorizontally {
-                make.right.lessThanOrEqualTo(self.snp.right)
             }
             
             // Run custom constraints

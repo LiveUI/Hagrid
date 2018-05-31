@@ -19,12 +19,6 @@ open class GridScrollView: ViewAlias, GridViewInterface, ScrollViewForwarder {
         /// Vertical
         case vertical
         
-        /// Horizontal
-        case horizontal
-        
-        /// Vertical & horizontal
-        case both
-        
     }
     
     /// Main scroll view
@@ -57,21 +51,14 @@ open class GridScrollView: ViewAlias, GridViewInterface, ScrollViewForwarder {
         }
         
         switch scrollingDirection {
-        case .horizontal:
-            gridView.config.autoDynamicHorizontally = true
         case .vertical:
-            gridView.config.autoDynamicVertically = true
-        case .both:
-            gridView.config.autoDynamicVertically = true
-            gridView.config.autoDynamicHorizontally = true
+            gridView.config.automaticVerticalSizing = true
         }
         scrollView.addSubview(gridView)
         gridView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
             if direction == .vertical {
                 make.width.equalTo(scrollView)
-            } else if direction == .horizontal {
-                make.height.equalTo(scrollView)
             }
         }
     }

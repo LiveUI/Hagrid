@@ -10,7 +10,7 @@
 
 
 /// Vertical positioning
-public struct Vertical {
+public struct Vertical: ExpressibleByFloatLiteral, ExpressibleByIntegerLiteral {
     
     /// Internal storage enum
     enum Storage {
@@ -67,5 +67,15 @@ public struct Vertical {
     /// Custom vertical position for a given size class (trait collection)
     public static func custom(_ closure: @escaping ((_ traitCollection: UITraitCollection) -> Vertical)) -> Vertical { return .init(.custom(closure)) }
     #endif
+    
+    /// Initialize with a Float
+    public init(floatLiteral value: Float) {
+        storage = .exactly(fromTop: CGFloat(value))
+    }
+    
+    /// Initialize with an Int
+    public init(integerLiteral value: Int) {
+        storage = .exactly(fromTop: CGFloat(value))
+    }
     
 }

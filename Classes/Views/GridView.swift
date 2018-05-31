@@ -53,18 +53,9 @@ open class GridView: ViewAlias, GridViewInterface {
         }
         
         /**
-         View is dynamically extending horizontally with each added element
-         */
-        open var autoDynamicHorizontally: Bool = false {
-            didSet {
-                reLayout()
-            }
-        }
-        
-        /**
          View is dynamically extending vertically with each added element
          */
-        open var autoDynamicVertically: Bool = false {
+        open var automaticVerticalSizing: Bool = false {
             didSet {
                 reLayout()
             }

@@ -10,6 +10,13 @@ Brings grid layout to the Apple platforms!
 	</tr>
 </table>
 
+## Available components
+
+* **GridView** - Basic grid view
+* **GridScrollView** - Grid view will all the properties available to a UIScrollView *(not available on macOS)*
+* **GridViewController** - Basic Grid view based UIViewController *(not available on macOS)*
+* **GridScrollViewController** - Scroll grid view enabled view controller *(not available on macOS)*
+
 ## Usage
 
 ```swift
@@ -90,6 +97,14 @@ You can set `top`, `left` or `right` padding for the entire grid view like this:
 gridView.config.padding = .full(top: 6, left: 12, right: 12)
 ```
 
+### Dynamic sizing
+
+You can enable dynamic sizing for the grid view by setting:
+
+```swift
+gridView.config.aaaaaaa = true
+```
+
 Available paddings are:
 ```swift
 /// Element padding
@@ -114,12 +129,64 @@ public enum Padding {
     case full(top: CGFloat, left: CGFloat, right: CGFloat)
     
 }
+```
 
+For vertical positioning you set a pixel value directly (`Int` or `Float`, later will be converted to `.exactly(fromTop: CGFloat)`) or use one of the following values:
+
+```swift
+/// Top of the grid
+.toTop
+
+/// Exact value from the top
+.exactly(fromTop: CGFloat)
+
+/// Match top of another view
+.match(UIView, margin: CGFloat = 0)
+
+/// Maintains a position under a set of elements
+.below([UIView], margin: CGFloat = 0)
+
+/// Below another view (view, margin)
+.below(UIView, margin: CGFloat = 0)
+
+/// Above another view (view, margin)
+.above(UIView, margin: CGFloat = 0)
+
+/// Custom vertical position for a given size class (trait collection, not available on macOS)
+.custom(((_ traitCollection: UITraitCollection) -> Vertical))
+```
+
+For horizontal positioning you can use an integer (`Int`) directly to specify the exact column or use one of the following methods:
+
+```swift
+/// First column
+.first
+
+/// Specific column on the grid
+.col(Int)
+
+/// Last column on a grid view
+.last
+
+/// N-th column from the end
+.reversed(Int)
+
+/// Up to another element
+.relation(UIView, margin: CGFloat = 0)
+
+/// Match position of another view
+.match(UIView, margin: CGFloat = 0)
+
+/// Dynamic position
+.dynamic
+
+/// Custom position for a given size class (trait collection, not available on macOS)
+.custom(((_ traitCollection: UITraitCollection) -> Position))
 ```
 
 ## View controller
 
-A `GridViewController` is available for subclassing and your convenience with `gridView` property replacing the standard `view`.
+A `GridViewController` and `GridScrollViewController` are available for subclassing and your convenience with `gridView` property replacing the standard `view`.
 
 ```swift
 class MyViewController: GridViewController { }

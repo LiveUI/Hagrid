@@ -42,6 +42,9 @@
 		15020AD920C0AC8D00BBADBD /* GridView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E9420BDDE280051A8CF /* GridView+Layout.swift */; };
 		15020ADA20C0AC9F00BBADBD /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1516412120BD7D760062FA33 /* GridView.swift */; };
 		15020ADB20C0ACAD00BBADBD /* GridViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D8720C028750051D0D3 /* GridViewInterface.swift */; };
+		15020ADD20C0AF7000BBADBD /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 15020ADC20C0AF6F00BBADBD /* Cartfile */; };
+		15020ADE20C0AF7000BBADBD /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 15020ADC20C0AF6F00BBADBD /* Cartfile */; };
+		15020ADF20C0AF7000BBADBD /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 15020ADC20C0AF6F00BBADBD /* Cartfile */; };
 		151640FB20BD7A8C0062FA33 /* TheGrid.h in Headers */ = {isa = PBXBuildFile; fileRef = 151640ED20BD7A8C0062FA33 /* TheGrid.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1516411020BD7B740062FA33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1516410F20BD7B740062FA33 /* AppDelegate.swift */; };
 		1516411220BD7B740062FA33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1516411120BD7B740062FA33 /* ViewController.swift */; };
@@ -105,6 +108,7 @@
 		15020AC620C0A9A300BBADBD /* Hagrid_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hagrid_macOS.h; sourceTree = "<group>"; };
 		15020AC720C0A9A300BBADBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15020ACF20C0AA8100BBADBD /* Compatibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compatibility.swift; sourceTree = "<group>"; };
+		15020ADC20C0AF6F00BBADBD /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		151640EA20BD7A8C0062FA33 /* Hagrid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hagrid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		151640ED20BD7A8C0062FA33 /* TheGrid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheGrid.h; sourceTree = "<group>"; };
 		151640EE20BD7A8C0062FA33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -344,12 +348,13 @@
 		153F9D7820BE22DF0051D0D3 /* Configs */ = {
 			isa = PBXGroup;
 			children = (
+				153F9D7920BE22F00051D0D3 /* README.md */,
+				15020ADC20C0AF6F00BBADBD /* Cartfile */,
 				15020A9D20C0A5A200BBADBD /* Hagrid.podspec */,
-				153F9D7D20BE2AEA0051D0D3 /* Other */,
-				153F9D7B20BE22F00051D0D3 /* LICENSE */,
 				153F9D7C20BE22F00051D0D3 /* Podfile */,
 				153F9D7A20BE22F00051D0D3 /* Podfile.lock */,
-				153F9D7920BE22F00051D0D3 /* README.md */,
+				153F9D7B20BE22F00051D0D3 /* LICENSE */,
+				153F9D7D20BE2AEA0051D0D3 /* Other */,
 			);
 			name = Configs;
 			sourceTree = "<group>";
@@ -585,6 +590,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15020ADE20C0AF7000BBADBD /* Cartfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,6 +598,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15020ADF20C0AF7000BBADBD /* Cartfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,6 +606,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15020ADD20C0AF7000BBADBD /* Cartfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
