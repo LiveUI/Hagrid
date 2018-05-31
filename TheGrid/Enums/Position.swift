@@ -37,13 +37,3 @@ public enum Position {
     public static var first: Position { return .col(0) }
     
 }
-
-
-//extension Position: PositionConvertible {
-//    
-//    /// Position forwarder to conform to PositionConvertible
-//    public var position: Position {
-//        return self
-//    }
-//    
-//}

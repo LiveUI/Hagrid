@@ -20,7 +20,6 @@ public struct Subview {
     
 }
 
-
 extension Subview: Hashable {
     
     /// Subviews hash value (equals hash value of it's view)
@@ -29,7 +28,6 @@ extension Subview: Hashable {
     }
     
 }
-
 
 extension Subview: Equatable {
     

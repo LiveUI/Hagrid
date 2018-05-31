@@ -24,7 +24,6 @@
 		15D00E8120BDC3B80051A8CF /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E8020BDC3B80051A8CF /* Position.swift */; };
 		15D00E8420BDC49F0051A8CF /* UIColor+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E8320BDC49F0051A8CF /* UIColor+Tools.swift */; };
 		15D00E8620BDC84A0051A8CF /* GridView+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E8520BDC84A0051A8CF /* GridView+Subviews.swift */; };
-		15D00E8820BDC86A0051A8CF /* PositionConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E8720BDC86A0051A8CF /* PositionConvertible.swift */; };
 		15D00E8F20BDD0690051A8CF /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E8E20BDD0690051A8CF /* Padding.swift */; };
 		15D00E9120BDD1930051A8CF /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E9020BDD1930051A8CF /* Properties.swift */; };
 		15D00E9320BDD2250051A8CF /* Subview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E9220BDD2250051A8CF /* Subview.swift */; };
@@ -51,7 +50,7 @@
 		151640F320BD7A8C0062FA33 /* TheGridTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheGridTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		151640F820BD7A8C0062FA33 /* TheGridTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheGridTests.swift; sourceTree = "<group>"; };
 		151640FA20BD7A8C0062FA33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1516410D20BD7B740062FA33 /* Hagrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hagrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1516410D20BD7B740062FA33 /* Hagrid-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hagrid-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1516410F20BD7B740062FA33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1516411120BD7B740062FA33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1516411620BD7B750062FA33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,7 +70,6 @@
 		15D00E8020BDC3B80051A8CF /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		15D00E8320BDC49F0051A8CF /* UIColor+Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Tools.swift"; sourceTree = "<group>"; };
 		15D00E8520BDC84A0051A8CF /* GridView+Subviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GridView+Subviews.swift"; sourceTree = "<group>"; };
-		15D00E8720BDC86A0051A8CF /* PositionConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionConvertible.swift; sourceTree = "<group>"; };
 		15D00E8E20BDD0690051A8CF /* Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Padding.swift; sourceTree = "<group>"; };
 		15D00E9020BDD1930051A8CF /* Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
 		15D00E9220BDD2250051A8CF /* Subview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subview.swift; sourceTree = "<group>"; };
@@ -130,7 +128,7 @@
 			children = (
 				151640EA20BD7A8C0062FA33 /* TheGrid.framework */,
 				151640F320BD7A8C0062FA33 /* TheGridTests.xctest */,
-				1516410D20BD7B740062FA33 /* Hagrid.app */,
+				1516410D20BD7B740062FA33 /* Hagrid-Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,7 +137,6 @@
 			isa = PBXGroup;
 			children = (
 				153F9D7320BE02300051D0D3 /* View controllers */,
-				1516410820BD7B5D0062FA33 /* Protocols */,
 				15D00E7F20BDC3A50051A8CF /* Extensions */,
 				1516410620BD7B4A0062FA33 /* Enums */,
 				1516410520BD7B420062FA33 /* Libs */,
@@ -184,14 +181,6 @@
 				15D00E8E20BDD0690051A8CF /* Padding.swift */,
 			);
 			path = Enums;
-			sourceTree = "<group>";
-		};
-		1516410820BD7B5D0062FA33 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				15D00E8720BDC86A0051A8CF /* PositionConvertible.swift */,
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		1516410E20BD7B740062FA33 /* Hagrid */ = {
@@ -335,9 +324,9 @@
 			productReference = 151640F320BD7A8C0062FA33 /* TheGridTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1516410C20BD7B740062FA33 /* Hagrid */ = {
+		1516410C20BD7B740062FA33 /* Hagrid-Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1516411C20BD7B750062FA33 /* Build configuration list for PBXNativeTarget "Hagrid" */;
+			buildConfigurationList = 1516411C20BD7B750062FA33 /* Build configuration list for PBXNativeTarget "Hagrid-Demo" */;
 			buildPhases = (
 				D3420C2B1C39E7176B927082 /* [CP] Check Pods Manifest.lock */,
 				1516410920BD7B740062FA33 /* Sources */,
@@ -349,9 +338,9 @@
 			);
 			dependencies = (
 			);
-			name = Hagrid;
+			name = "Hagrid-Demo";
 			productName = Hagrid;
-			productReference = 1516410D20BD7B740062FA33 /* Hagrid.app */;
+			productReference = 1516410D20BD7B740062FA33 /* Hagrid-Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -389,7 +378,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1516410C20BD7B740062FA33 /* Hagrid */,
+				1516410C20BD7B740062FA33 /* Hagrid-Demo */,
 				151640E920BD7A8C0062FA33 /* TheGrid */,
 				151640F220BD7A8C0062FA33 /* TheGridTests */,
 			);
@@ -486,7 +475,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15D00E8820BDC86A0051A8CF /* PositionConvertible.swift in Sources */,
 				15D00E8F20BDD0690051A8CF /* Padding.swift in Sources */,
 				1516412220BD7D760062FA33 /* GridView.swift in Sources */,
 				15D00E8120BDC3B80051A8CF /* Position.swift in Sources */,
@@ -762,7 +750,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.liveui.Hagrid;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.liveui.Hagrid-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -780,7 +768,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.liveui.Hagrid;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.liveui.Hagrid-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -817,7 +805,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1516411C20BD7B750062FA33 /* Build configuration list for PBXNativeTarget "Hagrid" */ = {
+		1516411C20BD7B750062FA33 /* Build configuration list for PBXNativeTarget "Hagrid-Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1516411D20BD7B750062FA33 /* Debug */,

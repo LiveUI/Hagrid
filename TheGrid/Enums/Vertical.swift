@@ -27,4 +27,7 @@ public enum Vertical {
     /// Maintains a position (row) under a set of elements
     case row([UIView], margin: CGFloat)
     
+    /// Custom vertical position for a given size class (trait collection)
+    case custom(((UITraitCollection) -> Vertical))
+    
 }

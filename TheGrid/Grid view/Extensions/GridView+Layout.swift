@@ -29,20 +29,25 @@ extension GridView {
         subview.view.snp.remakeConstraints { (make) in
             // Top
             if let vertical = subview.properties.vertical {
-                switch vertical {
-                case .toTop:
-                    make.top.equalTo(config.padding.value.top)
-                case .exactly(fromTop: let top):
-                    make.top.equalTo(top)
-                case .below(let view, margin: let margin):
-                    make.top.equalTo(view.snp.bottom).offset(margin)
-                case .above(let view, margin: let margin):
-                    make.bottom.equalTo(view.snp.top).offset(-margin)
-                case .row(let views, margin: let margin):
-                    for view in views {
-                        make.top.greaterThanOrEqualTo(view.snp.bottom).offset(margin)
+                func set(vertical: Vertical) {
+                    switch vertical {
+                    case .toTop:
+                        make.top.equalTo(config.padding.value.top)
+                    case .exactly(fromTop: let top):
+                        make.top.equalTo(top)
+                    case .below(let view, margin: let margin):
+                        make.top.equalTo(view.snp.bottom).offset(margin)
+                    case .above(let view, margin: let margin):
+                        make.bottom.equalTo(view.snp.top).offset(-margin)
+                    case .row(let views, margin: let margin):
+                        for view in views {
+                            make.top.greaterThanOrEqualTo(view.snp.bottom).offset(margin)
+                        }
+                    case .custom(let closure):
+                        set(vertical: closure(traitCollection))
                     }
                 }
+                set(vertical: vertical)
             } else {
                 make.top.greaterThanOrEqualTo(config.padding.value.top)
             }
