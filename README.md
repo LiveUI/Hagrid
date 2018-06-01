@@ -39,7 +39,7 @@ gridView.add(subview: albumCover, space: 5) { make in
 }
 
 // Add album title label, stretching (12px padding) from the album cover image to the end of the grid view
-gridView.add(subview: albumTitleLabel, from: albumCoverRelation, space: .last, padding: .left(12))
+gridView.add(subview: albumTitleLabel, from: .relation(albumCover, margin: 12), space: .last)
 
 // Reusable position for the remaining two album labels. iPhones in portrait will take the rest of the screen,
 // on bigger devices or in landscape mode these labels finish two columns from the end of the grid view (.reversed(2)). 
@@ -118,6 +118,7 @@ gridView.config.automaticVerticalSizing = true
 
 ## Positioning
 
+### Padding
 Available paddings are:
 ```swift  
 /// None
@@ -138,6 +139,8 @@ Available paddings are:
 /// Full (top, left, right, bottom)
 .full(top: CGFloat, left: CGFloat, right: CGFloat)
 ```
+
+### Vertical positioning
 
 For vertical positioning you set a pixel value directly (`Int` or `Float`, later will be converted to `.exactly(fromTop: CGFloat)`) or use one of the following values:
 
@@ -163,6 +166,8 @@ For vertical positioning you set a pixel value directly (`Int` or `Float`, later
 /// Custom vertical position for a given size class (trait collection, not available on macOS)
 .custom(((_ traitCollection: UITraitCollection) -> Vertical))
 ```
+
+### Horizontal positioning
 
 For horizontal positioning you can use an integer (`Int`) directly to specify the exact column or use one of the following methods:
 
