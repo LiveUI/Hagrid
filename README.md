@@ -119,29 +119,24 @@ gridView.config.automaticVerticalSizing = true
 ## Positioning
 
 Available paddings are:
-```swift
-/// Element padding
-public enum Padding {
-    
-    /// None
-    case none
-    
-    /// Top
-    case top(CGFloat)
-    
-    /// Left
-    case left(CGFloat)
-    
-    /// Right
-    case right(CGFloat)
-    
-    /// Sides (left, right)
-    case horizontal(left: CGFloat, right: CGFloat)
-    
-    /// Full (top, left, right, bottom)
-    case full(top: CGFloat, left: CGFloat, right: CGFloat)
-    
-}
+```swift  
+/// None
+.none
+
+/// Top
+.top(CGFloat)
+
+/// Left
+.left(CGFloat)
+
+/// Right
+.right(CGFloat)
+
+/// Sides (left, right)
+.horizontal(left: CGFloat, right: CGFloat)
+
+/// Full (top, left, right, bottom)
+.full(top: CGFloat, left: CGFloat, right: CGFloat)
 ```
 
 For vertical positioning you set a pixel value directly (`Int` or `Float`, later will be converted to `.exactly(fromTop: CGFloat)`) or use one of the following values:
