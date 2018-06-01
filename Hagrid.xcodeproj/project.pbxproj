@@ -52,6 +52,9 @@
 		15020AE420C0BFB800BBADBD /* GridScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D8220C023610051D0D3 /* GridScrollViewController.swift */; };
 		15020AE520C0BFEA00BBADBD /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D7420BE02D70051D0D3 /* GridViewController.swift */; };
 		15020AE620C0BFEA00BBADBD /* GridSrollView+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D8920C02B440051D0D3 /* GridSrollView+Subviews.swift */; };
+		15020AE820C147F600BBADBD /* GridTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15020AE720C147F600BBADBD /* GridTableViewCell.swift */; };
+		15020AE920C147F600BBADBD /* GridTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15020AE720C147F600BBADBD /* GridTableViewCell.swift */; };
+		15020AEA20C147F600BBADBD /* GridTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15020AE720C147F600BBADBD /* GridTableViewCell.swift */; };
 		151640FB20BD7A8C0062FA33 /* TheGrid.h in Headers */ = {isa = PBXBuildFile; fileRef = 151640ED20BD7A8C0062FA33 /* TheGrid.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1516411020BD7B740062FA33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1516410F20BD7B740062FA33 /* AppDelegate.swift */; };
 		1516411220BD7B740062FA33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1516411120BD7B740062FA33 /* ViewController.swift */; };
@@ -116,6 +119,7 @@
 		15020AC720C0A9A300BBADBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15020ACF20C0AA8100BBADBD /* Compatibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compatibility.swift; sourceTree = "<group>"; };
 		15020ADC20C0AF6F00BBADBD /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		15020AE720C147F600BBADBD /* GridTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridTableViewCell.swift; sourceTree = "<group>"; };
 		151640EA20BD7A8C0062FA33 /* Hagrid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hagrid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		151640ED20BD7A8C0062FA33 /* TheGrid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheGrid.h; sourceTree = "<group>"; };
 		151640EE20BD7A8C0062FA33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -371,6 +375,7 @@
 			children = (
 				1516412120BD7D760062FA33 /* GridView.swift */,
 				153F9D8420C027B70051D0D3 /* GridScrollView.swift */,
+				15020AE720C147F600BBADBD /* GridTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -728,6 +733,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15020AB920C0A6B500BBADBD /* Position.swift in Sources */,
+				15020AE920C147F600BBADBD /* GridTableViewCell.swift in Sources */,
 				15020ABC20C0A6B500BBADBD /* Subview.swift in Sources */,
 				15020AAD20C0A6B500BBADBD /* ScrollViewForwarder.swift in Sources */,
 				15020AB320C0A6B500BBADBD /* GridView+Drawing.swift in Sources */,
@@ -753,6 +759,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15020ADB20C0ACAD00BBADBD /* GridViewInterface.swift in Sources */,
+				15020AEA20C147F600BBADBD /* GridTableViewCell.swift in Sources */,
 				15020AE020C0BF6700BBADBD /* GridView+Drawing.swift in Sources */,
 				15020ACD20C0A9F800BBADBD /* Properties.swift in Sources */,
 				15020AE320C0BFAC00BBADBD /* GridScrollView.swift in Sources */,
@@ -778,6 +785,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				153F9D8820C028750051D0D3 /* GridViewInterface.swift in Sources */,
+				15020AE820C147F600BBADBD /* GridTableViewCell.swift in Sources */,
 				15D00E8F20BDD0690051A8CF /* Padding.swift in Sources */,
 				1516412220BD7D760062FA33 /* GridView.swift in Sources */,
 				15D00E8120BDC3B80051A8CF /* Position.swift in Sources */,
