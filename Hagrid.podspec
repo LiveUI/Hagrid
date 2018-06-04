@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'Hagrid'
-    s.version          = '1.0.1'
+    s.version          = '1.0.2'
     s.summary          = 'Brings proper grid layout to the Apple platforms!'
     s.swift_version    = '4.1'
 
