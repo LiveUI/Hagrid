@@ -24,15 +24,14 @@ open class GridViewController: UIViewController {
     /// Original view (removed)
     @available(*, unavailable, message: "This property is unavailable", renamed: "gridView")
     open override var view: ViewAlias! {
-        get { return gridView }
-        set { }
+        get { return super.view }
+        set { super.view = newValue }
     }
     
     // MARK: View lifecycle
     
     @available(*, unavailable, message: "This method is unavailable")
     open override func loadView() {
-        // Replacing view with gridView
         gridView = GridView()
         super.view = gridView
     }

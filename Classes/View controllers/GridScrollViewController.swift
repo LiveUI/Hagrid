@@ -26,8 +26,8 @@ open class GridScrollViewController: UIViewController {
     /// Original view (removed)
     @available(*, unavailable, message: "This property is unavailable", renamed: "gridView")
     open override var view: ViewAlias! {
-        get { return gridView }
-        set { }
+        get { return super.view }
+        set { super.view = newValue }
     }
     
     // MARK: View lifecycle
