@@ -24,6 +24,7 @@ Brings a proper grid layout to the Apple platforms!
 ## Available components
 
 * **GridView** - Basic grid view
+* **GridTableViewCell** - UITableViewCell subclass with `gridView` being placed on `contentView` *(not available on macOS)*
 * **GridScrollView** - Grid view with all the properties available to a UIScrollView *(not available on macOS)*
 * **GridViewController** - Basic Grid view based UIViewController *(not available on macOS)*
 * **GridScrollViewController** - Scroll grid view enabled view controller *(not available on macOS)*
