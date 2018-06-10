@@ -213,11 +213,11 @@ extension GridScrollView {
     }
     
     open func touchesShouldBegin(_ touches: Set<UITouch>, with event: UIEvent?, in view: ViewAlias) -> Bool {
-        return touchesShouldBegin(touches, with: event, in: view)
+        return scrollView.touchesShouldBegin(touches, with: event, in: view)
     }
     
     open func touchesShouldCancel(in view: ViewAlias) -> Bool {
-        return touchesShouldCancel(in: view)
+        return scrollView.touchesShouldCancel(in: view)
     }
     
     open var minimumZoomScale: CGFloat {

@@ -16,7 +16,7 @@
 class GridTableViewCell: UITableViewCell {
 
     /// Grid view
-    open let gridView = GridView()
+    public let gridView = GridView()
     
     @available(*, unavailable, message: "This method is unavailable", renamed: "gridView")
     override var contentView: UIView {

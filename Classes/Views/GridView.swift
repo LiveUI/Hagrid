@@ -55,7 +55,7 @@ open class GridView: ViewAlias, GridViewInterface {
         /**
          View is dynamically extending vertically with each added element
          */
-        open var automaticVerticalSizing: Bool = false {
+        public var automaticVerticalSizing: Bool = false {
             didSet {
                 reLayout()
             }
