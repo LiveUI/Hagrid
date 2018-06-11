@@ -9,12 +9,12 @@ Brings a proper grid layout to the Apple platforms!
 
 <table>
 	<tr>
-		<td><img src="https://github.com/LiveUI/TheGrid/blob/master/Other/screen1.png?raw=true" alt="" /></td>
-		<td><img src="https://github.com/LiveUI/TheGrid/blob/master/Other/screen2.png?raw=true" alt="" /></td>
-		<td><img src="https://github.com/LiveUI/TheGrid/blob/master/Other/screen3.png?raw=true" alt="" /></td>
+		<td><img src="https://github.com/LiveUI/Hagrid/blob/master/Other/screen1.png?raw=true" alt="" /></td>
+		<td><img src="https://github.com/LiveUI/Hagrid/blob/master/Other/screen2.png?raw=true" alt="" /></td>
+		<td><img src="https://github.com/LiveUI/Hagrid/blob/master/Other/screen3.png?raw=true" alt="" /></td>
 		<td>
-			<img src="https://github.com/LiveUI/TheGrid/blob/master/Other/screen4.png?raw=true" alt="" /><br />
-			<img src="https://github.com/LiveUI/TheGrid/blob/master/Other/screen5.png?raw=true" alt="" />
+			<img src="https://github.com/LiveUI/Hagrid/blob/master/Other/screen4.png?raw=true" alt="" /><br />
+			<img src="https://github.com/LiveUI/Hagrid/blob/master/Other/screen5.png?raw=true" alt="" />
 		</td>
 	</tr>
 </table>
