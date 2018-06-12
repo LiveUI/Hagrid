@@ -13,13 +13,13 @@
 
 
 /// Grid view enabled table view cell
-class GridTableViewCell: UITableViewCell {
+open class GridTableViewCell: UITableViewCell {
 
     /// Grid view
     public let gridView = GridView()
     
     @available(*, unavailable, message: "This method is unavailable", renamed: "gridView")
-    override var contentView: UIView {
+    override open var contentView: UIView {
         get { return super.contentView }
     }
     
@@ -36,7 +36,7 @@ class GridTableViewCell: UITableViewCell {
     }
     
     @available(*, unavailable, message: "This method is unavailable")
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
