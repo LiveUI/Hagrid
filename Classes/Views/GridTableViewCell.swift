@@ -26,7 +26,7 @@ class GridTableViewCell: UITableViewCell {
     // MARK: Initialization
     
     /// Initializer
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         super.contentView.addSubview(gridView)
