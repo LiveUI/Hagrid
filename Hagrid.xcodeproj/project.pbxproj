@@ -11,8 +11,6 @@
 		15020A9C20C0A46A00BBADBD /* Hagrid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 151640EA20BD7A8C0062FA33 /* Hagrid.framework */; };
 		15020A9E20C0A5A200BBADBD /* Hagrid.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 15020A9D20C0A5A200BBADBD /* Hagrid.podspec */; };
 		15020AA820C0A65200BBADBD /* Hagrid_appleTV.h in Headers */ = {isa = PBXBuildFile; fileRef = 15020AA620C0A65200BBADBD /* Hagrid_appleTV.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		15020AAC20C0A6B500BBADBD /* GridViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D8720C028750051D0D3 /* GridViewInterface.swift */; };
-		15020AAD20C0A6B500BBADBD /* ScrollViewForwarder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D8D20C03A6C0051D0D3 /* ScrollViewForwarder.swift */; };
 		15020AAE20C0A6B500BBADBD /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1516412120BD7D760062FA33 /* GridView.swift */; };
 		15020AAF20C0A6B500BBADBD /* GridScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D8420C027B70051D0D3 /* GridScrollView.swift */; };
 		15020AB020C0A6B500BBADBD /* GridScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D8220C023610051D0D3 /* GridScrollViewController.swift */; };
@@ -41,13 +39,11 @@
 		15020AD720C0AC8D00BBADBD /* GridView+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E8520BDC84A0051A8CF /* GridView+Subviews.swift */; };
 		15020AD920C0AC8D00BBADBD /* GridView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E9420BDDE280051A8CF /* GridView+Layout.swift */; };
 		15020ADA20C0AC9F00BBADBD /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1516412120BD7D760062FA33 /* GridView.swift */; };
-		15020ADB20C0ACAD00BBADBD /* GridViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D8720C028750051D0D3 /* GridViewInterface.swift */; };
 		15020ADD20C0AF7000BBADBD /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 15020ADC20C0AF6F00BBADBD /* Cartfile */; };
 		15020ADE20C0AF7000BBADBD /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 15020ADC20C0AF6F00BBADBD /* Cartfile */; };
 		15020ADF20C0AF7000BBADBD /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 15020ADC20C0AF6F00BBADBD /* Cartfile */; };
 		15020AE020C0BF6700BBADBD /* GridView+Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E7B20BDBE8A0051A8CF /* GridView+Drawing.swift */; };
 		15020AE120C0BF6B00BBADBD /* UIColor+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E7920BDB8C20051A8CF /* UIColor+Tools.swift */; };
-		15020AE220C0BF9A00BBADBD /* ScrollViewForwarder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D8D20C03A6C0051D0D3 /* ScrollViewForwarder.swift */; };
 		15020AE320C0BFAC00BBADBD /* GridScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D8420C027B70051D0D3 /* GridScrollView.swift */; };
 		15020AE420C0BFB800BBADBD /* GridScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D8220C023610051D0D3 /* GridScrollViewController.swift */; };
 		15020AE520C0BFEA00BBADBD /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D7420BE02D70051D0D3 /* GridViewController.swift */; };
@@ -65,9 +61,7 @@
 		153F9D7720BE1ACE0051D0D3 /* Vertical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D7620BE1ACE0051D0D3 /* Vertical.swift */; };
 		153F9D8320C023610051D0D3 /* GridScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D8220C023610051D0D3 /* GridScrollViewController.swift */; };
 		153F9D8520C027B70051D0D3 /* GridScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D8420C027B70051D0D3 /* GridScrollView.swift */; };
-		153F9D8820C028750051D0D3 /* GridViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D8720C028750051D0D3 /* GridViewInterface.swift */; };
 		153F9D8A20C02B440051D0D3 /* GridSrollView+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D8920C02B440051D0D3 /* GridSrollView+Subviews.swift */; };
-		153F9D8E20C03A6C0051D0D3 /* ScrollViewForwarder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D8D20C03A6C0051D0D3 /* ScrollViewForwarder.swift */; };
 		15D00E7A20BDB8C20051A8CF /* UIColor+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E7920BDB8C20051A8CF /* UIColor+Tools.swift */; };
 		15D00E7C20BDBE8A0051A8CF /* GridView+Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E7B20BDBE8A0051A8CF /* GridView+Drawing.swift */; };
 		15D00E7E20BDBECF0051A8CF /* GridView+Calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E7D20BDBECF0051A8CF /* GridView+Calculations.swift */; };
@@ -81,6 +75,12 @@
 		3C90ACB540437EA7A4A8F593 /* Pods_Hagrid_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB4248513ADBF0F843A9588C /* Pods_Hagrid_tvOS.framework */; };
 		BAC12D08CE1D3FD77B866AA6 /* Pods_Hagrid_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D7AB17DD8C832613ACD8B16 /* Pods_Hagrid_Demo.framework */; };
 		C4590549B6C522B067ADD83E /* Pods_Hagrid_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71143FA7D55E9607C58F4C6 /* Pods_Hagrid_iOS.framework */; };
+		C661724320D91300002511D3 /* GridViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C661723F20D912F1002511D3 /* GridViewInterface.swift */; };
+		C661724420D91300002511D3 /* ScrollViewForwarder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C661724020D912F1002511D3 /* ScrollViewForwarder.swift */; };
+		C661724520D91300002511D3 /* GridViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C661723F20D912F1002511D3 /* GridViewInterface.swift */; };
+		C661724620D91300002511D3 /* ScrollViewForwarder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C661724020D912F1002511D3 /* ScrollViewForwarder.swift */; };
+		C661724720D91301002511D3 /* GridViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C661723F20D912F1002511D3 /* GridViewInterface.swift */; };
+		C661724820D91301002511D3 /* ScrollViewForwarder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C661724020D912F1002511D3 /* ScrollViewForwarder.swift */; };
 		EFCAD873A9F0C77A7FE10E25 /* Pods_Hagrid_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E973DF88701F9CE6B97523 /* Pods_Hagrid_macOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -139,9 +139,7 @@
 		153F9D7D20BE2AEA0051D0D3 /* Other */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Other; sourceTree = "<group>"; };
 		153F9D8220C023610051D0D3 /* GridScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridScrollViewController.swift; sourceTree = "<group>"; };
 		153F9D8420C027B70051D0D3 /* GridScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridScrollView.swift; sourceTree = "<group>"; };
-		153F9D8720C028750051D0D3 /* GridViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewInterface.swift; sourceTree = "<group>"; };
 		153F9D8920C02B440051D0D3 /* GridSrollView+Subviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GridSrollView+Subviews.swift"; sourceTree = "<group>"; };
-		153F9D8D20C03A6C0051D0D3 /* ScrollViewForwarder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewForwarder.swift; sourceTree = "<group>"; };
 		15D00E7920BDB8C20051A8CF /* UIColor+Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Tools.swift"; sourceTree = "<group>"; };
 		15D00E7B20BDBE8A0051A8CF /* GridView+Drawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GridView+Drawing.swift"; sourceTree = "<group>"; };
 		15D00E7D20BDBECF0051A8CF /* GridView+Calculations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GridView+Calculations.swift"; sourceTree = "<group>"; };
@@ -161,6 +159,8 @@
 		BB4248513ADBF0F843A9588C /* Pods_Hagrid_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hagrid_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBCCC4FB790DBCD69D43EC1E /* Pods_Hagrid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hagrid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C242ACA85C259DC0AFADA102 /* Pods-Hagrid-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hagrid-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hagrid-Demo/Pods-Hagrid-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		C661723F20D912F1002511D3 /* GridViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewInterface.swift; sourceTree = "<group>"; };
+		C661724020D912F1002511D3 /* ScrollViewForwarder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewForwarder.swift; sourceTree = "<group>"; };
 		C6BBCC95665D6D0A9AD40A40 /* Pods-Hagrid-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hagrid-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hagrid-macOS/Pods-Hagrid-macOS.release.xcconfig"; sourceTree = "<group>"; };
 		D18E01931BD7CDB4C6680694 /* Pods-Hagrid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hagrid.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hagrid/Pods-Hagrid.release.xcconfig"; sourceTree = "<group>"; };
 		D3E73270D6C628A61AC35C7D /* Pods-Hagrid-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hagrid-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hagrid-Demo/Pods-Hagrid-Demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -380,20 +380,10 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		153F9D8620C0285F0051D0D3 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				153F9D8720C028750051D0D3 /* GridViewInterface.swift */,
-				153F9D8D20C03A6C0051D0D3 /* ScrollViewForwarder.swift */,
-			);
-			name = Protocols;
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		153F9D9620C0A2070051D0D3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				153F9D8620C0285F0051D0D3 /* Protocols */,
+				C661723E20D912F1002511D3 /* Protocols */,
 				153F9D7F20C022F80051D0D3 /* Views */,
 				153F9D7320BE02300051D0D3 /* View controllers */,
 				15D00E7F20BDC3A50051A8CF /* Extensions */,
@@ -441,6 +431,15 @@
 				C6BBCC95665D6D0A9AD40A40 /* Pods-Hagrid-macOS.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C661723E20D912F1002511D3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C661723F20D912F1002511D3 /* GridViewInterface.swift */,
+				C661724020D912F1002511D3 /* ScrollViewForwarder.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -735,10 +734,11 @@
 				15020AB920C0A6B500BBADBD /* Position.swift in Sources */,
 				15020AE920C147F600BBADBD /* GridTableViewCell.swift in Sources */,
 				15020ABC20C0A6B500BBADBD /* Subview.swift in Sources */,
-				15020AAD20C0A6B500BBADBD /* ScrollViewForwarder.swift in Sources */,
 				15020AB320C0A6B500BBADBD /* GridView+Drawing.swift in Sources */,
 				15020AB720C0A6B500BBADBD /* GridView+Layout.swift in Sources */,
 				15020AB220C0A6B500BBADBD /* UIColor+Tools.swift in Sources */,
+				C661724520D91300002511D3 /* GridViewInterface.swift in Sources */,
+				C661724620D91300002511D3 /* ScrollViewForwarder.swift in Sources */,
 				15020AB820C0A6B500BBADBD /* Vertical.swift in Sources */,
 				15020AAE20C0A6B500BBADBD /* GridView.swift in Sources */,
 				15020AD120C0AA8100BBADBD /* Compatibility.swift in Sources */,
@@ -746,7 +746,6 @@
 				15020ABB20C0A6B500BBADBD /* Properties.swift in Sources */,
 				15020AB420C0A6B500BBADBD /* GridView+Calculations.swift in Sources */,
 				15020AB120C0A6B500BBADBD /* GridViewController.swift in Sources */,
-				15020AAC20C0A6B500BBADBD /* GridViewInterface.swift in Sources */,
 				15020ABA20C0A6B500BBADBD /* Padding.swift in Sources */,
 				15020AB020C0A6B500BBADBD /* GridScrollViewController.swift in Sources */,
 				15020AAF20C0A6B500BBADBD /* GridScrollView.swift in Sources */,
@@ -758,13 +757,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15020ADB20C0ACAD00BBADBD /* GridViewInterface.swift in Sources */,
 				15020AEA20C147F600BBADBD /* GridTableViewCell.swift in Sources */,
 				15020AE020C0BF6700BBADBD /* GridView+Drawing.swift in Sources */,
 				15020ACD20C0A9F800BBADBD /* Properties.swift in Sources */,
 				15020AE320C0BFAC00BBADBD /* GridScrollView.swift in Sources */,
 				15020ACE20C0A9F800BBADBD /* Subview.swift in Sources */,
 				15020AE520C0BFEA00BBADBD /* GridViewController.swift in Sources */,
+				C661724720D91301002511D3 /* GridViewInterface.swift in Sources */,
+				C661724820D91301002511D3 /* ScrollViewForwarder.swift in Sources */,
 				15020AD920C0AC8D00BBADBD /* GridView+Layout.swift in Sources */,
 				15020ADA20C0AC9F00BBADBD /* GridView.swift in Sources */,
 				15020AD220C0AA8100BBADBD /* Compatibility.swift in Sources */,
@@ -775,7 +775,6 @@
 				15020AD520C0AB7500BBADBD /* Padding.swift in Sources */,
 				15020AE420C0BFB800BBADBD /* GridScrollViewController.swift in Sources */,
 				15020AE620C0BFEA00BBADBD /* GridSrollView+Subviews.swift in Sources */,
-				15020AE220C0BF9A00BBADBD /* ScrollViewForwarder.swift in Sources */,
 				15020AE120C0BF6B00BBADBD /* UIColor+Tools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -784,14 +783,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				153F9D8820C028750051D0D3 /* GridViewInterface.swift in Sources */,
 				15020AE820C147F600BBADBD /* GridTableViewCell.swift in Sources */,
 				15D00E8F20BDD0690051A8CF /* Padding.swift in Sources */,
 				1516412220BD7D760062FA33 /* GridView.swift in Sources */,
 				15D00E8120BDC3B80051A8CF /* Position.swift in Sources */,
 				153F9D7720BE1ACE0051D0D3 /* Vertical.swift in Sources */,
 				15D00E9520BDDE280051A8CF /* GridView+Layout.swift in Sources */,
-				153F9D8E20C03A6C0051D0D3 /* ScrollViewForwarder.swift in Sources */,
+				C661724320D91300002511D3 /* GridViewInterface.swift in Sources */,
+				C661724420D91300002511D3 /* ScrollViewForwarder.swift in Sources */,
 				15D00E7C20BDBE8A0051A8CF /* GridView+Drawing.swift in Sources */,
 				15020AD020C0AA8100BBADBD /* Compatibility.swift in Sources */,
 				153F9D8A20C02B440051D0D3 /* GridSrollView+Subviews.swift in Sources */,
