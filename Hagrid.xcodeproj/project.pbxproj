@@ -65,6 +65,12 @@
 		157D35DC20DAA1E6005C01D1 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157D35DB20DAA1E6005C01D1 /* SnapKit.framework */; };
 		157D35DE20DAA1F3005C01D1 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157D35DD20DAA1F3005C01D1 /* SnapKit.framework */; };
 		157D35E020DAAB1C005C01D1 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 157D35D920DAA1D2005C01D1 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		157D35E420DAB115005C01D1 /* GridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157D35E320DAB115005C01D1 /* GridCollectionViewCell.swift */; };
+		157D35E520DAB115005C01D1 /* GridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157D35E320DAB115005C01D1 /* GridCollectionViewCell.swift */; };
+		157D35E720DAB129005C01D1 /* GridTableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157D35E620DAB129005C01D1 /* GridTableViewHeaderFooterView.swift */; };
+		157D35E820DAB129005C01D1 /* GridTableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157D35E620DAB129005C01D1 /* GridTableViewHeaderFooterView.swift */; };
+		157D35EA20DAB1AB005C01D1 /* GridCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157D35E920DAB1AB005C01D1 /* GridCollectionReusableView.swift */; };
+		157D35EB20DAB1AB005C01D1 /* GridCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157D35E920DAB1AB005C01D1 /* GridCollectionReusableView.swift */; };
 		15D00E7A20BDB8C20051A8CF /* UIColor+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E7920BDB8C20051A8CF /* UIColor+Tools.swift */; };
 		15D00E7C20BDBE8A0051A8CF /* GridView+Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E7B20BDBE8A0051A8CF /* GridView+Drawing.swift */; };
 		15D00E7E20BDBECF0051A8CF /* GridView+Calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E7D20BDBECF0051A8CF /* GridView+Calculations.swift */; };
@@ -142,6 +148,9 @@
 		157D35D920DAA1D2005C01D1 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = SOURCE_ROOT; };
 		157D35DB20DAA1E6005C01D1 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/tvOS/SnapKit.framework; sourceTree = SOURCE_ROOT; };
 		157D35DD20DAA1F3005C01D1 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/Mac/SnapKit.framework; sourceTree = SOURCE_ROOT; };
+		157D35E320DAB115005C01D1 /* GridCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCollectionViewCell.swift; sourceTree = "<group>"; };
+		157D35E620DAB129005C01D1 /* GridTableViewHeaderFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridTableViewHeaderFooterView.swift; sourceTree = "<group>"; };
+		157D35E920DAB1AB005C01D1 /* GridCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCollectionReusableView.swift; sourceTree = "<group>"; };
 		15D00E7920BDB8C20051A8CF /* UIColor+Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Tools.swift"; sourceTree = "<group>"; };
 		15D00E7B20BDBE8A0051A8CF /* GridView+Drawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GridView+Drawing.swift"; sourceTree = "<group>"; };
 		15D00E7D20BDBECF0051A8CF /* GridView+Calculations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GridView+Calculations.swift"; sourceTree = "<group>"; };
@@ -347,6 +356,9 @@
 				1516412120BD7D760062FA33 /* GridView.swift */,
 				153F9D8420C027B70051D0D3 /* GridScrollView.swift */,
 				15020AE720C147F600BBADBD /* GridTableViewCell.swift */,
+				157D35E620DAB129005C01D1 /* GridTableViewHeaderFooterView.swift */,
+				157D35E320DAB115005C01D1 /* GridCollectionViewCell.swift */,
+				157D35E920DAB1AB005C01D1 /* GridCollectionReusableView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -613,11 +625,13 @@
 				15020AE920C147F600BBADBD /* GridTableViewCell.swift in Sources */,
 				15020ABC20C0A6B500BBADBD /* Subview.swift in Sources */,
 				15020AB320C0A6B500BBADBD /* GridView+Drawing.swift in Sources */,
+				157D35E520DAB115005C01D1 /* GridCollectionViewCell.swift in Sources */,
 				15020AB720C0A6B500BBADBD /* GridView+Layout.swift in Sources */,
 				15020AB220C0A6B500BBADBD /* UIColor+Tools.swift in Sources */,
 				C661724520D91300002511D3 /* GridViewInterface.swift in Sources */,
 				C661724620D91300002511D3 /* ScrollViewForwarder.swift in Sources */,
 				15020AB820C0A6B500BBADBD /* Vertical.swift in Sources */,
+				157D35EB20DAB1AB005C01D1 /* GridCollectionReusableView.swift in Sources */,
 				15020AAE20C0A6B500BBADBD /* GridView.swift in Sources */,
 				15020AD120C0AA8100BBADBD /* Compatibility.swift in Sources */,
 				15020AB520C0A6B500BBADBD /* GridView+Subviews.swift in Sources */,
@@ -625,6 +639,7 @@
 				15020AB420C0A6B500BBADBD /* GridView+Calculations.swift in Sources */,
 				15020AB120C0A6B500BBADBD /* GridViewController.swift in Sources */,
 				15020ABA20C0A6B500BBADBD /* Padding.swift in Sources */,
+				157D35E820DAB129005C01D1 /* GridTableViewHeaderFooterView.swift in Sources */,
 				15020AB020C0A6B500BBADBD /* GridScrollViewController.swift in Sources */,
 				15020AAF20C0A6B500BBADBD /* GridScrollView.swift in Sources */,
 				15020AB620C0A6B500BBADBD /* GridSrollView+Subviews.swift in Sources */,
@@ -665,11 +680,13 @@
 				15D00E8F20BDD0690051A8CF /* Padding.swift in Sources */,
 				1516412220BD7D760062FA33 /* GridView.swift in Sources */,
 				15D00E8120BDC3B80051A8CF /* Position.swift in Sources */,
+				157D35E420DAB115005C01D1 /* GridCollectionViewCell.swift in Sources */,
 				153F9D7720BE1ACE0051D0D3 /* Vertical.swift in Sources */,
 				15D00E9520BDDE280051A8CF /* GridView+Layout.swift in Sources */,
 				C661724320D91300002511D3 /* GridViewInterface.swift in Sources */,
 				C661724420D91300002511D3 /* ScrollViewForwarder.swift in Sources */,
 				15D00E7C20BDBE8A0051A8CF /* GridView+Drawing.swift in Sources */,
+				157D35EA20DAB1AB005C01D1 /* GridCollectionReusableView.swift in Sources */,
 				15020AD020C0AA8100BBADBD /* Compatibility.swift in Sources */,
 				153F9D8A20C02B440051D0D3 /* GridSrollView+Subviews.swift in Sources */,
 				153F9D8320C023610051D0D3 /* GridScrollViewController.swift in Sources */,
@@ -677,6 +694,7 @@
 				15D00E9120BDD1930051A8CF /* Properties.swift in Sources */,
 				153F9D8520C027B70051D0D3 /* GridScrollView.swift in Sources */,
 				153F9D7520BE02D70051D0D3 /* GridViewController.swift in Sources */,
+				157D35E720DAB129005C01D1 /* GridTableViewHeaderFooterView.swift in Sources */,
 				15D00E9320BDD2250051A8CF /* Subview.swift in Sources */,
 				15D00E8620BDC84A0051A8CF /* GridView+Subviews.swift in Sources */,
 				15D00E7E20BDBECF0051A8CF /* GridView+Calculations.swift in Sources */,
