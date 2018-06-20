@@ -72,16 +72,12 @@
 		15D00E9120BDD1930051A8CF /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E9020BDD1930051A8CF /* Properties.swift */; };
 		15D00E9320BDD2250051A8CF /* Subview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E9220BDD2250051A8CF /* Subview.swift */; };
 		15D00E9520BDDE280051A8CF /* GridView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E9420BDDE280051A8CF /* GridView+Layout.swift */; };
-		3C90ACB540437EA7A4A8F593 /* Pods_Hagrid_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB4248513ADBF0F843A9588C /* Pods_Hagrid_tvOS.framework */; };
-		BAC12D08CE1D3FD77B866AA6 /* Pods_Hagrid_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D7AB17DD8C832613ACD8B16 /* Pods_Hagrid_Demo.framework */; };
-		C4590549B6C522B067ADD83E /* Pods_Hagrid_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71143FA7D55E9607C58F4C6 /* Pods_Hagrid_iOS.framework */; };
 		C661724320D91300002511D3 /* GridViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C661723F20D912F1002511D3 /* GridViewInterface.swift */; };
 		C661724420D91300002511D3 /* ScrollViewForwarder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C661724020D912F1002511D3 /* ScrollViewForwarder.swift */; };
 		C661724520D91300002511D3 /* GridViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C661723F20D912F1002511D3 /* GridViewInterface.swift */; };
 		C661724620D91300002511D3 /* ScrollViewForwarder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C661724020D912F1002511D3 /* ScrollViewForwarder.swift */; };
 		C661724720D91301002511D3 /* GridViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C661723F20D912F1002511D3 /* GridViewInterface.swift */; };
 		C661724820D91301002511D3 /* ScrollViewForwarder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C661724020D912F1002511D3 /* ScrollViewForwarder.swift */; };
-		EFCAD873A9F0C77A7FE10E25 /* Pods_Hagrid_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E973DF88701F9CE6B97523 /* Pods_Hagrid_macOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,7 +105,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		114CEE34C270FDE36133C125 /* Pods_TheGrid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheGrid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15020A9D20C0A5A200BBADBD /* Hagrid.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hagrid.podspec; sourceTree = "<group>"; };
 		15020AA420C0A65200BBADBD /* Hagrid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hagrid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15020AA620C0A65200BBADBD /* Hagrid_appleTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hagrid_appleTV.h; sourceTree = "<group>"; };
@@ -150,25 +145,8 @@
 		15D00E9020BDD1930051A8CF /* Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
 		15D00E9220BDD2250051A8CF /* Subview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subview.swift; sourceTree = "<group>"; };
 		15D00E9420BDDE280051A8CF /* GridView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GridView+Layout.swift"; sourceTree = "<group>"; };
-		3CB21749E899116D43348A5B /* Pods-TheGrid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheGrid.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheGrid/Pods-TheGrid.debug.xcconfig"; sourceTree = "<group>"; };
-		4A3632002708C4117FD2E160 /* Pods-Hagrid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hagrid.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hagrid/Pods-Hagrid.debug.xcconfig"; sourceTree = "<group>"; };
-		4D7AB17DD8C832613ACD8B16 /* Pods_Hagrid_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hagrid_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		69E2FBC6F4687B54A0C44152 /* Pods-Hagrid-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hagrid-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hagrid-iOS/Pods-Hagrid-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		6BDDE19FA3AA6C9956FC29F8 /* Pods-Hagrid-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hagrid-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hagrid-iOS/Pods-Hagrid-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		88511D80AFA68B04A9940FDE /* Pods-Hagrid-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hagrid-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hagrid-tvOS/Pods-Hagrid-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		BB4248513ADBF0F843A9588C /* Pods_Hagrid_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hagrid_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBCCC4FB790DBCD69D43EC1E /* Pods_Hagrid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hagrid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C242ACA85C259DC0AFADA102 /* Pods-Hagrid-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hagrid-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hagrid-Demo/Pods-Hagrid-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		C661723F20D912F1002511D3 /* GridViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewInterface.swift; sourceTree = "<group>"; };
 		C661724020D912F1002511D3 /* ScrollViewForwarder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewForwarder.swift; sourceTree = "<group>"; };
-		C6BBCC95665D6D0A9AD40A40 /* Pods-Hagrid-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hagrid-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hagrid-macOS/Pods-Hagrid-macOS.release.xcconfig"; sourceTree = "<group>"; };
-		D18E01931BD7CDB4C6680694 /* Pods-Hagrid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hagrid.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hagrid/Pods-Hagrid.release.xcconfig"; sourceTree = "<group>"; };
-		D3E73270D6C628A61AC35C7D /* Pods-Hagrid-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hagrid-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hagrid-Demo/Pods-Hagrid-Demo.release.xcconfig"; sourceTree = "<group>"; };
-		D4E973DF88701F9CE6B97523 /* Pods_Hagrid_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hagrid_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF7847A38AF1993933259644 /* Pods-Hagrid-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hagrid-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hagrid-tvOS/Pods-Hagrid-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		E0A3C8BC6F94CC51804EB9DB /* Pods-TheGrid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheGrid.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheGrid/Pods-TheGrid.release.xcconfig"; sourceTree = "<group>"; };
-		ED992AF2789CCD5AF016E590 /* Pods-Hagrid-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hagrid-macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hagrid-macOS/Pods-Hagrid-macOS.debug.xcconfig"; sourceTree = "<group>"; };
-		F71143FA7D55E9607C58F4C6 /* Pods_Hagrid_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hagrid_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,7 +154,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C90ACB540437EA7A4A8F593 /* Pods_Hagrid_tvOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,7 +161,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFCAD873A9F0C77A7FE10E25 /* Pods_Hagrid_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,7 +168,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4590549B6C522B067ADD83E /* Pods_Hagrid_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +175,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAC12D08CE1D3FD77B866AA6 /* Pods_Hagrid_Demo.framework in Frameworks */,
 				15020A9C20C0A46A00BBADBD /* Hagrid.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,8 +226,6 @@
 				15020AC520C0A9A300BBADBD /* Hagrid-macOS */,
 				1516410E20BD7B740062FA33 /* Hagrid Demo */,
 				151640EB20BD7A8C0062FA33 /* Products */,
-				1516411F20BD7D490062FA33 /* Frameworks */,
-				41D83C6D48422F23A3AD3BE9 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -314,19 +286,6 @@
 				1516412320BD81790062FA33 /* Supporting files */,
 			);
 			path = "Hagrid Demo";
-			sourceTree = "<group>";
-		};
-		1516411F20BD7D490062FA33 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BBCCC4FB790DBCD69D43EC1E /* Pods_Hagrid.framework */,
-				114CEE34C270FDE36133C125 /* Pods_TheGrid.framework */,
-				4D7AB17DD8C832613ACD8B16 /* Pods_Hagrid_Demo.framework */,
-				F71143FA7D55E9607C58F4C6 /* Pods_Hagrid_iOS.framework */,
-				BB4248513ADBF0F843A9588C /* Pods_Hagrid_tvOS.framework */,
-				D4E973DF88701F9CE6B97523 /* Pods_Hagrid_macOS.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		1516412320BD81790062FA33 /* Supporting files */ = {
@@ -414,25 +373,6 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		41D83C6D48422F23A3AD3BE9 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4A3632002708C4117FD2E160 /* Pods-Hagrid.debug.xcconfig */,
-				D18E01931BD7CDB4C6680694 /* Pods-Hagrid.release.xcconfig */,
-				3CB21749E899116D43348A5B /* Pods-TheGrid.debug.xcconfig */,
-				E0A3C8BC6F94CC51804EB9DB /* Pods-TheGrid.release.xcconfig */,
-				6BDDE19FA3AA6C9956FC29F8 /* Pods-Hagrid-iOS.debug.xcconfig */,
-				69E2FBC6F4687B54A0C44152 /* Pods-Hagrid-iOS.release.xcconfig */,
-				C242ACA85C259DC0AFADA102 /* Pods-Hagrid-Demo.debug.xcconfig */,
-				D3E73270D6C628A61AC35C7D /* Pods-Hagrid-Demo.release.xcconfig */,
-				88511D80AFA68B04A9940FDE /* Pods-Hagrid-tvOS.debug.xcconfig */,
-				DF7847A38AF1993933259644 /* Pods-Hagrid-tvOS.release.xcconfig */,
-				ED992AF2789CCD5AF016E590 /* Pods-Hagrid-macOS.debug.xcconfig */,
-				C6BBCC95665D6D0A9AD40A40 /* Pods-Hagrid-macOS.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		C661723E20D912F1002511D3 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -476,7 +416,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15020AA920C0A65200BBADBD /* Build configuration list for PBXNativeTarget "Hagrid-tvOS" */;
 			buildPhases = (
-				FAE883F56D4E05988285A5A8 /* [CP] Check Pods Manifest.lock */,
 				15020A9F20C0A65200BBADBD /* Sources */,
 				15020AA020C0A65200BBADBD /* Frameworks */,
 				15020AA120C0A65200BBADBD /* Headers */,
@@ -495,7 +434,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15020AC920C0A9A300BBADBD /* Build configuration list for PBXNativeTarget "Hagrid-macOS" */;
 			buildPhases = (
-				731A1E2BEE9071DAC09D7B75 /* [CP] Check Pods Manifest.lock */,
 				15020ABF20C0A9A300BBADBD /* Sources */,
 				15020AC020C0A9A300BBADBD /* Frameworks */,
 				15020AC120C0A9A300BBADBD /* Headers */,
@@ -514,7 +452,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 151640FE20BD7A8C0062FA33 /* Build configuration list for PBXNativeTarget "Hagrid-iOS" */;
 			buildPhases = (
-				908C19F8659954CA27010EC4 /* [CP] Check Pods Manifest.lock */,
 				151640E520BD7A8C0062FA33 /* Sources */,
 				151640E620BD7A8C0062FA33 /* Frameworks */,
 				151640E720BD7A8C0062FA33 /* Headers */,
@@ -533,12 +470,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1516411C20BD7B750062FA33 /* Build configuration list for PBXNativeTarget "Hagrid-Demo" */;
 			buildPhases = (
-				12A5A45FA24F0D97816D9013 /* [CP] Check Pods Manifest.lock */,
 				1516410920BD7B740062FA33 /* Sources */,
 				1516410A20BD7B740062FA33 /* Frameworks */,
 				1516410B20BD7B740062FA33 /* Resources */,
 				153F9D9320C08E470051D0D3 /* Embed Frameworks */,
-				94EBE1097F5EF1196F78070D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -632,99 +567,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		12A5A45FA24F0D97816D9013 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Hagrid-Demo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		731A1E2BEE9071DAC09D7B75 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Hagrid-macOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		908C19F8659954CA27010EC4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Hagrid-iOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		94EBE1097F5EF1196F78070D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Hagrid-Demo/Pods-Hagrid-Demo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SnapKit-iOS/SnapKit.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hagrid-Demo/Pods-Hagrid-Demo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FAE883F56D4E05988285A5A8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Hagrid-tvOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		15020A9F20C0A65200BBADBD /* Sources */ = {
@@ -839,7 +681,6 @@
 /* Begin XCBuildConfiguration section */
 		15020AAA20C0A65200BBADBD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88511D80AFA68B04A9940FDE /* Pods-Hagrid-tvOS.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -849,11 +690,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Hagrid-tvOS/Supporting files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.liveui.Hagrid-appleTV";
 				PRODUCT_NAME = Hagrid;
 				SDKROOT = appletvos;
@@ -866,7 +703,6 @@
 		};
 		15020AAB20C0A65200BBADBD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF7847A38AF1993933259644 /* Pods-Hagrid-tvOS.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -876,11 +712,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Hagrid-tvOS/Supporting files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.liveui.Hagrid-appleTV";
 				PRODUCT_NAME = Hagrid;
 				SDKROOT = appletvos;
@@ -893,7 +725,6 @@
 		};
 		15020ACA20C0A9A300BBADBD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED992AF2789CCD5AF016E590 /* Pods-Hagrid-macOS.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
@@ -905,11 +736,7 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "Hagrid-macOS/Supporting files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.liveui.Hagrid-macOS";
 				PRODUCT_NAME = Hagrid;
@@ -921,7 +748,6 @@
 		};
 		15020ACB20C0A9A300BBADBD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6BBCC95665D6D0A9AD40A40 /* Pods-Hagrid-macOS.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
@@ -933,11 +759,7 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "Hagrid-macOS/Supporting files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.liveui.Hagrid-macOS";
 				PRODUCT_NAME = Hagrid;
@@ -1069,7 +891,6 @@
 		};
 		151640FF20BD7A8C0062FA33 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BDDE19FA3AA6C9956FC29F8 /* Pods-Hagrid-iOS.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -1082,11 +903,7 @@
 				INFOPLIST_FILE = "Hagrid-iOS/Supporting files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.liveui.Hagrid-iOS";
 				PRODUCT_NAME = Hagrid;
 				SKIP_INSTALL = YES;
@@ -1098,7 +915,6 @@
 		};
 		1516410020BD7A8C0062FA33 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69E2FBC6F4687B54A0C44152 /* Pods-Hagrid-iOS.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -1111,11 +927,7 @@
 				INFOPLIST_FILE = "Hagrid-iOS/Supporting files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.liveui.Hagrid-iOS";
 				PRODUCT_NAME = Hagrid;
 				SKIP_INSTALL = YES;
@@ -1126,17 +938,13 @@
 		};
 		1516411D20BD7B750062FA33 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C242ACA85C259DC0AFADA102 /* Pods-Hagrid-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3R8ZGADY96;
 				INFOPLIST_FILE = "Hagrid Demo/Supporting files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.liveui.Hagrid-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1146,17 +954,13 @@
 		};
 		1516411E20BD7B750062FA33 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3E73270D6C628A61AC35C7D /* Pods-Hagrid-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3R8ZGADY96;
 				INFOPLIST_FILE = "Hagrid Demo/Supporting files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.liveui.Hagrid-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
