@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		15020A9B20C0A46700BBADBD /* Hagrid.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 151640EA20BD7A8C0062FA33 /* Hagrid.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		15020A9C20C0A46A00BBADBD /* Hagrid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 151640EA20BD7A8C0062FA33 /* Hagrid.framework */; };
 		15020A9E20C0A5A200BBADBD /* Hagrid.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 15020A9D20C0A5A200BBADBD /* Hagrid.podspec */; };
 		15020AA820C0A65200BBADBD /* Hagrid_appleTV.h in Headers */ = {isa = PBXBuildFile; fileRef = 15020AA620C0A65200BBADBD /* Hagrid_appleTV.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		15020AAE20C0A6B500BBADBD /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1516412120BD7D760062FA33 /* GridView.swift */; };
@@ -65,6 +64,7 @@
 		157D35DA20DAA1D3005C01D1 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157D35D920DAA1D2005C01D1 /* SnapKit.framework */; };
 		157D35DC20DAA1E6005C01D1 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157D35DB20DAA1E6005C01D1 /* SnapKit.framework */; };
 		157D35DE20DAA1F3005C01D1 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157D35DD20DAA1F3005C01D1 /* SnapKit.framework */; };
+		157D35E020DAAB1C005C01D1 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 157D35D920DAA1D2005C01D1 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		15D00E7A20BDB8C20051A8CF /* UIColor+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E7920BDB8C20051A8CF /* UIColor+Tools.swift */; };
 		15D00E7C20BDBE8A0051A8CF /* GridView+Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E7B20BDBE8A0051A8CF /* GridView+Drawing.swift */; };
 		15D00E7E20BDBECF0051A8CF /* GridView+Calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E7D20BDBECF0051A8CF /* GridView+Calculations.swift */; };
@@ -101,6 +101,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				15020A9B20C0A46700BBADBD /* Hagrid.framework in Embed Frameworks */,
+				157D35E020DAAB1C005C01D1 /* SnapKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,7 +185,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15020A9C20C0A46A00BBADBD /* Hagrid.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1026,7 +1026,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3R8ZGADY96;
-				FRAMEWORK_SEARCH_PATHS = ./Carthage/Build/iOS/;
+				FRAMEWORK_SEARCH_PATHS = (
+					./Carthage/Build/iOS/,
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Hagrid Demo/Supporting files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1046,7 +1049,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3R8ZGADY96;
-				FRAMEWORK_SEARCH_PATHS = ./Carthage/Build/iOS/;
+				FRAMEWORK_SEARCH_PATHS = (
+					./Carthage/Build/iOS/,
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Hagrid Demo/Supporting files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
