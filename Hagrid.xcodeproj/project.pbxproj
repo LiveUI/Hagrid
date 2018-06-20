@@ -62,6 +62,9 @@
 		153F9D8320C023610051D0D3 /* GridScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D8220C023610051D0D3 /* GridScrollViewController.swift */; };
 		153F9D8520C027B70051D0D3 /* GridScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D8420C027B70051D0D3 /* GridScrollView.swift */; };
 		153F9D8A20C02B440051D0D3 /* GridSrollView+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F9D8920C02B440051D0D3 /* GridSrollView+Subviews.swift */; };
+		157D35DA20DAA1D3005C01D1 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157D35D920DAA1D2005C01D1 /* SnapKit.framework */; };
+		157D35DC20DAA1E6005C01D1 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157D35DB20DAA1E6005C01D1 /* SnapKit.framework */; };
+		157D35DE20DAA1F3005C01D1 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157D35DD20DAA1F3005C01D1 /* SnapKit.framework */; };
 		15D00E7A20BDB8C20051A8CF /* UIColor+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E7920BDB8C20051A8CF /* UIColor+Tools.swift */; };
 		15D00E7C20BDBE8A0051A8CF /* GridView+Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E7B20BDBE8A0051A8CF /* GridView+Drawing.swift */; };
 		15D00E7E20BDBECF0051A8CF /* GridView+Calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D00E7D20BDBECF0051A8CF /* GridView+Calculations.swift */; };
@@ -135,6 +138,9 @@
 		153F9D8220C023610051D0D3 /* GridScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridScrollViewController.swift; sourceTree = "<group>"; };
 		153F9D8420C027B70051D0D3 /* GridScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridScrollView.swift; sourceTree = "<group>"; };
 		153F9D8920C02B440051D0D3 /* GridSrollView+Subviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GridSrollView+Subviews.swift"; sourceTree = "<group>"; };
+		157D35D920DAA1D2005C01D1 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = SOURCE_ROOT; };
+		157D35DB20DAA1E6005C01D1 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/tvOS/SnapKit.framework; sourceTree = SOURCE_ROOT; };
+		157D35DD20DAA1F3005C01D1 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/Mac/SnapKit.framework; sourceTree = SOURCE_ROOT; };
 		15D00E7920BDB8C20051A8CF /* UIColor+Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Tools.swift"; sourceTree = "<group>"; };
 		15D00E7B20BDBE8A0051A8CF /* GridView+Drawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GridView+Drawing.swift"; sourceTree = "<group>"; };
 		15D00E7D20BDBECF0051A8CF /* GridView+Calculations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GridView+Calculations.swift"; sourceTree = "<group>"; };
@@ -154,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				157D35DC20DAA1E6005C01D1 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				157D35DE20DAA1F3005C01D1 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +176,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				157D35DA20DAA1D3005C01D1 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +194,7 @@
 		15020AA520C0A65200BBADBD /* Hagrid-tvOS */ = {
 			isa = PBXGroup;
 			children = (
+				157D35D720DAA1AC005C01D1 /* Frameworks */,
 				15020ABE20C0A71300BBADBD /* Supporting files */,
 			);
 			path = "Hagrid-tvOS";
@@ -202,6 +212,7 @@
 		15020AC520C0A9A300BBADBD /* Hagrid-macOS */ = {
 			isa = PBXGroup;
 			children = (
+				157D35D620DAA19C005C01D1 /* Frameworks */,
 				15020ACC20C0A9BE00BBADBD /* Supporting files */,
 			);
 			path = "Hagrid-macOS";
@@ -243,6 +254,7 @@
 		151640EC20BD7A8C0062FA33 /* Hagrid-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				157D35D820DAA1B1005C01D1 /* Frameworks */,
 				1516410420BD7AFF0062FA33 /* Supporting files */,
 			);
 			path = "Hagrid-iOS";
@@ -350,6 +362,30 @@
 				1516410520BD7B420062FA33 /* Libs */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		157D35D620DAA19C005C01D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				157D35DD20DAA1F3005C01D1 /* SnapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		157D35D720DAA1AC005C01D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				157D35DB20DAA1E6005C01D1 /* SnapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		157D35D820DAA1B1005C01D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				157D35D920DAA1D2005C01D1 /* SnapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		15D00E7F20BDC3A50051A8CF /* Extensions */ = {
@@ -688,9 +724,17 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = "Hagrid-tvOS/Supporting files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.liveui.Hagrid-appleTV";
 				PRODUCT_NAME = Hagrid;
 				SDKROOT = appletvos;
@@ -710,9 +754,17 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = "Hagrid-tvOS/Supporting files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.liveui.Hagrid-appleTV";
 				PRODUCT_NAME = Hagrid;
 				SDKROOT = appletvos;
@@ -733,10 +785,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "Hagrid-macOS/Supporting files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.liveui.Hagrid-macOS";
 				PRODUCT_NAME = Hagrid;
@@ -756,10 +816,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "Hagrid-macOS/Supporting files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.liveui.Hagrid-macOS";
 				PRODUCT_NAME = Hagrid;
@@ -900,10 +968,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Hagrid-iOS/Supporting files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.liveui.Hagrid-iOS";
 				PRODUCT_NAME = Hagrid;
 				SKIP_INSTALL = YES;
@@ -924,10 +1000,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Hagrid-iOS/Supporting files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.liveui.Hagrid-iOS";
 				PRODUCT_NAME = Hagrid;
 				SKIP_INSTALL = YES;
@@ -942,9 +1026,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3R8ZGADY96;
+				FRAMEWORK_SEARCH_PATHS = ./Carthage/Build/iOS/;
 				INFOPLIST_FILE = "Hagrid Demo/Supporting files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.liveui.Hagrid-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -958,9 +1046,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3R8ZGADY96;
+				FRAMEWORK_SEARCH_PATHS = ./Carthage/Build/iOS/;
 				INFOPLIST_FILE = "Hagrid Demo/Supporting files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.liveui.Hagrid-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
