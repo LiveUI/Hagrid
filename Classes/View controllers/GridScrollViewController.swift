@@ -41,6 +41,13 @@ open class GridScrollViewController: UIViewController {
     
     // MARK: Initialization
     
+    /// Initializer
+    public init() {
+        self.scrollingDirection = .vertical
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+    
     /// Initializer (scrolling direction set to `.vertical` by default)
     public init(scrollingDirection: GridScrollView.Direction = .vertical) {
         self.scrollingDirection = scrollingDirection
