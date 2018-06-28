@@ -41,7 +41,7 @@ extension GridScrollView {
     
     @available(*, unavailable, message: "This method is unavailable, please use add(subview:_:from:space:padding:redraw:) instead")
     open override func addSubview(_ view: ViewAlias) {
-        fatalError("Add subview is not supported on a GridView")
+        super.addSubview(view)
     }
     
 }
