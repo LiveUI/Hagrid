@@ -65,7 +65,7 @@ extension GridView {
             
             // Dynamic size
             if config.automaticVerticalSizing {
-                make.bottom.lessThanOrEqualTo(self.snp.bottom)
+                make.bottom.lessThanOrEqualTo(self.snp.bottom).offset(-config.padding.value.bottom)
             }
             
             // Run custom constraints
@@ -78,6 +78,10 @@ extension GridView {
         if let vertical = subview.properties.vertical {
             func set(vertical: Vertical) {
                 switch vertical.storage {
+                case .none:
+                    break
+                case .centerY:
+                    make.centerY.equalToSuperview()
                 case .exactly(fromTop: let top):
                     make.top.equalTo(top + config.padding.value.top)
                 case .match(let view, margin: let margin):

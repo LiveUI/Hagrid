@@ -15,6 +15,12 @@ public struct Vertical: ExpressibleByFloatLiteral, ExpressibleByIntegerLiteral {
     /// Internal storage enum
     enum Storage {
         
+        /// Don't set vertical position
+        case none
+        
+        /// Center horizontally in superview
+        case centerY
+        
         /// Exact value from the top
         case exactly(fromTop: CGFloat)
         
@@ -44,6 +50,12 @@ public struct Vertical: ExpressibleByFloatLiteral, ExpressibleByIntegerLiteral {
     init(_ value: Storage) {
         storage = value
     }
+    
+    /// Don't set vertical position
+    public static var none: Vertical { return .init(.none) }
+    
+    /// Center horizontally in superview
+    public static var centerY: Vertical { return .init(.centerY) }
     
     /// Top of the grid
     public static var toTop: Vertical { return .exactly(fromTop: 0) }
